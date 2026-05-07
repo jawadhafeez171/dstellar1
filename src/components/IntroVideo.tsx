@@ -69,8 +69,8 @@ export function IntroVideo() {
         className="intro-video-wrapper"
         initial={{ opacity: 0, scale: 0.9, y: 50 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+        viewport={{ once: false, margin: "-100px" }}
+        transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1] }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onMouseMove={handleMouseMove}

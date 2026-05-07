@@ -17,6 +17,7 @@ const PROMOS: Record<string, { title: string, desc: string, btn: string }> = {
 
 export function TopBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeMenu, setActiveMenu] = useState<string | null>(null);
 
   return (
     <header className="topbar">
@@ -29,10 +30,14 @@ export function TopBar() {
             const limit = isGrid ? 10 : 5;
             
             return (
-              <div key={n.label} className="nav-item">
+              <div 
+                key={n.label} 
+                className={`nav-item ${activeMenu === n.label ? 'mobile-active' : ''}`}
+                onClick={() => setActiveMenu(activeMenu === n.label ? null : n.label)}
+              >
                 {n.label}<span className="chev">⌄</span>
                 {n.children && (
-                  <div className="megamenu megamenu-wide">
+                  <div className="megamenu megamenu-wide" onClick={(e) => e.stopPropagation()}>
                     <div className="mega-split">
                       <div className={isGrid ? 'mega-links-grid' : 'mega-links'}>
                         {n.children.slice(0, limit).map((c) => <a key={c} href="#">{c}</a>)}

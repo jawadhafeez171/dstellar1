@@ -1572,7 +1572,7 @@ footer::before {
     opacity: 1;
     pointer-events: auto;
   }
-  .mainnav > .nav-item:hover .megamenu {
+  .mainnav > .nav-item.mobile-active .megamenu {
     display: block;
   }
   .mega-split {
