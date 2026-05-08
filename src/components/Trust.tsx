@@ -4,7 +4,11 @@ export function Trust() {
   return (
     <section className="trust">
       <div className="trust-inner">
-        <span className="trust-label">Certified · Partnered</span>
+        <div className="trust-label">
+          <span>Certified</span>
+          <span className="dot">·</span>
+          <span>Partnered</span>
+        </div>
         <div className="trust-marquee">
           <div className="trust-track">
             {double.map((l,i) => <span key={i} className="trust-item">{l} ✦</span>)}

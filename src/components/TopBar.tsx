@@ -18,6 +18,9 @@ const PROMOS: Record<string, { title: string, desc: string, btn: string }> = {
 export function TopBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
+  const [globalOpen, setGlobalOpen] = useState(false);
+
+  const regions = ['Americas', 'Europe', 'Asia Pacific', 'Middle East & Africa'];
 
   return (
     <header className="topbar">
@@ -56,10 +59,28 @@ export function TopBar() {
             );
           })}
           <div className="mobile-only-login">
+            <div className="mobile-global-wrap">
+              <button className="nav-global-btn" onClick={() => setGlobalOpen(!globalOpen)}><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></button>
+              {globalOpen && (
+                <div className="mobile-global-list">
+                  {regions.map(r => <button key={r} className="global-item">{r}</button>)}
+                </div>
+              )}
+            </div>
             <button className="cta-btn accent">Login</button>
           </div>
         </nav>
-        <button className="cta-btn topbar-cta">Login</button>
+        <div className="topbar-actions">
+          <div className="global-dropdown-wrap" onMouseEnter={() => setGlobalOpen(true)} onMouseLeave={() => setGlobalOpen(false)}>
+            <button className="nav-global-btn" aria-label="Select Region"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></button>
+            {globalOpen && (
+              <div className="global-dropdown">
+                {regions.map(r => <button key={r} className="global-item">{r}</button>)}
+              </div>
+            )}
+          </div>
+          <button className="cta-btn topbar-cta">Login</button>
+        </div>
         <button className="mobile-menu-btn" aria-label="Toggle Menu" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           {mobileMenuOpen ? '✕' : '☰'}
         </button>
