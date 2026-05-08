@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     siteName: 'Dstellar',
     images: [
       {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Dstellar SAP Solutions',
+        url: '/assets/logo-white.webp',
+        width: 800,
+        height: 600,
+        alt: 'Dstellar Logo',
       },
     ],
     locale: 'en_US',
@@ -27,7 +27,11 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Dstellar | Global SAP Solutions & Enterprise Software Consulting',
     description: 'Expert SAP S/4HANA migrations and enterprise software products.',
-    images: ['/og-image.png'],
+    images: ['/assets/logo-white.webp'],
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
   robots: {
     index: true,
