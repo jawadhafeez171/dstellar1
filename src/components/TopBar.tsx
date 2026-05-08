@@ -56,7 +56,7 @@ export function TopBar() {
             );
           })}
         </nav>
-        <button className="cta-btn topbar-cta">Try & Buy →</button>
+        <button className="cta-btn topbar-cta">Login</button>
         <button className="mobile-menu-btn" aria-label="Toggle Menu" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           {mobileMenuOpen ? '✕' : '☰'}
         </button>

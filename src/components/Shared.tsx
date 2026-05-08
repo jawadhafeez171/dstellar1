@@ -4,7 +4,7 @@ export function Logo() {
   return (
     <div className="logo" style={{ display: 'flex', alignItems: 'center' }}>
       <Image
-        src="/assets/logo-light.webp"
+        src="/assets/logo-white.webp"
         alt="Dstellar Logo"
         width={250}
         height={65}

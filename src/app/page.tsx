@@ -1,6 +1,5 @@
 import { TopBar } from '@/components/TopBar';
 import { Hero } from '@/components/Hero';
-import { IntroVideo } from '@/components/IntroVideo';
 import { Trust } from '@/components/Trust';
 import { Industries } from '@/components/Industries';
 import { SAPServices } from '@/components/SAPServices';
@@ -15,7 +14,6 @@ export default function Home() {
     <>
       <TopBar />
       <Hero />
-      <IntroVideo />
       <Trust />
       <Industries />
       <SAPServices />
