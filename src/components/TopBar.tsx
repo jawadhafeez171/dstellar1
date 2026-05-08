@@ -55,6 +55,9 @@ export function TopBar() {
               </div>
             );
           })}
+          <div className="mobile-only-login">
+            <button className="cta-btn accent">Login</button>
+          </div>
         </nav>
         <button className="cta-btn topbar-cta">Login</button>
         <button className="mobile-menu-btn" aria-label="Toggle Menu" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>

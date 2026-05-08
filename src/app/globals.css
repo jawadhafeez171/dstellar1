@@ -75,13 +75,15 @@ a {
 
 /* ————— TOP BAR ————— */
 .topbar {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 50;
-  background: transparent;
-  border-bottom: none;
+  z-index: 100;
+  background: rgba(10, 18, 40, 0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
 }
 
 .topbar-inner {
@@ -144,6 +146,10 @@ a {
 
 .mainnav>.nav-item:hover {
   background: rgba(255, 255, 255, 0.1);
+}
+
+.mobile-only-login {
+  display: none;
 }
 
 .mainnav>.nav-item .chev {
@@ -1677,6 +1683,21 @@ footer::before {
 
   .mainnav>.nav-item.mobile-active .megamenu {
     display: block;
+  }
+
+  .mobile-only-login {
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+
+  .mobile-only-login button {
+    width: 100%;
+    justify-content: center;
+    background: var(--ink);
+    color: #fff;
   }
 
   .mega-split {
