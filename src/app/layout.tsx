@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'Dstellar',
     images: [
       {
-        url: '/assets/logo-white.webp',
+        url: '/assets/fav.png',
         width: 800,
         height: 600,
         alt: 'Dstellar Logo',
