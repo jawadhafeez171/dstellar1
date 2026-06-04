@@ -935,6 +935,7 @@ section {
   color: var(--accent);
 }
 
+<<<<<<< HEAD
 /* Background Image Layer inside Card */
 .ind-focus-bg-layer {
   position: absolute;
@@ -1043,6 +1044,8 @@ section {
   box-shadow: 0 8px 25px rgba(255, 122, 0, 0.4);
 }
 
+=======
+>>>>>>> 8af83501851808a1f4a41fb468146e454925b46a
 .ind-focus-glyph::after {
   content: "";
   position: absolute;

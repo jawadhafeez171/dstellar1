@@ -53,6 +53,7 @@ export function Industries() {
       </motion.div>
 
       <div className="ind-stage">
+<<<<<<< HEAD
         <div className={`ind-focus ${('image' in ind && ind.image) ? 'has-image' : ''}`}>
           <div className="ind-focus-bg-layer">
             <AnimatePresence mode="wait">
@@ -72,6 +73,9 @@ export function Industries() {
             </AnimatePresence>
           </div>
 
+=======
+        <div className="ind-focus">
+>>>>>>> 8af83501851808a1f4a41fb468146e454925b46a
           <AnimatePresence mode="wait">
             <motion.div
               key={active}
@@ -79,7 +83,10 @@ export function Industries() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
+<<<<<<< HEAD
               className="ind-focus-content"
+=======
+>>>>>>> 8af83501851808a1f4a41fb468146e454925b46a
             >
               <div className="ind-focus-glyph">
                 <IndustryGlyph name={ind.name} />

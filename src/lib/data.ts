@@ -15,6 +15,7 @@ export const DSTELLAR_DATA = {
   ],
 
   industries: [
+<<<<<<< HEAD
     { name: 'Automotive', tag: 'Mfg', desc: 'Connected vehicles, dealer networks, plant ops.', image: '/assets/automotive.webp' },
     { name: 'Consumer Products', tag: 'CPG', desc: 'Demand sensing, trade promo, omni-channel.', image: '/assets/consumer_products.webp' },
     { name: 'Electronic & High Tech', tag: 'HT', desc: 'Fast product cycles, global supply chains.', image: '/assets/electronic_high_tech.webp' },
@@ -33,6 +34,26 @@ export const DSTELLAR_DATA = {
     { name: 'Travel, Transport & Hospitality', tag: 'TTH', desc: 'Fleet, loyalty, booking operations.', image: '/assets/travel_transport.webp' },
     { name: 'Construction', tag: 'Con', desc: 'Project costing, equipment, subcontractor ops.', image: '/assets/construction.webp' },
     { name: 'Education', tag: 'Edu', desc: 'Student lifecycle, admissions, LMS integration.', image: '/assets/education.webp' },
+=======
+    { name: 'Automotive', tag: 'Mfg', desc: 'Connected vehicles, dealer networks, plant ops.' },
+    { name: 'Consumer Products', tag: 'CPG', desc: 'Demand sensing, trade promo, omni-channel.' },
+    { name: 'Electronic & High Tech', tag: 'HT', desc: 'Fast product cycles, global supply chains.' },
+    { name: 'Government & Public Sector', tag: 'Gov', desc: 'Funds mgmt, procurement, citizen services.' },
+    { name: 'Media & Entertainment', tag: 'M&E', desc: 'Rights, royalties, content monetization.' },
+    { name: 'Telecommunications', tag: 'Tel', desc: 'Billing, OSS/BSS, subscriber analytics.' },
+    { name: 'Distribution & Wholesale', tag: 'D&W', desc: 'Order-to-cash at scale, warehouse velocity.' },
+    { name: 'Energy & Utilities', tag: 'E&U', desc: 'SAP IS-U, asset mgmt, outage ops.' },
+    { name: 'Manufacturing & Industrial', tag: 'Ind', desc: 'Discrete & process manufacturing, PM.' },
+    { name: 'Retail', tag: 'Rtl', desc: 'Unified commerce, store ops, inventory.' },
+    { name: 'Hotel Management', tag: 'Hos', desc: 'Reservations, revenue mgmt, guest ops.' },
+    { name: 'Capital Markets', tag: 'Fin', desc: 'Trade lifecycle, risk, regulatory reporting.' },
+    { name: 'Life Sciences & Healthcare', tag: 'LSH', desc: 'GxP, QM, batch, regulatory reporting.' },
+    { name: 'Information Services', tag: 'IS',  desc: 'Data products, subscription billing.' },
+    { name: 'Public Services', tag: 'PS',  desc: 'Grant mgmt, SLAs, case management.' },
+    { name: 'Travel, Transport & Hospitality', tag: 'TTH', desc: 'Fleet, loyalty, booking operations.' },
+    { name: 'Construction', tag: 'Con', desc: 'Project costing, equipment, subcontractor ops.' },
+    { name: 'Education', tag: 'Edu', desc: 'Student lifecycle, admissions, LMS integration.' },
+>>>>>>> 8af83501851808a1f4a41fb468146e454925b46a
   ],
 
   products: [

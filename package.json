@@ -20,7 +20,10 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.5",
+<<<<<<< HEAD
     "sharp": "^0.34.5",
+=======
+>>>>>>> 8af83501851808a1f4a41fb468146e454925b46a
     "typescript": "^5"
   }
 }
