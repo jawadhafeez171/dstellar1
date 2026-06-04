@@ -15,12 +15,51 @@ const PROMOS: Record<string, { title: string, desc: string, btn: string }> = {
   'Discover Dstellar': { title: 'Our Story', desc: 'Discover the Dstellar way and our global impact.', btn: 'Learn More' },
 };
 
+const REGIONS = [
+  {
+    region: 'Americas',
+    countries: [
+      { name: 'United States', code: 'us' },
+      { name: 'Canada', code: 'ca' },
+      { name: 'Brazil', code: 'br' },
+      { name: 'Mexico', code: 'mx' }
+    ]
+  },
+  {
+    region: 'Europe',
+    countries: [
+      { name: 'Germany', code: 'de' },
+      { name: 'United Kingdom', code: 'gb' },
+      { name: 'France', code: 'fr' },
+      { name: 'Italy', code: 'it' },
+      { name: 'Spain', code: 'es' }
+    ]
+  },
+  {
+    region: 'Asia Pacific',
+    countries: [
+      { name: 'India', code: 'in' },
+      { name: 'Japan', code: 'jp' },
+      { name: 'Singapore', code: 'sg' },
+      { name: 'Australia', code: 'au' },
+      { name: 'China', code: 'cn' }
+    ]
+  },
+  {
+    region: 'Middle East & Africa',
+    countries: [
+      { name: 'UAE', code: 'ae' },
+      { name: 'Saudi Arabia', code: 'sa' },
+      { name: 'South Africa', code: 'za' },
+      { name: 'Turkey', code: 'tr' }
+    ]
+  }
+];
+
 export function TopBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [globalOpen, setGlobalOpen] = useState(false);
-
-  const regions = ['Americas', 'Europe', 'Asia Pacific', 'Middle East & Africa'];
 
   return (
     <header className="topbar">
@@ -29,8 +68,7 @@ export function TopBar() {
         <nav className={`mainnav ${mobileMenuOpen ? 'open' : ''}`}>
           {D.nav.slice(0, 9).map((n) => {
             const promo = PROMOS[n.label];
-            const isGrid = n.children && n.children.length > 8;
-            const limit = isGrid ? 10 : 5;
+            const isGrid = n.children && n.children.length > 6;
             
             return (
               <div 
@@ -43,7 +81,7 @@ export function TopBar() {
                   <div className="megamenu megamenu-wide" onClick={(e) => e.stopPropagation()}>
                     <div className="mega-split">
                       <div className={isGrid ? 'mega-links-grid' : 'mega-links'}>
-                        {n.children.slice(0, limit).map((c) => <a key={c} href="#">{c}</a>)}
+                        {n.children.map((c) => <a key={c} href="#">{c}</a>)}
                       </div>
                       {promo && (
                         <div className="mega-promo">
@@ -63,7 +101,16 @@ export function TopBar() {
               <button className="nav-global-btn" onClick={() => setGlobalOpen(!globalOpen)}><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></button>
               {globalOpen && (
                 <div className="mobile-global-list">
-                  {regions.map(r => <button key={r} className="global-item">{r}</button>)}
+                  {REGIONS.map(r => (
+                    <div key={r.region} className="mobile-global-region-group">
+                      <div className="mobile-global-region-header">{r.region}</div>
+                      {r.countries.map(c => (
+                        <button key={c.name} className="mobile-global-item">
+                          <span className={`fi fi-${c.code} global-flag`}></span> {c.name}
+                        </button>
+                      ))}
+                    </div>
+                  ))}
                 </div>
               )}
             </div>
@@ -75,7 +122,18 @@ export function TopBar() {
             <button className="nav-global-btn" aria-label="Select Region"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></button>
             {globalOpen && (
               <div className="global-dropdown">
-                {regions.map(r => <button key={r} className="global-item">{r}</button>)}
+                {REGIONS.map(r => (
+                  <div key={r.region} className="global-region-col">
+                    <div className="global-region-name">{r.region}</div>
+                    <div className="global-country-list">
+                      {r.countries.map(c => (
+                        <button key={c.name} className="global-country-btn">
+                          <span className={`fi fi-${c.code} global-flag`}></span> {c.name}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
             )}
           </div>

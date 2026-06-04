@@ -2,16 +2,16 @@
 
 export const DSTELLAR_DATA = {
   nav: [
-    { label: 'Industries', children: ['Automotive','Consumer Products','Electronic & High Tech','Government & Public Sector','Media & Entertainment','Telecoms','Distribution & Wholesale','Energy & Utilities','Manufacturing & Industrial','Retail','Hotel Management','Capital Markets','Communications, Media & Technology','Life Sciences & Healthcare','Public Services','Travel, Transportation & Hospitality','Construction','Education'] },
-    { label: 'Products', children: ['Software Development','Website Development','iOS / macOS Apps','Android Applications','QA & Testing','Database Management','DSTELLAR ERP','DSTELLAR Dental Software','DSTELLAR Doctor Software','DSTELLAR Hospital Management','DSTELLAR Clinic Management','DSTELLAR Pharmacy Management','DSTELLAR E-Commerce','DSTELLAR Logistic Package','DSTELLAR Ticketing Tool','DSTELLAR Sales Package','DSTELLAR Accounting Package','DSTELLAR Inventory Package','DSTELLAR Payroll Package','DSTELLAR Hospitality Management','Educational Software','Business Object'] },
-    { label: 'SAP Consulting', children: ['SAP Implementations & Support (ECC · S/4HANA · Cloud)','Finance & Controlling (FICO)','Sales & Distribution (SD)','Material Management (MM)','Production Planning (PP)','Human Resources (HR)','Logistics Execution (LE)','Project System (PS)','Investment Management (IM)','Central Finance','ABAP Development','Third-Party System Integration','India GST Automations','SAP HANA / Cloud','SAP S/4HANA','SAP Fiori','SAP Integration Suite','SAP Ariba Invoice Management','SAP Extended Warehouse Management','SAP Financial Closing Cockpit','SAP Treasury and Risk Management','SAP Transportation Resource Planning'] },
-    { label: 'Services & Support', children: ['Artificial Intelligence','Business Services','Cloud Services','Cybersecurity Services','Digital Services','Intelligent Services','Sustainability Services','Technology Solutions','Transformation & Innovation','Advisory Services','Implementation Services','Support Services','Premium Engagements','Dstellar Help Portal'] },
-    { label: 'Trainings', children: ['Dstellar Learning Journeys','Dstellar Certification','Dstellar Learning Hub','Free Training with openDstellar','Dstellar Education Partners','SAP Training Courses','User Adoption Solutions'] },
-    { label: 'Partners', children: ['Find a Partner','Strategic Partners','Certified Solutions & Hardware','Outsourcing Partners','Dstellar Partner Finder','Dstellar Pinnacle Awards','Become a Partner'] },
-    { label: 'Careers', children: ['Who We Are','Students & Recent Graduates','Your Career','Joining Dstellar','Job Search'] },
-    { label: 'Community', children: ['Community Overview','Questions & Answers','Browse Topics','Blogs','Community Events','Community Programs','Community Resources'] },
-    { label: 'Discover Dstellar', children: ['Who We Are','History','Investor Relations','Sports Sponsorships','Alliances & Partnerships','Corporate Sustainability','Corporate Social Responsibility','Leadership & Diversity','The Dstellar Way','Dstellar Research','Leadership','Diversity and Inclusion','Innovation','Quality'] },
-    { label: 'Try & Buy', children: ['Free software trials','Get training and enablement','Solutions and services from Dstellar'] },
+    { label: 'Industries', children: ['Automotive','Consumer Products','Electronic & High Tech','Manufacturing & Industrial','Energy & Utilities','Life Sciences & Healthcare','Government & Public Sector','Capital Markets','Travel & Hospitality','Construction'] },
+    { label: 'Products', children: ['Custom Software Development','DSTELLAR ERP','DSTELLAR E-Commerce','DSTELLAR Healthcare Suite','DSTELLAR Logistics & Warehouse','DSTELLAR Sales & Accounting','Business Intelligence & Analytics','Mobile & Web Applications'] },
+    { label: 'SAP Consulting', children: ['S/4HANA Implementations','Finance & Controlling (FICO)','Sales & Logistics (SD · MM · WM)','Production & Planning (PP)','SuccessFactors (HR)','ABAP & Fiori Custom Development','SAP Integration & API Suite','Ariba & Supply Chain Solutions'] },
+    { label: 'Services & Support', children: ['Artificial Intelligence & ML','Cloud Migration & DevSecOps','Cybersecurity & Compliance','Digital Transformation','Technology Advisory Services','Premium Support & Managed AMS','Dstellar Help Portal'] },
+    { label: 'Trainings', children: ['Dstellar Learning Hub','Certified SAP Courses','Dstellar Certification Prep','Education Partner Program','Free openDstellar Training'] },
+    { label: 'Partners', children: ['Find a Partner','Strategic Partners','Become a Partner','Certified Solutions Directory','Outsourcing Partners'] },
+    { label: 'Careers', children: ['Job Search & Openings','Students & Graduates','Your Career Path','Why Join Dstellar'] },
+    { label: 'Community', children: ['Community Forum','Expert Blogs','Q&A and Forums','Events & Meetups','Resource Library'] },
+    { label: 'Discover Dstellar', children: ['Who We Are','History','Leadership & Governance','Sustainability & CSR','Innovation & Research','Investor Relations','Sports Sponsorships'] },
+    { label: 'Try & Buy', children: ['Free Software Trials','Training & Enablement Catalog','Dstellar Solutions Store'] },
   ],
 
   industries: [
