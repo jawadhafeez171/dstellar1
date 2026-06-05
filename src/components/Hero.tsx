@@ -3,11 +3,12 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, Variants } from 'framer-motion';
 import { DSTELLAR_DATA as D } from '@/lib/data';
-
-
+import { useLanguage } from '@/context/LanguageContext';
 
 function VideoModal({ open, onClose }: { open: boolean, onClose: () => void }) {
   const vref = useRef<HTMLVideoElement>(null);
+  const { t } = useLanguage();
+
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
@@ -22,13 +23,14 @@ function VideoModal({ open, onClose }: { open: boolean, onClose: () => void }) {
       <button className="video-close" onClick={onClose} aria-label="Close">×</button>
       <div className="video-modal-inner" onClick={e => e.stopPropagation()}>
         <video ref={vref} src="/assets/intro.webm" controls autoPlay playsInline />
-        <div className="video-modal-cap mono">Dstellar · 90-sec intro reel</div>
+        <div className="video-modal-cap mono">{t('intro_cap')}</div>
       </div>
     </div>
   );
 }
 
 function VideoCard({ onOpen }: { onOpen: () => void }) {
+  const { t } = useLanguage();
   return (
     <motion.button
       className="video-pill"
@@ -50,8 +52,8 @@ function VideoCard({ onOpen }: { onOpen: () => void }) {
         <svg viewBox="0 0 24 24" width="10" height="10"><path d="M8 5 L19 12 L8 19 Z" fill="currentColor" /></svg>
       </motion.span>
       <span className="video-pill-text">
-        <span className="video-pill-title">Inside Dstellar</span>
-        <span className="video-pill-meta mono">90 SEC · WATCH</span>
+        <span className="video-pill-title">{t('inside_dstellar')}</span>
+        <span className="video-pill-meta mono">{t('watch_reel')}</span>
       </span>
     </motion.button>
   );
@@ -59,6 +61,7 @@ function VideoCard({ onOpen }: { onOpen: () => void }) {
 
 export function Hero() {
   const [videoOpen, setVideoOpen] = useState(false);
+  const { t } = useLanguage();
 
   const container: Variants = {
     hidden: { opacity: 0 },
@@ -101,18 +104,26 @@ export function Hero() {
           From S/4HANA implementations to custom DSTELLAR products — we plan, build, migrate, and run SAP landscapes across 18 industries and four continents.
         </motion.p>
         <motion.div variants={item} className="hero-actions">
-          <button className="cta-btn accent">Explore our services →</button>
-          <button className="cta-btn ghost">Book an assessment</button>
+          <button className="cta-btn accent">{t('explore_services')}</button>
+          <button className="cta-btn ghost">{t('book_assessment')}</button>
           <VideoCard onOpen={() => setVideoOpen(true)} />
         </motion.div>
         
         <div className="hero-stats-row">
-          {D.stats.map(s => (
-            <div key={s.l} className="stat">
-              <div className="n">{s.n}</div>
-              <div className="l">{s.l}</div>
-            </div>
-          ))}
+          {D.stats.map(s => {
+            let translatedLabel = s.l;
+            if (s.l === 'industries served') translatedLabel = t('industries_served');
+            else if (s.l === 'DSTELLAR products') translatedLabel = t('dstellar_products');
+            else if (s.l === 'SAP modules delivered') translatedLabel = t('sap_modules');
+            else if (s.l === 'support coverage') translatedLabel = t('support_coverage');
+            
+            return (
+              <div key={s.l} className="stat">
+                <div className="n">{s.n}</div>
+                <div className="l">{translatedLabel}</div>
+              </div>
+            );
+          })}
         </div>
       </motion.div>
       <VideoModal open={videoOpen} onClose={() => setVideoOpen(false)} />

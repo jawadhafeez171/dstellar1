@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import 'flag-icons/css/flag-icons.min.css';
 import { BottomNav } from '@/components/BottomNav';
+import { LanguageProvider } from '@/context/LanguageContext';
 
 export const metadata: Metadata = {
   title: 'Dstellar | Global SAP Solutions & Enterprise Software Consulting',
@@ -51,8 +52,10 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
       </head>
       <body>
-        {children}
-        <BottomNav />
+        <LanguageProvider>
+          {children}
+          <BottomNav />
+        </LanguageProvider>
       </body>
     </html>
   );

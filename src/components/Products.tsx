@@ -1,9 +1,12 @@
 "use client";
 
-import { DSTELLAR_DATA as D } from '@/lib/data';
+import { useLanguage } from '@/context/LanguageContext';
 import { motion } from 'framer-motion';
 
 export function Products() {
+  const { t, tData } = useLanguage();
+  const products = tData<any[]>('products');
+
   return (
     <section className="section-pad" style={{ background: 'var(--paper-2)', maxWidth: 'none', paddingLeft: 0, paddingRight: 0, borderRadius: 0 }}>
       <div style={{ maxWidth: 1440, margin: '0 auto', padding: '0 32px' }}>
@@ -13,12 +16,16 @@ export function Products() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="section-eyebrow"><span>§ 03</span><span>Products</span><span className="line" /></div>
-          <h2 className="section-title">The DSTELLAR suite — <em>software we built, ship, and stand behind.</em></h2>
+          <div className="section-eyebrow">
+            <span>§ 03</span>
+            <span>{t('eyebrow_products')}</span>
+            <span className="line" />
+          </div>
+          <h2 className="section-title">{t('title_products')}</h2>
         </motion.div>
 
         <div className="products-row">
-          {D.products.map((g, i) => (
+          {products.map((g, i) => (
             <motion.div
               key={g.group}
               className="prod-group"
@@ -28,9 +35,9 @@ export function Products() {
               transition={{ duration: 0.7, delay: i * 0.15, ease: [0.16, 1, 0.3, 1] }}
             >
               <div className="mono">{g.group}</div>
-              <h4>{g.items.length} solutions</h4>
+              <h4>{g.items.length} {t('solutions')}</h4>
               <div className="prod-list">
-                {g.items.map(it => (
+                {g.items.map((it: string) => (
                   <div key={it} className="prod-item">
                     <span>{it}</span>
                     <span className="arr">→</span>

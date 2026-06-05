@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { DSTELLAR_DATA as D } from '@/lib/data';
+import { useLanguage } from '@/context/LanguageContext';
 
 const INDUSTRY_GLYPHS: Record<string, React.ReactNode> = {
   'Automotive': (<g><rect x="14" y="32" width="52" height="14" rx="4" /><circle cx="24" cy="50" r="6" /><circle cx="56" cy="50" r="6" /><path d="M20 32 L26 22 L54 22 L60 32" /></g>),
@@ -38,7 +39,11 @@ function IndustryGlyph({ name }: { name: string }) {
 
 export function Industries() {
   const [active, setActive] = useState(0);
-  const ind = D.industries[active];
+  const { t, tData } = useLanguage();
+  const industries = tData<any[]>('industries');
+
+  const ind = industries[active];
+  const originalInd = D.industries[active];
 
   return (
     <section className="section-pad industries">
@@ -48,24 +53,28 @@ export function Industries() {
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <div className="section-eyebrow"><span>§ 01</span><span>Industries · {D.industries.length} verticals</span><span className="line" /></div>
-        <h2 className="section-title">Deep in the verticals <em>that matter to you.</em></h2>
+        <div className="section-eyebrow">
+          <span>§ 01</span>
+          <span>{t('eyebrow_industries')}</span>
+          <span className="line" />
+        </div>
+        <h2 className="section-title">{t('title_industries')}</h2>
       </motion.div>
 
       <div className="ind-stage">
-        <div className={`ind-focus ${('image' in ind && ind.image) ? 'has-image' : ''}`}>
+        <div className={`ind-focus ${('image' in originalInd && originalInd.image) ? 'has-image' : ''}`}>
           <div className="ind-focus-bg-layer">
             <AnimatePresence mode="wait">
-              {('image' in ind && ind.image) && (
+              {('image' in originalInd && originalInd.image) && (
                 <motion.div
-                  key={ind.name}
+                  key={originalInd.name}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.4 }}
                   className="ind-focus-bg-wrapper"
                 >
-                  <img src={ind.image as string} alt="" className="ind-focus-bg-img" />
+                  <img src={originalInd.image as string} alt="" className="ind-focus-bg-img" />
                   <div className="ind-focus-bg-overlay" />
                 </motion.div>
               )}
@@ -82,20 +91,20 @@ export function Industries() {
               className="ind-focus-content"
             >
               <div className="ind-focus-glyph">
-                <IndustryGlyph name={ind.name} />
+                <IndustryGlyph name={originalInd.name} />
                 <div className="ind-focus-rings">
                   <span /><span /><span />
                 </div>
               </div>
               <div className="ind-focus-meta">
-                <div className="mono">{String(active + 1).padStart(2, '0')} / {String(D.industries.length).padStart(2, '0')} · {ind.tag}</div>
+                <div className="mono">{String(active + 1).padStart(2, '0')} / {String(industries.length).padStart(2, '0')} · {ind.tag}</div>
                 <h3>{ind.name}</h3>
                 <p>{ind.desc}</p>
                 <div className="ind-tags">
-                  {['SAP S/4HANA', 'Industry add-ons', 'AMS', 'Analytics'].map(t => <span key={t} className="ind-tag">{t}</span>)}
+                  {[t('ind_tag_s4'), t('ind_tag_addons'), t('ind_tag_ams'), t('ind_tag_analytics')].map(t => <span key={t} className="ind-tag">{t}</span>)}
                 </div>
                 <button className="cta-btn" style={{ marginTop: 24, background: 'var(--ink)', color: 'var(--paper)' }}>
-                  Open {ind.name} playbook →
+                  {t('playbook_cta').replace('{name}', ind.name)}
                 </button>
               </div>
             </motion.div>
@@ -103,13 +112,13 @@ export function Industries() {
         </div>
 
         <div className="ind-chips">
-          {D.industries.map((it, i) => (
+          {industries.map((it, i) => (
             <button
               key={it.name}
               onMouseEnter={() => setActive(i)}
               onClick={() => setActive(i)}
               className={`ind-chip ${active === i ? 'active' : ''}`}>
-              <IndustryGlyph name={it.name} />
+              <IndustryGlyph name={D.industries[i].name} />
               <span className="ind-chip-name">{it.name}</span>
               <span className="ind-chip-num mono">{String(i + 1).padStart(2, '0')}</span>
             </button>

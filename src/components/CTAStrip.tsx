@@ -1,8 +1,10 @@
 "use client";
 
+import { useLanguage } from '@/context/LanguageContext';
 import { motion } from 'framer-motion';
 
 export function CTAStrip() {
+  const { t } = useLanguage();
   return (
     <motion.div 
       initial={{ opacity: 0, scale: 0.95 }}
@@ -12,12 +14,12 @@ export function CTAStrip() {
       className="cta-strip"
     >
       <div>
-        <h2>Let's make SAP<br/>your advantage.</h2>
-        <p>60-minute assessment. No slides. Straight answers from a senior SAP architect.</p>
+        <h2 style={{ whiteSpace: 'pre-line' }}>{t('advantage_title')}</h2>
+        <p>{t('advantage_sub')}</p>
       </div>
       <div className="actions">
-        <button className="cta-btn">Book a call →</button>
-        <button className="cta-btn ghost">See case studies</button>
+        <button className="cta-btn">{t('book_call')}</button>
+        <button className="cta-btn ghost">{t('see_case_studies')}</button>
       </div>
     </motion.div>
   );
