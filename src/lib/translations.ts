@@ -40,6 +40,7 @@ export const TRANSLATIONS = {
     company_items: ["Who We Are", "Leadership", "Careers", "Partners", "Community", "Investor Relations", "Press"],
     select_region: "Select Region",
     login: "Login",
+    select_language: "Select Language",
 
     // Section Titles & Eyebrows
     eyebrow_industries: "Industries · 18 verticals",
@@ -65,7 +66,7 @@ export const TRANSLATIONS = {
       { label: 'Partners', children: ['Find a Partner','Strategic Partners','Become a Partner','Certified Solutions Directory','Outsourcing Partners'] },
       { label: 'Careers', children: ['Job Search & Openings','Students & Graduates','Your Career Path','Why Join Dstellar'] },
       { label: 'Community', children: ['Community Forum','Expert Blogs','Q&A and Forums','Events & Meetups','Resource Library'] },
-      { label: 'Discover Dstellar', children: ['Who We Are','History','Leadership & Governance','Sustainability & CSR','Innovation & Research','Investor Relations','Sports Sponsorships'] },
+      { label: 'Discover Dstellar', children: ['Who We Are','History','Sustainability & CSR','Innovation & Research','Investor Relations','Sports Sponsorships'] },
       { label: 'Try & Buy', children: ['Free Software Trials','Training & Enablement Catalog','Dstellar Solutions Store'] }
     ],
 
@@ -141,7 +142,79 @@ export const TRANSLATIONS = {
       'Cutover rehearsals (×3)',
       'AMS handoff with runbooks',
       'Continuous improvement roadmap'
-    ]
+    ],
+
+    // Subpages localization
+    who_we_are: {
+      title: "Who We Are",
+      subtitle: "A global collective of SAP architects, software developers, and industry experts.",
+      mission_title: "Our Mission",
+      mission_desc: "To deliver enterprise solutions that enable organizations to run with speed, agility, and precision.",
+      vision_title: "Our Vision",
+      vision_desc: "To be the most trusted gold-standard partner for next-generation SAP transformations worldwide.",
+      values_title: "Core Values",
+      values: [
+        { t: "Technical Excellence", d: "We write clean code, design clean-core architectures, and stand behind our work." },
+        { t: "Customer Obsession", d: "We align completely with client goals. No hand-offs, no excuses." },
+        { t: "Constant Innovation", d: "We constantly research and implement AI-driven automation for enterprise resource planning." }
+      ]
+    },
+    history: {
+      title: "Our History",
+      subtitle: "Since 2013, Dstellar has pioneered custom software and cloud-integrated SAP migrations.",
+      events: [
+        { y: "2013", t: "The Founding", d: "Dstellar begins as a boutique custom software and database development agency in Toronto." },
+        { y: "2017", t: "European Expansion", d: "We launch our Madrid office to support growing S/4HANA migrations in Western Europe." },
+        { y: "2021", t: "SAP Gold Partnership", d: "Recognized as a leading SAP Gold Partner with expert consulting credentials." },
+        { y: "2025", t: "AI Enterprise Era", d: "Dstellar rolls out AI-driven Joule integrations and custom cloud platforms." }
+      ]
+    },
+    leadership: {
+      title: "Leadership & Governance",
+      subtitle: "Meet the senior architects and executives steering Dstellar's global delivery.",
+      members: [
+        { name: "Marcus Vance", role: "Chief Executive Officer", bio: "20+ years of enterprise tech experience. Former Senior Director of SAP EMEA." },
+        { name: "Dr. Elena Rostova", role: "Chief Technology Officer", bio: "Ph.D. in Distributed Systems. Architect of the Dstellar Custom Suite." },
+        { name: "Sanjay Mehta", role: "Head of SAP Architecture", bio: "Delivered 50+ end-to-end S/4HANA migrations across 4 continents." }
+      ]
+    },
+    sustainability: {
+      title: "Sustainability & CSR",
+      subtitle: "We believe standard business software should drive environmental sustainability.",
+      metrics_title: "Environmental Impact Metrics",
+      metrics: [
+        { label: "Client Carbon Reductions", value: "35%" },
+        { label: "Paperless Operations", value: "100%" },
+        { label: "Green Cloud Migrations", value: "250+" }
+      ],
+      desc: "Through our Green Ledger implementations, we enable enterprises to trace carbon footprint data in real-time alongside financial metrics.",
+      esr_title: "ESR (Environmental & Social Responsibility) Integration",
+      esr_desc: "We embed ESR compliance directly into core enterprise ERP architectures. This enables organizations to automate environmental impact auditing and social responsibility governance across global supply chains."
+    },
+    innovation: {
+      title: "Innovation & Research",
+      subtitle: "Designing tomorrow's business systems at the Dstellar Labs.",
+      projects: [
+        { t: "Joule Agent Integrations", d: "Using SAP's dynamic copilot to automate customer billing workflows." },
+        { t: "Clean Core Refactoring", d: "Automated analysis tools to extract custom code and align with standard upgrade paths." },
+        { t: "Predictive AMS Support", d: "AI-driven outage modeling to resolve database issues before they affect production." }
+      ]
+    },
+    investor_relations: {
+      title: "Investor Relations",
+      subtitle: "Robust financial stability backed by double-digit year-over-year growth.",
+      highlights: [
+        { label: "Revenue Growth (YoY)", value: "+24%" },
+        { label: "Enterprise Customers", value: "300+" },
+        { label: "Global Presence", value: "4 Hubs" }
+      ],
+      desc: "Dstellar is a privately backed corporation with solid equity structures, positioning us for long-term expansion."
+    },
+    sports_sponsorships: {
+      title: "Sports Sponsorships",
+      subtitle: "Speed, precision, and engineering excellence.",
+      desc: "Dstellar is a proud sponsor of Formula E and cyber-sport racing leagues worldwide. We believe high-performance engineering on the track mirrors the high-performance software architectures we design for enterprise clients."
+    }
   },
   es: {
     // UI strings
@@ -182,6 +255,7 @@ export const TRANSLATIONS = {
     company_items: ["Quiénes Somos", "Liderazgo", "Carreras", "Socios", "Comunidad", "Relaciones con Inversores", "Prensa"],
     select_region: "Seleccionar Región",
     login: "Iniciar Sesión",
+    select_language: "Seleccionar Idioma",
 
     // Section Titles & Eyebrows
     eyebrow_industries: "Sectores · 18 verticales",
@@ -207,7 +281,7 @@ export const TRANSLATIONS = {
       { label: 'Socios', children: ['Buscar un Socio','Socios Estratégicos','Convertirse en Socio','Directorio de Soluciones Certificadas','Socios de Outsourcing'] },
       { label: 'Carreras', children: ['Búsqueda de Empleo y Vacantes','Estudiantes y Graduados','Su Trayectoria Profesional','Por qué Unirse a Dstellar'] },
       { label: 'Comunidad', children: ['Foro de la Comunidad','Blogs de Expertos','Preguntas y Respuestas','Eventos y Reuniones','Biblioteca de Recursos'] },
-      { label: 'Descubrir Dstellar', children: ['Quiénes Somos','Historia','Liderazgo y Gobernanza','Sostenibilidad y RSC','Innovación e Investigación','Relaciones con Inversores','Patrocinios Deportivos'] },
+      { label: 'Descubrir Dstellar', children: ['Quiénes Somos','Historia','Sostenibilidad y RSC','Innovación e Investigación','Relaciones con Inversores','Patrocinios Deportivos'] },
       { label: 'Probar y Comprar', children: ['Pruebas de Software Gratuitas','Catálogo de Capacitación y Habilitación','Tienda de Soluciones Dstellar'] }
     ],
 
@@ -283,7 +357,79 @@ export const TRANSLATIONS = {
       'Ensayos generales de puesta en producción (×3)',
       'Traspaso de AMS con manuales de operación detallados',
       'Hoja de ruta para la mejora continua'
-    ]
+    ],
+
+    // Subpages localization
+    who_we_are: {
+      title: "Quiénes Somos",
+      subtitle: "Un colectivo global de arquitectos SAP, desarrolladores de software y expertos del sector.",
+      mission_title: "Nuestra Misión",
+      mission_desc: "Entregar soluciones empresariales que permitan a las organizaciones operar con velocidad, agilidad y precisión.",
+      vision_title: "Nuestra Visión",
+      vision_desc: "Ser el socio de estándar de oro más confiable para las transformaciones SAP de próxima generación en todo el mundo.",
+      values_title: "Valores Fundamentales",
+      values: [
+        { t: "Excelencia Técnica", d: "Escribimos código limpio, diseñamos arquitecturas con núcleo limpio y respaldamos nuestro trabajo." },
+        { t: "Obsesión por el Cliente", d: "Nos alineamos completamente con los objetivos del cliente. Sin intermediarios, sin excusas." },
+        { t: "Innovación Constante", d: "Investigamos e implementamos constantemente la automatización impulsada por IA para la planificación de recursos empresariales." }
+      ]
+    },
+    history: {
+      title: "Nuestra Historia",
+      subtitle: "Desde 2013, Dstellar ha sido pionero en software a medida y migraciones SAP integradas en la nube.",
+      events: [
+        { y: "2013", t: "La Fundación", d: "Dstellar comienza como una agencia boutique de desarrollo de software y bases de datos a medida en Toronto." },
+        { y: "2017", t: "Expansión Europea", d: "Lanzamos nuestra oficina en Madrid para dar soporte a las crecientes migraciones S/4HANA en Europa Occidental." },
+        { y: "2021", t: "Socio Gold de SAP", d: "Reconocidos como socio Gold líder de SAP con credenciales de consultoría experta." },
+        { y: "2025", t: "Era de la IA Empresarial", d: "Dstellar lanza integraciones Joule impulsadas por IA y plataformas en la nube personalizadas." }
+      ]
+    },
+    leadership: {
+      title: "Liderazgo y Gobernanza",
+      subtitle: "Conozca a los arquitectos y ejecutivos senior que dirigen la entrega global de Dstellar.",
+      members: [
+        { name: "Marcus Vance", role: "Director Ejecutivo (CEO)", bio: "Más de 20 años de experiencia en tecnología empresarial. Exdirector Senior de SAP EMEA." },
+        { name: "Dr. Elena Rostova", role: "Directora de Tecnología (CTO)", bio: "Doctora en Sistemas Distribuidos. Arquitecta de la suite a medida de Dstellar." },
+        { name: "Sanjay Mehta", role: "Director de Arquitectura SAP", bio: "Ha liderado más de 50 migraciones S/4HANA de extremo a extremo en 4 continentes." }
+      ]
+    },
+    sustainability: {
+      title: "Sostenibilidad y RSC",
+      subtitle: "Creemos que el software empresarial debe impulsar la sostenibilidad ambiental.",
+      metrics_title: "Métricas de Impacto Ambiental",
+      metrics: [
+        { label: "Reducción de Carbono de Clientes", value: "35%" },
+        { label: "Operaciones sin Papel", value: "100%" },
+        { label: "Migraciones Cloud Ecológicas", value: "250+" }
+      ],
+      desc: "A través de nuestras implementaciones de Green Ledger, permitimos a las empresas rastrear datos de huella de carbono en tiempo real junto con las métricas financieras.",
+      esr_title: "Integración de ESR (Responsabilidad Ambiental y Social)",
+      esr_desc: "Integramos el cumplimiento de ESR directamente en las arquitecturas ERP centrales de la empresa. Esto permite a las organizaciones automatizar la auditoría de impacto ambiental y la gobernanza de la responsabilidad social en las cadenas de suministro globales."
+    },
+    innovation: {
+      title: "Innovación e Investigación",
+      subtitle: "Diseñando los sistemas de negocio del mañana en los Laboratorios Dstellar.",
+      projects: [
+        { t: "Integraciones del Asistente Joule", d: "Uso del copiloto dinámico de SAP para automatizar los flujos de trabajo de facturación a clientes." },
+        { t: "Refactorización de Núcleo Limpio", d: "Herramientas de análisis automatizadas para extraer código personalizado y alinearlo con las rutas de actualización estándar." },
+        { t: "Soporte AMS Predictivo", d: "Modelado de cortes impulsado por IA para resolver problemas de bases de datos antes de que afecten a la producción." }
+      ]
+    },
+    investor_relations: {
+      title: "Relaciones con Inversores",
+      subtitle: "Sólida estabilidad financiera respaldada por un crecimiento interanual de dos dígitos.",
+      highlights: [
+        { label: "Crecimiento de Ingresos (Anual)", value: "+24%" },
+        { label: "Clientes Empresariales", value: "300+" },
+        { label: "Presencia Global", value: "4 Sedes" }
+      ],
+      desc: "Dstellar es una corporación de capital privado con estructuras de capital sólidas, posicionándonos para una expansión a largo plazo."
+    },
+    sports_sponsorships: {
+      title: "Patrocinios Deportivos",
+      subtitle: "Velocidad, precisión y excelencia en ingeniería.",
+      desc: "Dstellar se enorgullece de patrocinar la Fórmula E y las ligas de deportes electrónicos en todo el mundo. Creemos que la ingeniería de alto rendimiento en la pista refleja las arquitecturas de software de alto rendimiento que diseñamos para nuestros clientes empresariales."
+    }
   },
   zh: {
     // UI strings
@@ -324,6 +470,7 @@ export const TRANSLATIONS = {
     company_items: ["公司简介", "领导团队", "招贤纳士", "合作伙伴", "技术社区", "投资者关系", "新闻中心"],
     select_region: "选择地区",
     login: "登录系统",
+    select_language: "选择语言",
 
     // Section Titles & Eyebrows
     eyebrow_industries: "服务行业 · 18大垂直领域",
@@ -349,7 +496,7 @@ export const TRANSLATIONS = {
       { label: '合作伙伴', children: ['寻找合作伙伴','战略合作伙伴','成为合作伙伴','认证解决方案目录','外包合作伙伴'] },
       { label: '加入我们', children: ['职位搜索与招聘','校园招聘与实习生','您的职业发展路径','为什么选择 Dstellar'] },
       { label: '互动社区', children: ['社区论坛','专家博客','问答社区','活动与线下聚会','资源库'] },
-      { label: '发现 Dstellar', children: ['关于我们','发展历史','领导与公司治理','可持续发展与 CSR','创新与前沿研究','投资者关系','体育赞助'] },
+      { label: '发现 Dstellar', children: ['关于我们','发展历史','可持续发展与 CSR','创新与前沿研究','投资者关系','体育赞助'] },
       { label: '试用与购买', children: ['免费软件试用','培训与赋能产品目录','Dstellar 解决方案商城'] }
     ],
 
@@ -376,7 +523,7 @@ export const TRANSLATIONS = {
 
     products: [
       { group: '技术研发', items: ['软件外包开发','企业网站建设','iOS / macOS 应用程序','Android 应用程序','质量保证与测试','数据库管理与调优'] },
-      { group: 'DSTELLAR 核心套件', items: ['DSTELLAR ERP','DSTELLAR 医院管理平台','DSTELLAR 门诊管理系统','DSTELLAR 医师工作站软件','DSTELLAR 牙科诊所软件','DSTELLAR 药房发药系统','DSTELLAR 电子商务平台','DSTELLAR 酒店接待系统','DSTELLAR 工单与派单工具'] },
+      { group: 'DSTELLAR 核心套件', items: ['DSTELLAR ERP 系统','DSTELLAR 医院管理平台','DSTELLAR 门诊管理系统','DSTELLAR 医师工作站软件','DSTELLAR 牙科诊所软件','DSTELLAR 药房发药系统','DSTELLAR 电子商务平台','DSTELLAR 酒店接待系统','DSTELLAR 工单与派单工具'] },
       { group: '行业套件', items: ['现代物流管理包','专业销售管理系统','智能财务核算包','实时仓储库存包','企业薪酬福利系统','商务智能数据分析','教育管理支持软件'] }
     ],
 
@@ -384,7 +531,7 @@ export const TRANSLATIONS = {
       { t: 'SAP 实施与系统支持', d: '提供 ECC、S/4HANA 和 SAP 智能云的全生命周期端到端交付。' },
       { t: '财务与成本管理 (FICO)', d: '财务会计、集团控制、中央财务系统集成。' },
       { t: '销售与分销 (SD)', d: '订单管理、复杂定价策略、账单与返利管理。' },
-      { t: '物资与库存管理 (MM)', d: '现代采购流程、库存账务、供应商绩效评估。' },
+      { t: '物资与库存 management (MM)', d: '现代采购流程、库存账务、供应商绩效评估。' },
       { t: '生产与制造计划 (PP)', d: '支持离散制造、流程制造以及重复性制造模式。' },
       { t: '人力资源与组织 (HR)', d: '员工主数据管理、考勤排班、薪酬计算及 SuccessFactors 实施。' },
       { t: '物流与运输执行 (LE)', d: '高效收发货、智能仓库分配、多式联运管理。' },
@@ -425,7 +572,79 @@ export const TRANSLATIONS = {
       '上线前全仿真割接实战演练（不少于3次）',
       '配合标准运行手册交付高标准 AMS 运维交接',
       '长期系统性能调优与架构改善路线图'
-    ]
+    ],
+
+    // Subpages localization
+    who_we_are: {
+      title: "公司简介",
+      subtitle: "由 SAP 架构师、软件开发人员和行业专家组成的全球协作团队。",
+      mission_title: "企业使命",
+      mission_desc: "交付使企业能够快速、敏捷且精准运行的软件解决方案。",
+      vision_title: "企业愿景",
+      vision_desc: "成为全球下一代 SAP 数字化转型最值得信赖的金牌合作伙伴。",
+      values_title: "核心价值观",
+      values: [
+        { t: "技术卓越", d: "编写规范代码，设计干净核心（clean-core）架构，为交付结果负责。" },
+        { t: "客户至上", d: "与客户的目标完全一致。不推诿，只为解决问题。" },
+        { t: "持续创新", d: "持续研发并引入基于 AI 的企业资源规划自动化技术。" }
+      ]
+    },
+    history: {
+      title: "发展历史",
+      subtitle: "自 2013 年起，Dstellar 便是定制软件和云集成 SAP 迁移领域的先驱。",
+      events: [
+        { y: "2013", t: "公司成立", d: "Dstellar 作为一家精品定制软件与数据库开发机构在多伦多成立。" },
+        { y: "2017", t: "开拓欧洲市场", d: "我们在马德里设立办事处，为西欧日益增长的 S/4HANA 迁移需求提供技术支持。" },
+        { y: "2021", t: "SAP 金牌合作伙伴", d: "凭借卓越的咨询能力，荣获 SAP 官方金牌合作伙伴资质。" },
+        { y: "2025", t: "企业级 AI 时代", d: "Dstellar 推出基于 AI 的 Joule 助手集成及定制化云原生平台。" }
+      ]
+    },
+    leadership: {
+      title: "领导与公司治理",
+      subtitle: "介绍指引 Dstellar 全球项目交付的高管与资深架构师团队。",
+      members: [
+        { name: "Marcus Vance", role: "首席执行官 (CEO)", bio: "拥有 20 多年企业级技术管理经验。曾任 SAP 欧洲、中东和概念区 (EMEA) 高级总监。" },
+        { name: "Dr. Elena Rostova", role: "首席技术官 (CTO)", bio: "分布式系统博士。Dstellar 自主研发企业套件的总设计师。" },
+        { name: "Sanjay Mehta", role: "SAP 架构负责人", bio: "在四大洲主导并完成了 50 多个端到端 S/4HANA 迁移项目。" }
+      ]
+    },
+    sustainability: {
+      title: "可持续发展与 CSR",
+      subtitle: "我们坚信，现代企业软件应该致力于推动环境的可持续发展。",
+      metrics_title: "环境影响指标",
+      metrics: [
+        { label: "客户碳排放减少", value: "35%" },
+        { label: "无纸化办公比例", value: "100%" },
+        { label: "绿色云端迁移项目", value: "250+" }
+      ],
+      desc: "通过实施 Green Ledger（绿色账本），我们助力企业实时追踪碳足迹数据，并与财务指标无缝关联。",
+      esr_title: "ESR（环境与社会责任）集成",
+      esr_desc: "我们将 ESR 合规性直接嵌入到核心企业 ERP 架构中。这使企业能够自动执行全球供应链的环境影响审计和社会责任治理。"
+    },
+    innovation: {
+      title: "创新与前沿研究",
+      subtitle: "在 Dstellar 实验室设计明天的商业运营系统。",
+      projects: [
+        { t: "Joule 助手工单集成", d: "利用 SAP 的动态智能副驾驶自动处理客户账单工作流。" },
+        { t: "干净核心代码重构", d: "自动化分析工具，用于提取自定义代码并将其与标准升级路径对齐。" },
+        { t: "预测性 AMS 运维服务", d: "基于 AI 的故障建模，在数据库问题影响生产系统之前进行预警并解决。" }
+      ]
+    },
+    investor_relations: {
+      title: "投资者关系",
+      subtitle: "以双位数的年同比增长率，保障强大的财务稳定性。",
+      highlights: [
+        { label: "营业收入同比增长", value: "+24%" },
+        { label: "服务企业客户数", value: "300+" },
+        { label: "全球交付中心", value: "4 大中心" }
+      ],
+      desc: "Dstellar 是一家拥有稳健资本结构的私有化公司，为长期业务扩张奠定了坚实的基础。"
+    },
+    sports_sponsorships: {
+      title: "体育赞助",
+      subtitle: "速度、精准与卓越工程的完美结合。",
+      desc: "Dstellar 荣幸地成为全球 Formula E（电动方程式）和电子竞技联赛的赞助商。我们相信，赛道上的高性能工程表现与我们为企业客户设计的卓越软件架构如出一辙。"
+    }
   },
   de: {
     // UI strings
@@ -466,6 +685,7 @@ export const TRANSLATIONS = {
     company_items: ["Über uns", "Führungsteam", "Karriere", "Partner", "Community", "Investor Relations", "Presse"],
     select_region: "Region Auswählen",
     login: "Einloggen",
+    select_language: "Sprache Auswählen",
 
     // Section Titles & Eyebrows
     eyebrow_industries: "Branchen · 18 Spezialisierungen",
@@ -491,7 +711,7 @@ export const TRANSLATIONS = {
       { label: 'Partner', children: ['Partner finden','Strategische Partner','Partner werden','Verzeichnis zertifizierter Lösungen','Outsourcing-Partner'] },
       { label: 'Karriere', children: ['Stellensuche & Stellenangebote','Studenten & Absolventen','Ihr Karriereweg','Warum Dstellar'] },
       { label: 'Community', children: ['Community-Forum','Experten-Blogs','Fragen & Antworten','Events & Meetups','Ressourcen-Bibliothek'] },
-      { label: 'Dstellar entdecken', children: ['Wer wir sind','Geschichte','Unternehmensführung','Nachhaltigkeit & CSR','Innovation & Forschung','Investor Relations','Sport-Sponsoring'] },
+      { label: 'Dstellar entdecken', children: ['Wer wir sind','Geschichte','Nachhaltigkeit & CSR','Innovation & Forschung','Investor Relations','Sport-Sponsoring'] },
       { label: 'Testen & Kaufen', children: ['Kostenlose Software-Testversionen','Schulungs- und Aktivierungskatalog','Dstellar Solutions Store'] }
     ],
 
@@ -567,7 +787,79 @@ export const TRANSLATIONS = {
       'Generalproben für den Produktivstart (×3)',
       'AMS-Übergabe inklusive detaillierter Betriebshandbücher',
       'Fahrplan für kontinuierliche Optimierung'
-    ]
+    ],
+
+    // Subpages localization
+    who_we_are: {
+      title: "Über uns",
+      subtitle: "Ein globales Kollektiv aus SAP-Architekten, Softwareentwicklern und Branchenexperten.",
+      mission_title: "Unsere Mission",
+      mission_desc: "Unternehmen durch erstklassige Softwarelösungen zu mehr Geschwindigkeit, Agilität und Präzision zu verhelfen.",
+      vision_title: "Unsere Vision",
+      vision_desc: "Weltweit der vertrauenswürdigste Gold-Standard-Partner für SAP-Transformationen der nächsten Generation zu sein.",
+      values_title: "Unsere Kernwerte",
+      values: [
+        { t: "Technische Exzellenz", d: "Wir schreiben sauberen Code, entwerfen Clean-Core-Architekturen und stehen hinter unserer Arbeit." },
+        { t: "Kundenfokus", d: "Wir richten uns vollständig nach den Zielen unserer Kunden. Keine Ausreden, keine halben Sachen." },
+        { t: "Ständige Innovation", d: "Wir erforschen und implementieren kontinuierlich KI-gestützte Automatisierung für ERP-Systeme." }
+      ]
+    },
+    history: {
+      title: "Geschichte",
+      subtitle: "Seit 2013 leistet Dstellar Pionierarbeit bei maßgeschneiderter Software und Cloud-basierten SAP-Migrationen.",
+      events: [
+        { y: "2013", t: "Die Gründung", d: "Dstellar startet als Boutique-Agentur für maßgeschneiderte Software- und Datenbankentwicklung in Toronto." },
+        { y: "2017", t: "Europäische Expansion", d: "Eröffnung unseres Büros in Madrid zur Unterstützung der wachsenden Zahl von S/4HANA-Migrationen in Westeuropa." },
+        { y: "2021", t: "SAP-Gold-Partnerschaft", d: "Auszeichnung als führender SAP Gold Partner mit nachgewiesener Beratungskompetenz." },
+        { y: "2025", t: "Ära der Unternehmens-KI", d: "Dstellar führt KI-gestützte Joule-Assistenten-Integrationen und maßgeschneiderte Cloud-Plattformen ein." }
+      ]
+    },
+    leadership: {
+      title: "Unternehmensführung",
+      subtitle: "Lernen Sie die Architekten und Führungskräfte kennen, die Dstellars globale Projekte leiten.",
+      members: [
+        { name: "Marcus Vance", role: "CEO", bio: "Über 20 Jahre Erfahrung in der Unternehmens-IT. Ehemaliger Senior Director bei SAP EMEA." },
+        { name: "Dr. Elena Rostova", role: "CTO", bio: "Promotion in verteilten Systemen. Architektin der Dstellar Custom Suite." },
+        { name: "Sanjay Mehta", role: "Leiter SAP-Architektur", bio: "Erfolgreiche Leitung von über 50 End-to-End S/4HANA-Migrationen auf 4 Kontinenten." }
+      ]
+    },
+    sustainability: {
+      title: "Nachhaltigkeit & CSR",
+      subtitle: "Wir glauben daran, dass Unternehmenssoftware ökologische Nachhaltigkeit fördern sollte.",
+      metrics_title: "Umweltkennzahlen",
+      metrics: [
+        { label: "CO2-Reduktion bei Kunden", value: "35%" },
+        { label: "Papierloser Betrieb", value: "100%" },
+        { label: "Grüne Cloud-Migrationen", value: "250+" }
+      ],
+      desc: "Mit unseren Green Ledger-Implementierungen ermöglichen wir es Unternehmen, CO2-Fußabdruckdaten in Echtzeit direkt neben Finanzkennzahlen zu erfassen.",
+      esr_title: "ESR (Umwelt- und Sozialverantwortung) Integration",
+      esr_desc: "Wir betten die ESR-Compliance direkt in die zentralen ERP-Architekturen der Unternehmen ein. Dies ermöglicht es Organisationen, sowohl die Auditierung von Umweltauswirkungen als auch die Governance der sozialen Verantwortung in globalen Lieferketten zu automatisieren."
+    },
+    innovation: {
+      title: "Innovation & Forschung",
+      subtitle: "Entwicklung der Geschäftssysteme von morgen in den Dstellar Labs.",
+      projects: [
+        { t: "Joule-Assistenten-Integrationen", d: "Nutzung des dynamischen SAP-Kopiloten zur Automatisierung von Abrechnungsworkflows." },
+        { t: "Clean-Core-Refaktorierung", d: "Automatisierte Analysetools zur Extraktion von individuellem Code und Anpassung an Standard-Upgrade-Pfade." },
+        { t: "Prädiktiver AMS-Support", d: "KI-gestützte Ausfallmodellierung zur Behebung von Datenbankproblemen vor Produktionsbeeinträchtigung." }
+      ]
+    },
+    investor_relations: {
+      title: "Investor Relations",
+      subtitle: "Robuste finanzielle Stabilität gestützt auf zweistelliges Wachstum im Jahresvergleich.",
+      highlights: [
+        { label: "Umsatzwachstum (Vorjahr)", value: "+24%" },
+        { label: "Unternehmenskunden", value: "300+" },
+        { label: "Globale Hubs", value: "4 Hubs" }
+      ],
+      desc: "Dstellar is ein inhabergeführtes Unternehmen mit solider Kapitalstruktur, optimal positioniert für langfristiges Wachstum."
+    },
+    sports_sponsorships: {
+      title: "Sport-Sponsoring",
+      subtitle: "Geschwindigkeit, Präzision und ingenieurstechnische Exzellenz.",
+      desc: "Dstellar ist stolzer Sponsor der Formula E und weltweiter E-Sports-Ligen. Wir sind überzeugt, dass Höchstleistungen auf der Rennstrecke die Effizienz der von uns entworfenen Softwarearchitekturen widerspiegeln."
+    }
   },
   fr: {
     // UI strings
@@ -608,6 +900,7 @@ export const TRANSLATIONS = {
     company_items: ["Qui Sommes-Nous", "Direction", "Carrières", "Partenaires", "Communauté", "Relations Investisseurs", "Presse"],
     select_region: "Sélectionner la Région",
     login: "Connexion",
+    select_language: "Sélectionner la Langue",
 
     // Section Titles & Eyebrows
     eyebrow_industries: "Secteurs · 18 spécialités",
@@ -633,7 +926,7 @@ export const TRANSLATIONS = {
       { label: 'Partenaires', children: ['Trouver un Partenaire','Partenaires Strategiques','Devenir Partenaire','Répertoire des Solutions Certifiées','Partenaires de Sous-traitance'] },
       { label: 'Carrières', children: ['Recherche d\'Emploi & Postes Ouverts','Étudiants & Jeunes Diplômés','Votre Plan de Carrière','Pourquoi Nous Rejoindre'] },
       { label: 'Communauté', children: ['Forum de la Communauté','Blogs d\'Experts','Questions & Réponses','Événements & Meetups','Bibliothèque de Ressources'] },
-      { label: 'Découvrir Dstellar', children: ['Qui Nous Sommes','Histoire','Gouvernance & Leadership','Développement Durable & RSE','Innovation & Recherche','Relations Investisseurs','Sponsorings Sportifs'] },
+      { label: 'Découvrir Dstellar', children: ['Qui Nous Sommes','Histoire','Développement Durable & RSE','Innovation & Recherche','Relations Investisseurs','Sponsorings Sportifs'] },
       { label: 'Tester & Acheter', children: ['Essais Gratuits de Logiciels','Catalogue de Formation & d\'Habilitation','Boutique de Solutions Dstellar'] }
     ],
 
@@ -709,7 +1002,79 @@ export const TRANSLATIONS = {
       'Simulations de mise en production à blanc (×3)',
       'Passage en AMS documenté avec fiches de procédures',
       'Plan d\'optimisation continue de l\'infrastructure'
-    ]
+    ],
+
+    // Subpages localization
+    who_we_are: {
+      title: "Qui Sommes-Nous",
+      subtitle: "Un collectif mondial d'architectes SAP, de développeurs de logiciels et d'experts sectoriels.",
+      mission_title: "Notre Mission",
+      mission_desc: "Fournir des solutions logicielles permettant aux entreprises de fonctionner avec vitesse, agilité et précision.",
+      vision_title: "Notre Vision",
+      vision_desc: "Être le partenaire Gold standard le plus fiable pour les transformations SAP de nouvelle génération dans le monde entier.",
+      values_title: "Valeurs Fondamentales",
+      values: [
+        { t: "Excellence Technique", d: "Nous écrivons du code propre, concevons des architectures clean-core et garantissons la qualité de notre travail." },
+        { t: "Obsession Client", d: "Nous nous alignons entièrement avec les objectifs de nos clients. Pas d'excuses, pas d'intermédiaires." },
+        { t: "Innovation Continue", d: "Nous recherchons et mettons en œuvre en permanence des solutions d'automatisation IA pour les ERP." }
+      ]
+    },
+    history: {
+      title: "Histoire",
+      subtitle: "Depuis 2013, Dstellar est un pionnier des logiciels sur mesure et des migrations SAP intégrées au cloud.",
+      events: [
+        { y: "2013", t: "La Fondation", d: "Dstellar débute en tant qu'agence de développement de logiciels et de bases de données sur mesure à Toronto." },
+        { y: "2017", t: "Expansion Européenne", d: "Ouverture de notre bureau à Madrid pour accompagner les projets croissants de migration S/4HANA en Europe de l'Ouest." },
+        { y: "2021", t: "Partenariat SAP Gold", d: "Reconnu comme partenaire SAP Gold de premier plan, certifié pour notre expertise en conseil." },
+        { y: "2025", t: "Ère de l'IA d'Entreprise", d: "Dstellar déploie l'assistant intelligent Joule piloté par l'IA et des plateformes cloud personnalisées." }
+      ]
+    },
+    leadership: {
+      title: "Gouvernance & Leadership",
+      subtitle: "Découvrez l'équipe dirigeante et les architectes senior qui pilotent nos projets mondiaux.",
+      members: [
+        { name: "Marcus Vance", role: "CEO", bio: "Plus de 20 ans d'expérience dans les technologies d'entreprise. Ancien directeur principal chez SAP EMEA." },
+        { name: "Dr. Elena Rostova", role: "CTO", bio: "Doctorat en systèmes distribués. Architecte de la suite logicielle Dstellar Custom." },
+        { name: "Sanjay Mehta", role: "Directeur de l'Architecture SAP", bio: "A dirigé plus de 50 projets de migration S/4HANA de bout en bout sur 4 continents." }
+      ]
+    },
+    sustainability: {
+      title: "Développement Durable & RSE",
+      subtitle: "Nous croyons que les progiciels de gestion d'entreprise doivent encourager la durabilité environnementale.",
+      metrics_title: "Indicateurs d'Impact Environnemental",
+      metrics: [
+        { label: "Réduction Carbone des Clients", value: "35%" },
+        { label: "Opérations Zéro Papier", value: "100%" },
+        { label: "Migrations Cloud Écologiques", value: "250+" }
+      ],
+      desc: "À travers nos implémentations de Green Ledger, nous permettons aux entreprises de suivre en temps réel leurs données d'empreinte carbone à côté de leurs indicateurs financiers.",
+      esr_title: "Intégration ESR (Responsabilité Environnementale et Sociale)",
+      esr_desc: "Nous intégrons la conformité ESR directement dans les architectures ERP de l'entreprise. Cela permet aux organisations d'automatiser l'audit d'impact environnemental et la gouvernance de la responsabilité sociale dans les chaînes d'approvisionnement mondiales."
+    },
+    innovation: {
+      title: "Innovation & Recherche",
+      subtitle: "Concevoir les systèmes d'information de demain dans les Laboratoires Dstellar.",
+      projects: [
+        { t: "Intégrations de l'Assistant Joule", d: "Utilisation du copilote intelligent de SAP pour automatiser les flux de facturation client." },
+        { t: "Refactorisation Clean Core", d: "Outils d'analyse automatisés pour extraire les codes spécifiques et les aligner sur les versions standards." },
+        { t: "Support AMS Prédictif", d: "Modélisation des incidents par l'IA pour corriger les dysfonctionnements système avant tout impact en production." }
+      ]
+    },
+    investor_relations: {
+      title: "Relations Investisseurs",
+      subtitle: "Une rentabilité et une stabilité financière solides soutenues par une croissance annuelle à deux chiffres.",
+      highlights: [
+        { label: "Croissance des Revenus (an)", value: "+24%" },
+        { label: "Clients Entreprises", value: "300+" },
+        { label: "Centres de Services", value: "4 Centres" }
+      ],
+      desc: "Dstellar est une société par actions privée disposant de structures de capitaux solides, nous positionnant pour un développement à long terme."
+    },
+    sports_sponsorships: {
+      title: "Sponsorings Sportifs",
+      subtitle: "Vitesse, précision et excellence technique.",
+      desc: "Dstellar est un fier sponsor officiel de la Formula E et des ligues d'e-sports mondiales. Nous pensons que l'ingénierie de pointe en course automobile reflète la performance des architectures logicielles que nous concevons."
+    }
   },
   ja: {
     // UI strings
@@ -726,7 +1091,7 @@ export const TRANSLATIONS = {
     support_coverage: "サポート体制",
     playbook_cta: "{name} プレイブックを開く →",
     read_playbook: "プレイブックを読む →",
-    solutions: "個のソリューション",
+    solutions: "個 of ソリューション",
     ind_tag_s4: "SAP S/4HANA",
     ind_tag_addons: "業界特化型アドオン",
     ind_tag_ams: "AMS (アプリケーション保守)",
@@ -750,6 +1115,7 @@ export const TRANSLATIONS = {
     company_items: ["会社概要", "リーダーシップ", "採用情報", "パートナー", "コミュニティ", "投資家情報", "プレスリリース"],
     select_region: "地域を選択",
     login: "ログイン",
+    select_language: "言語を選択",
 
     // Section Titles & Eyebrows
     eyebrow_industries: "提供中の業界 · 18の専門分野",
@@ -775,7 +1141,7 @@ export const TRANSLATIONS = {
       { label: 'パートナー', children: ['パートナーを探す','戦略的パートナー','パートナーになる','公式ソリューションカタログ','アウトソーシングパートナー'] },
       { label: '採用情報', children: ['求人検索・募集要項','新卒・学生向け採用','キャリアパス','Dstellarで働く理由'] },
       { label: 'コミュニティ', children: ['コミュニティフォーラム','エキスパートブログ','Q&Aとフォーラム','イベント＆勉強会','資料ライブラリ'] },
-      { label: 'Dstellarを知る', children: ['私たちについて','沿革','コーポレートガバナンス','サステナビリティ＆CSR','イノベーション＆研究','投資家情報','スポーツ協賛'] },
+      { label: 'Dstellarを知る', children: ['私たちについて','沿革','サステナビリティ＆CSR','イノベーション＆研究','投資家情報','スポーツ協賛'] },
       { label: '評価＆購入', children: ['無料トライアル','教育・検証プログラム','Dstellarソリューションストア'] }
     ],
 
@@ -826,7 +1192,7 @@ export const TRANSLATIONS = {
       { t: 'クラウドサービス', d: 'パブリッククラウド移行、マネージド移行、運用コスト最適化。' },
       { t: 'サイバーセキュリティ', d: 'GRC（ガバナンス・リスク・コンプライアンス）、職務分掌 (SOD)、アクセス管理。' },
       { t: 'デジタル体験設計', d: '顧客体験 (CX) プラットフォーム、Fiori UI/UX設計、モバイル。' },
-      { t: 'サステイナビリティ', d: 'グリーンLEDジャー、温室効果ガス排出トラッキング、循環サプライチェーン。' },
+      { t: 'サステイナビリティ', d: 'グリーン元帳、温室効果ガス排出トラッキング、循環サプライチェーン。' },
       { t: '変革とクリーンコア設計', d: '標準機能を活かしたアドオン排除（Clean Core）による最新の運用モデル。' },
       { t: '技術アドバイザリー', d: 'システム監査、移行ロードマップ策定、シニアアーキテクト支援。' },
       { t: 'プレミアム保守サービス', d: 'ミッションクリティカルな大規模システム向けの専用 AMS 保守。' }
@@ -851,6 +1217,78 @@ export const TRANSLATIONS = {
       '本番想定切り替えリハーサルの徹底実行（計3回）',
       '詳細な業務手順書に基づく円滑なAMS保守引き継ぎ',
       '継続的なインフラおよびアーキテクチャ最適化ロードマップ'
-    ]
+    ],
+
+    // Subpages localization
+    who_we_are: {
+      title: "私たちについて",
+      subtitle: "SAPアーキテクト、ソフトウェア開発者、業界エキスパートからなるグローバルな技術チーム。",
+      mission_title: "企業使命",
+      mission_desc: "企業が迅速、俊敏、かつ精密に業務を実行できるエンタープライズソリューションを提供します。",
+      vision_title: "企業ビジョン",
+      vision_desc: "グローバルにおける次世代SAP移行プロジェクトの最も信頼されるゴールドスタンダードパートナーになります。",
+      values_title: "行動指針",
+      values: [
+        { t: "技術的卓越性", d: "クリーンなコードを書き、クリーンコア（Clean Core）設計を追求し、自社の品質を保証します。" },
+        { t: "顧客満足の追求", d: "お客様のビジネス目標と完全に同調します。丸投げや言い訳は一切ありません。" },
+        { t: "継続的イノベーション", d: "エンタープライズリソースプランニングに向けたAIによる自動化技術を絶えず研究・導入します。" }
+      ]
+    },
+    history: {
+      title: "沿革",
+      subtitle: "2013年の創業以来、Dstellarはカスタムソフトウェアとクラウド統合型SAP移行の先駆者であり続けています。",
+      events: [
+        { y: "2013", t: "会社設立", d: "Dstellarは、トロントでカスタムソフトウェアおよびデータベース開発のブティック企業としてスタートしました。" },
+        { y: "2017", t: "ヨーロッパ事業展開", d: "西欧におけるS/4HANA移行需要の高まりを受け、マドリッドオフィスを開設しました。" },
+        { y: "2021", t: "SAPゴールドパートナー", d: "卓越した技術力と支援実績が評価され、SAP認定ゴールドパートナーに指定されました。" },
+        { y: "2025", t: "企業向けAI時代", d: "AI主導のJouleアシスタント連携およびカスタムクラウド基盤を順次展開しています。" }
+      ]
+    },
+    leadership: {
+      title: "コーポレートガバナンス",
+      subtitle: "Dstellarのグローバルデリバリーを統率する主要メンバーをご紹介します。",
+      members: [
+        { name: "Marcus Vance", role: "最高経営責任者 (CEO)", bio: "エンタープライズテック分野で20年以上の経験。元SAP欧州・中東・アフリカ部門シニアディレクター。" },
+        { name: "Dr. Elena Rostova", role: "最高技術責任者 (CTO)", bio: "分散システム分野の博士号取得。Dstellarカスタム製品のチーフアーキテクト。" },
+        { name: "Sanjay Mehta", role: "SAPアーキテクチャ責任者", bio: "世界4大陸にわたり、50件以上のエンドツーエンドS/4HANA移行プロジェクトを主導。" }
+      ]
+    },
+    sustainability: {
+      title: "サステナビリティ＆CSR",
+      subtitle: "私たちは、ビジネスシステムが環境持続可能性に貢献すべきであると信じています。",
+      metrics_title: "環境への影響指標",
+      metrics: [
+        { label: "クライアントのCO2削減率", value: "35%" },
+        { label: "ペーパーレス業務率", value: "100%" },
+        { label: "グリーンクラウド移行実績", value: "250件以上" }
+      ],
+      desc: "私たちはGreen Ledger（グリーン元帳）の構築を通じて、企業が財務指標と並行して炭素排出量データをリアルタイムで追跡することを可能にします。",
+      esr_title: "ESR（環境・社会責任）の統合",
+      esr_desc: "当社はESRコンプライアンスを企業の基幹ERPアーキテクチャに直接組み込みます。これにより、組織はグローバルなサプライチェーン全体で、環境影響監査と社会的責任ガバナンスの両方を自動化できます。"
+    },
+    innovation: {
+      title: "イノベーション＆研究",
+      subtitle: "Dstellar研究所（Dstellar Labs）で未来のビジネスシステムを設計。",
+      projects: [
+        { t: "Jouleコパイロット連携", d: "SAPの対話型AIを活用し、顧客請求書発行ワークフローを自動化します。" },
+        { t: "クリーンコア（Clean Core）リファクタリング", d: "独自コードを抽出してアップグレードを容易にするための静的自動分析ツール。" },
+        { t: "予測型AMSサポート", d: "データベーストラブルが生産活動に影響を与える前に、AIで障害予兆を検知し解決します。" }
+      ]
+    },
+    investor_relations: {
+      title: "投資家情報",
+      subtitle: "前年比2桁成長の成長トレンドに支えられた、強固な財務体質。",
+      highlights: [
+        { label: "売上高前年比成長率", value: "+24%" },
+        { label: "取引企業数", value: "300社以上" },
+        { label: "グローバル拠点数", value: "4拠点" }
+      ],
+      desc: "Dstellarは、安定した株主構造と健全な資本力を備えており、長期的な世界的成長に最適な位置にあります。"
+    },
+    sports_sponsorships: {
+      title: "スポーツ協賛",
+      subtitle: "スピード、精密さ、工程の融合。",
+      desc: "Dstellarは、世界各地のFormula Eおよびeスポーツリーグの公式スポンサーです。サーキットにおける極限の精密機械設計は、私たちがエンタープライズ顧客のために設計する超高性能ソフトウェアアーキテクチャに通じるものがあると確信しています。"
+    }
   }
 };

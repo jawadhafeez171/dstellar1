@@ -65,6 +65,55 @@ const COUNTRY_LANGS: Record<string, Language> = {
   'Turkey': 'en'
 };
 
+const DISCOVER_LINKS: Record<string, string> = {
+  // English
+  'Who We Are': '/discover/who-we-are',
+  'History': '/discover/history',
+  'Sustainability & CSR': '/discover/sustainability',
+  'Innovation & Research': '/discover/innovation',
+  'Investor Relations': '/discover/investor-relations',
+  'Sports Sponsorships': '/discover/sports-sponsorships',
+  
+  // Spanish
+  'Quiénes Somos': '/discover/who-we-are',
+  'Historia': '/discover/history',
+  'Sostenibilidad y RSC': '/discover/sustainability',
+  'Innovación e Investigación': '/discover/innovation',
+  'Relaciones con Inversores': '/discover/investor-relations',
+  'Patrocinios Deportivos': '/discover/sports-sponsorships',
+  
+  // Chinese
+  '公司简介': '/discover/who-we-are',
+  '发展历史': '/discover/history',
+  '可持续发展与 CSR': '/discover/sustainability',
+  '创新与前沿研究': '/discover/innovation',
+  '投资者关系': '/discover/investor-relations',
+  '体育赞助': '/discover/sports-sponsorships',
+
+  // German
+  'Wer wir sind': '/discover/who-we-are',
+  'Geschichte': '/discover/history',
+  'Nachhaltigkeit & CSR': '/discover/sustainability',
+  'Innovation & Forschung': '/discover/innovation',
+  'Sport-Sponsoring': '/discover/sports-sponsorships',
+
+  // French
+  'Qui Nous Sommes': '/discover/who-we-are',
+  'Histoire': '/discover/history',
+  'Développement Durable & RSE': '/discover/sustainability',
+  'Innovation & Recherche': '/discover/innovation',
+  'Relations Investisseurs': '/discover/investor-relations',
+  'Sponsorings Sportifs': '/discover/sports-sponsorships',
+
+  // Japanese
+  '私たちについて': '/discover/who-we-are',
+  '沿革': '/discover/history',
+  'サステナビリティ＆CSR': '/discover/sustainability',
+  'イノベーション＆研究': '/discover/innovation',
+  '投資家情報': '/discover/investor-relations',
+  'スポーツ協賛': '/discover/sports-sponsorships'
+};
+
 export function TopBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -94,7 +143,10 @@ export function TopBar() {
                   <div className="megamenu megamenu-wide" onClick={(e) => e.stopPropagation()}>
                     <div className="mega-split">
                       <div className={isGrid ? 'mega-links-grid' : 'mega-links'}>
-                        {n.children.map((c: string) => <a key={c} href="#">{c}</a>)}
+                        {n.children.map((c: string) => {
+                          const href = DISCOVER_LINKS[c] || '#';
+                          return <a key={c} href={href}>{c}</a>;
+                        })}
                       </div>
                       {promo && (
                         <div className="mega-promo">
