@@ -214,6 +214,87 @@ export const TRANSLATIONS = {
       title: "Sports Sponsorships",
       subtitle: "Speed, precision, and engineering excellence.",
       desc: "Dstellar is a proud sponsor of Formula E and cyber-sport racing leagues worldwide. We believe high-performance engineering on the track mirrors the high-performance software architectures we design for enterprise clients."
+    },
+    trainings_hub: {
+      badge: "DSTELLAR ACADEMY",
+      title: "Learning Hub",
+      subtitle: "Your gateway to SAP mastery. Explore curated learning pathways designed by certified SAP architects and industry specialists.",
+      cta: "Start Learning",
+      pathways: [
+        { title: "SAP S/4HANA Foundation", desc: "Master the fundamentals of SAP's next-generation ERP platform with hands-on exercises and real-world scenarios.", level: "Intermediate", duration: "40 hrs" },
+        { title: "FICO for Finance Leaders", desc: "Deep-dive into Financial Accounting and Controlling modules — from GL to cost center accounting and beyond.", level: "Advanced", duration: "56 hrs" },
+        { title: "SAP Fiori UX Design", desc: "Build intuitive enterprise apps with SAP Fiori principles and SAPUI5 components.", level: "Intermediate", duration: "32 hrs" },
+        { title: "ABAP Clean Code", desc: "Write modern, maintainable ABAP code following clean-core principles and best practices.", level: "Advanced", duration: "48 hrs" },
+        { title: "Supply Chain Excellence", desc: "Optimize your supply chain with SAP MM, WM, and EWM — from procurement to warehouse execution.", level: "Intermediate", duration: "36 hrs" },
+        { title: "AI in SAP Environments", desc: "Leverage SAP Joule and embedded AI capabilities to supercharge your enterprise workflows.", level: "Specialist", duration: "24 hrs" }
+      ]
+    },
+    trainings_courses: {
+      badge: "CERTIFIED TRAINING",
+      title: "Certified SAP Courses",
+      subtitle: "Industry-recognized certifications that validate your SAP expertise and accelerate your career growth.",
+      cta: "Register Now",
+      courses: [
+        { code: "SAP-FICO-001", title: "SAP Financial Accounting (FI)", desc: "Covers general ledger, accounts payable, accounts receivable, asset accounting, and month-end closing.", level: "Professional", duration: "5 days" },
+        { code: "SAP-CO-002", title: "SAP Controlling (CO)", desc: "Cost center accounting, profit center accounting, internal orders, and product cost planning.", level: "Professional", duration: "4 days" },
+        { code: "SAP-SD-003", title: "SAP Sales & Distribution (SD)", desc: "Sales order processing, pricing, delivery, billing, and credit management.", level: "Professional", duration: "5 days" },
+        { code: "SAP-MM-004", title: "SAP Materials Management (MM)", desc: "Procurement cycle, inventory management, invoice verification, and vendor management.", level: "Associate", duration: "4 days" },
+        { code: "SAP-S4H-005", title: "SAP S/4HANA Migration", desc: "Migration scenarios, conversion approaches, system landscape transformation, and go-live strategies.", level: "Expert", duration: "6 days" },
+        { code: "SAP-AI-006", title: "SAP AI & Joule Integration", desc: "Implementing AI-driven business processes using SAP Business AI and Joule copilot capabilities.", level: "Specialist", duration: "3 days" }
+      ]
+    },
+    trainings_prep: {
+      badge: "EXAM PREPARATION",
+      title: "Certification Prep",
+      subtitle: "Structured preparation programs to help you pass SAP certification exams on the first attempt.",
+      cta: "Start Prep",
+      programs: [
+        { exam: "C_TS4FI_2023", title: "SAP Certified Associate – SAP S/4HANA for Financial Accounting", topics: ["General Ledger", "Accounts Payable & Receivable", "Asset Accounting", "Bank Accounting"], passRate: "94%", duration: "3 weeks" },
+        { exam: "C_TS4CO_2023", title: "SAP Certified Associate – SAP S/4HANA for Management Accounting", topics: ["Cost Centers", "Profit Centers", "Internal Orders", "Product Costing"], passRate: "91%", duration: "3 weeks" },
+        { exam: "C_TS410_2022", title: "SAP Certified Associate – Business Process Integration", topics: ["Procure-to-Pay", "Order-to-Cash", "Plan-to-Produce", "Hire-to-Retire"], passRate: "89%", duration: "4 weeks" }
+      ],
+      questions: [
+        { q: "Which of the following is the next-generation ERP suite from SAP?", options: ["SAP ECC", "SAP S/4HANA", "SAP Business One", "SAP R/3"], correct: 1 },
+        { q: "In SAP S/4HANA Finance, which table is the single source of truth for all accounting data?", options: ["BKPF", "BSEG", "ACDOCA", "COEP"], correct: 2 },
+        { q: "What does 'Clean Core' refer to in modern SAP architecture?", options: ["Deleting all database logs", "Running database on-premises only", "Keeping custom modifications separate from the standard code using APIs and BTP", "Using a clean graphic interface"], correct: 2 }
+      ],
+      question_label: "Question",
+      timer_label: "Time Remaining",
+      score_label: "Your Mock Score"
+    },
+    trainings_program: {
+      badge: "EDUCATION PARTNERSHIP",
+      title: "Education Partner Program",
+      subtitle: "Partner with Dstellar Academy to deliver world-class SAP training at your institution or corporate campus.",
+      cta: "Apply Now",
+      tiers: [
+        { name: "Bronze", price: "Free", features: ["Access to learning materials", "Branded courseware templates", "Online instructor portal", "Up to 50 students/year"] },
+        { name: "Silver", price: "$2,400/yr", features: ["Everything in Bronze", "Co-branded certifications", "Dedicated partner manager", "Up to 250 students/year", "LMS integration support"] },
+        { name: "Gold", price: "$6,000/yr", features: ["Everything in Silver", "On-site instructor training", "Custom curriculum development", "Unlimited students", "Revenue sharing model", "Premier placement listing"] }
+      ]
+    },
+    trainings_free: {
+      badge: "FREE ACCESS",
+      title: "Free openDstellar Training",
+      subtitle: "Get started with SAP learning at no cost. Our free openDstellar library gives everyone access to foundational knowledge.",
+      cta: "Access Free Courses",
+      modules: [
+        { title: "SAP Navigation Basics", desc: "Get familiar with the SAP GUI, Fiori launchpad, and core navigation patterns.", duration: "2 hrs", icon: "🧭" },
+        { title: "Introduction to ERP", desc: "Understand what ERP means, why companies use it, and how SAP fits into the enterprise landscape.", duration: "3 hrs", icon: "🏢" },
+        { title: "SAP Data Model Fundamentals", desc: "Learn about clients, company codes, plants, and other key organizational elements in SAP.", duration: "2.5 hrs", icon: "🗂️" },
+        { title: "Finance Basics in SAP", desc: "A non-technical overview of how financial processes flow in SAP S/4HANA.", duration: "3 hrs", icon: "💰" },
+        { title: "Supply Chain in SAP", desc: "Introduction to procurement, inventory, and logistics using SAP modules.", duration: "3.5 hrs", icon: "🔗" },
+        { title: "SAP Career Pathways", desc: "Explore different SAP career tracks — from consultant to developer to architect.", duration: "1 hr", icon: "🚀" }
+      ],
+      videos_title: "Free Video Lectures",
+      videos: [
+        { title: "SAP Navigation Basics", duration: "2 hrs", instructor: "Sarah Jenkins, Lead SAP Architect" },
+        { title: "Introduction to ERP Systems", duration: "3 hrs", instructor: "Marcus Vance, CEO & SAP Veteran" },
+        { title: "SAP Data Model Fundamentals", duration: "2.5 hrs", instructor: "Sanjay Mehta, Head of SAP Architecture" },
+        { title: "Finance Basics in SAP S/4HANA", duration: "3 hrs", instructor: "Dr. Elena Rostova, CTO" },
+        { title: "Supply Chain & Logistics in SAP", duration: "3.5 hrs", instructor: "Sanjay Mehta, Head of SAP Architecture" },
+        { title: "SAP Consulting Career Pathways", duration: "1 hr", instructor: "Marcus Vance, CEO & SAP Veteran" }
+      ]
     }
   },
   es: {
@@ -429,6 +510,87 @@ export const TRANSLATIONS = {
       title: "Patrocinios Deportivos",
       subtitle: "Velocidad, precisión y excelencia en ingeniería.",
       desc: "Dstellar se enorgullece de patrocinar la Fórmula E y las ligas de deportes electrónicos en todo el mundo. Creemos que la ingeniería de alto rendimiento en la pista refleja las arquitecturas de software de alto rendimiento que diseñamos para nuestros clientes empresariales."
+    },
+    trainings_hub: {
+      badge: "DSTELLAR ACADEMY",
+      title: "Centro de Aprendizaje",
+      subtitle: "Tu puerta de entrada al dominio de SAP. Explora rutas de aprendizaje creadas por arquitectos SAP certificados.",
+      cta: "Empezar a Aprender",
+      pathways: [
+        { title: "Fundamentos de SAP S/4HANA", desc: "Domina los fundamentos de la plataforma ERP de próxima generación de SAP con ejercicios prácticos.", level: "Intermediate", duration: "40 h" },
+        { title: "FICO para Líderes Financieros", desc: "Profundiza en los módulos de Contabilidad Financiera y Control: desde GL hasta centros de costo.", level: "Advanced", duration: "56 h" },
+        { title: "Diseño UX con SAP Fiori", desc: "Crea aplicaciones empresariales intuitivas con principios SAP Fiori y componentes SAPUI5.", level: "Intermediate", duration: "32 h" },
+        { title: "ABAP Código Limpio", desc: "Escribe código ABAP moderno y mantenible siguiendo principios de núcleo limpio.", level: "Advanced", duration: "48 h" },
+        { title: "Excelencia en Cadena de Suministro", desc: "Optimiza tu cadena de suministro con SAP MM, WM y EWM.", level: "Intermediate", duration: "36 h" },
+        { title: "IA en Entornos SAP", desc: "Aprovecha SAP Joule y las capacidades de IA integradas para potenciar tus flujos de trabajo.", level: "Specialist", duration: "24 h" }
+      ]
+    },
+    trainings_courses: {
+      badge: "FORMACIÓN CERTIFICADA",
+      title: "Cursos SAP Certificados",
+      subtitle: "Certificaciones reconocidas por la industria que validan tu expertise en SAP y aceleran tu carrera.",
+      cta: "Inscribirse Ahora",
+      courses: [
+        { code: "SAP-FICO-001", title: "SAP Contabilidad Financiera (FI)", desc: "Cubre el libro mayor, cuentas por pagar, cuentas por cobrar, contabilidad de activos y cierre mensual.", level: "Professional", duration: "5 días" },
+        { code: "SAP-CO-002", title: "SAP Controlling (CO)", desc: "Contabilidad de centros de costo, centros de beneficio, órdenes internas y planificación de costos.", level: "Professional", duration: "4 días" },
+        { code: "SAP-SD-003", title: "SAP Ventas y Distribución (SD)", desc: "Procesamiento de pedidos, precios, entrega, facturación y gestión de crédito.", level: "Professional", duration: "5 días" },
+        { code: "SAP-MM-004", title: "SAP Gestión de Materiales (MM)", desc: "Ciclo de adquisición, gestión de inventario, verificación de facturas y gestión de proveedores.", level: "Associate", duration: "4 días" },
+        { code: "SAP-S4H-005", title: "Migración SAP S/4HANA", desc: "Escenarios de migración, enfoques de conversión, transformación del sistema y estrategias de go-live.", level: "Expert", duration: "6 días" },
+        { code: "SAP-AI-006", title: "SAP AI e Integración Joule", desc: "Implementación de procesos de negocio impulsados por IA usando SAP Business AI y Joule.", level: "Specialist", duration: "3 días" }
+      ]
+    },
+    trainings_prep: {
+      badge: "PREPARACIÓN DE EXAMEN",
+      title: "Preparación de Certificaciones",
+      subtitle: "Programas de preparación estructurados para aprobar los exámenes de certificación SAP a la primera.",
+      cta: "Iniciar Preparación",
+      programs: [
+        { exam: "C_TS4FI_2023", title: "SAP Certified Associate – S/4HANA Contabilidad Financiera", topics: ["Libro Mayor", "Cuentas por Pagar y Cobrar", "Contabilidad de Activos", "Contabilidad Bancaria"], passRate: "94%", duration: "3 semanas" },
+        { exam: "C_TS4CO_2023", title: "SAP Certified Associate – S/4HANA Contabilidad de Gestión", topics: ["Centros de Costo", "Centros de Beneficio", "Órdenes Internas", "Costos de Producto"], passRate: "91%", duration: "3 semanas" },
+        { exam: "C_TS410_2022", title: "SAP Certified Associate – Integración de Procesos de Negocio", topics: ["Procure-to-Pay", "Order-to-Cash", "Plan-to-Produce", "Hire-to-Retire"], passRate: "89%", duration: "4 semanas" }
+      ],
+      questions: [
+        { q: "¿Cuál de los siguientes es el ERP de próxima generación de SAP?", options: ["SAP ECC", "SAP S/4HANA", "SAP Business One", "SAP R/3"], correct: 1 },
+        { q: "En SAP S/4HANA Finance, ¿qué tabla es la única fuente de verdad para todos los datos contables?", options: ["BKPF", "BSEG", "ACDOCA", "COEP"], correct: 2 },
+        { q: "En la arquitectura moderna de SAP, ¿a qué se refiere un núcleo limpio ('Clean Core')?", options: ["Eliminar todos los registros de la base de datos", "Ejecutar la base de datos solo en local", "Mantener las modificaciones personalizadas separadas del código estándar mediante APIs y BTP", "Usar una interfaz gráfica limpia"], correct: 2 }
+      ],
+      question_label: "Pregunta",
+      timer_label: "Tiempo Restante",
+      score_label: "Tu Puntuación Mock"
+    },
+    trainings_program: {
+      badge: "ALIANZA EDUCATIVA",
+      title: "Programa de Socios Educativos",
+      subtitle: "Asóciate con Dstellar Academy para impartir formación SAP de clase mundial en tu institución.",
+      cta: "Aplicar Ahora",
+      tiers: [
+        { name: "Bronce", price: "Gratis", features: ["Acceso a materiales de aprendizaje", "Plantillas de cursos con marca", "Portal de instructores online", "Hasta 50 estudiantes/año"] },
+        { name: "Plata", price: "2.400 €/año", features: ["Todo en Bronce", "Certificaciones co-branded", "Gestor de socios dedicado", "Hasta 250 estudiantes/año", "Integración con LMS"] },
+        { name: "Oro", price: "6.000 €/año", features: ["Todo en Plata", "Formación de instructores presencial", "Desarrollo de currículo personalizado", "Estudiantes ilimitados", "Modelo de reparto de ingresos", "Listado premier"] }
+      ]
+    },
+    trainings_free: {
+      badge: "ACCESO GRATUITO",
+      title: "Formación Gratuita openDstellar",
+      subtitle: "Comienza tu aprendizaje SAP sin costo. Nuestra biblioteca openDstellar gratuita da acceso a conocimiento fundamental.",
+      cta: "Acceder a Cursos Gratuitos",
+      modules: [
+        { title: "Navegación Básica SAP", desc: "Familiarízate con el GUI de SAP, el launchpad de Fiori y los patrones de navegación principales.", duration: "2 h", icon: "🧭" },
+        { title: "Introducción al ERP", desc: "Entiende qué es el ERP, por qué las empresas lo usan y cómo encaja SAP en el ecosistema empresarial.", duration: "3 h", icon: "🏢" },
+        { title: "Fundamentos del Modelo de Datos SAP", desc: "Aprende sobre mandantes, sociedad, centros y otros elementos organizativos clave en SAP.", duration: "2.5 h", icon: "🗂️" },
+        { title: "Finanzas Básicas en SAP", desc: "Una visión no técnica de cómo fluyen los procesos financieros en SAP S/4HANA.", duration: "3 h", icon: "💰" },
+        { title: "Cadena de Suministro en SAP", desc: "Introducción a compras, inventario y logística usando módulos SAP.", duration: "3.5 h", icon: "🔗" },
+        { title: "Trayectorias de Carrera SAP", desc: "Explora las distintas carreras en SAP: consultor, desarrollador, arquitecto y más.", duration: "1 h", icon: "🚀" }
+      ],
+      videos_title: "Lecciones en Video Gratuitas",
+      videos: [
+        { title: "Conceptos Básicos de Navegación SAP", duration: "2 horas", instructor: "Sarah Jenkins, Arquitecta Principal SAP" },
+        { title: "Introducción a los Sistemas ERP", duration: "3 horas", instructor: "Marcus Vance, CEO y Veterano de SAP" },
+        { title: "Fundamentos del Modelo de Datos SAP", duration: "2.5 horas", instructor: "Sanjay Mehta, Director de Arquitectura SAP" },
+        { title: "Conceptos Básicos de Finanzas en SAP S/4HANA", duration: "3 horas", instructor: "Dra. Elena Rostova, CTO" },
+        { title: "Cadena de Suministro y Logística en SAP", duration: "3.5 horas", instructor: "Sanjay Mehta, Director de Arquitectura SAP" },
+        { title: "Trayectorias Profesionales en Consultoría SAP", duration: "1 hora", instructor: "Marcus Vance, CEO y Veterano de SAP" }
+      ]
     }
   },
   zh: {
@@ -644,6 +806,87 @@ export const TRANSLATIONS = {
       title: "体育赞助",
       subtitle: "速度、精准与卓越工程的完美结合。",
       desc: "Dstellar 荣幸地成为全球 Formula E（电动方程式）和电子竞技联赛的赞助商。我们相信，赛道上的高性能工程表现与我们为企业客户设计的卓越软件架构如出一辙。"
+    },
+    trainings_hub: {
+      badge: "DSTELLAR 学院",
+      title: "学习中心",
+      subtitle: "掌握 SAP 的门户。探索由经过认证的 SAP 架构师精心设计的学习路径。",
+      cta: "开始学习",
+      pathways: [
+        { title: "SAP S/4HANA 基础", desc: "通过实践练习掌握 SAP 下一代 ERP 平台的基础知识。", level: "Intermediate", duration: "40 小时" },
+        { title: "面向财务领导者的 FICO", desc: "深入了解财务会计和控制模块——从总账到成本中心会计。", level: "Advanced", duration: "56 小时" },
+        { title: "SAP Fiori UX 设计", desc: "使用 SAP Fiori 原则和 SAPUI5 组件构建直观的企业应用程序。", level: "Intermediate", duration: "32 小时" },
+        { title: "ABAP 简洁代码", desc: "遵循简洁核心原则和最佳实践编写现代、可维护的 ABAP 代码。", level: "Advanced", duration: "48 小时" },
+        { title: "供应链卓越管理", desc: "通过 SAP MM、WM 和 EWM 优化您的供应链——从采购到仓库执行。", level: "Intermediate", duration: "36 小时" },
+        { title: "SAP 环境中的 AI", desc: "利用 SAP Joule 和嵌入式 AI 功能增强您的企业工作流程。", level: "Specialist", duration: "24 小时" }
+      ]
+    },
+    trainings_courses: {
+      badge: "认证培训",
+      title: "SAP 认证课程",
+      subtitle: "获得行业认可的认证，验证您的 SAP 专业知识并加速职业发展。",
+      cta: "立即报名",
+      courses: [
+        { code: "SAP-FICO-001", title: "SAP 财务会计 (FI)", desc: "涵盖总账、应付账款、应收账款、资产会计和月末结账。", level: "Professional", duration: "5天" },
+        { code: "SAP-CO-002", title: "SAP 控制 (CO)", desc: "成本中心会计、利润中心会计、内部订单和产品成本计划。", level: "Professional", duration: "4天" },
+        { code: "SAP-SD-003", title: "SAP 销售与分销 (SD)", desc: "销售订单处理、定价、交货、开票和信用管理。", level: "Professional", duration: "5天" },
+        { code: "SAP-MM-004", title: "SAP 物料管理 (MM)", desc: "采购周期、库存管理、发票校验和供应商管理。", level: "Associate", duration: "4天" },
+        { code: "SAP-S4H-005", title: "SAP S/4HANA 迁移", desc: "迁移方案、转换方法、系统架构转型和上线策略。", level: "Expert", duration: "6天" },
+        { code: "SAP-AI-006", title: "SAP AI 与 Joule 集成", desc: "使用 SAP Business AI 和 Joule 协同功能实现 AI 驱动的业务流程。", level: "Specialist", duration: "3天" }
+      ]
+    },
+    trainings_prep: {
+      badge: "考试备考",
+      title: "认证备考",
+      subtitle: "结构化备考项目，帮助您一次通过 SAP 认证考试。",
+      cta: "开始备考",
+      programs: [
+        { exam: "C_TS4FI_2023", title: "SAP 认证助理 – SAP S/4HANA 财务会计", topics: ["总账", "应付和应收账款", "资产会计", "银行会计"], passRate: "94%", duration: "3周" },
+        { exam: "C_TS4CO_2023", title: "SAP 认证助理 – SAP S/4HANA 管理会计", topics: ["成本中心", "利润中心", "内部订单", "产品成本"], passRate: "91%", duration: "3周" },
+        { exam: "C_TS410_2022", title: "SAP 认证助理 – 业务流程集成", topics: ["采购到付款", "订单到收款", "计划到生产", "招聘到退休"], passRate: "89%", duration: "4周" }
+      ],
+      questions: [
+        { q: "以下哪项是 SAP 的下一代 ERP 套件？", options: ["SAP ECC", "SAP S/4HANA", "SAP Business One", "SAP R/3"], correct: 1 },
+        { q: "在 SAP S/4HANA Finance 中，哪个表是所有财务数据的单一事实来源？", options: ["BKPF", "BSEG", "ACDOCA", "COEP"], correct: 2 },
+        { q: "在现代 SAP 架构中，“干净核心 (Clean Core)”是指什么？", options: ["删除所有数据库日志", "仅在本地运行数据库", "通过 API 和 BTP 将自定义修改与标准代码分离", "使用干净的图形界面"], correct: 2 }
+      ],
+      question_label: "问题",
+      timer_label: "剩余时间",
+      score_label: "您的模拟测试得分"
+    },
+    trainings_program: {
+      badge: "教育合作伙伴",
+      title: "教育合作伙伴计划",
+      subtitle: "与 Dstellar 学院合作，在您的机构或企业园区提供世界一流的 SAP 培训。",
+      cta: "立即申请",
+      tiers: [
+        { name: "青铜", price: "免费", features: ["访问学习材料", "品牌课程模板", "在线讲师门户", "每年最多50名学生"] },
+        { name: "白银", price: "¥17,000/年", features: ["青铜的一切", "联合品牌认证", "专属合作伙伴经理", "每年最多250名学生", "LMS集成支持"] },
+        { name: "黄金", price: "¥43,000/年", features: ["白银的一切", "现场讲师培训", "定制课程开发", "无限学生", "收入分成模式", "优先展示列表"] }
+      ]
+    },
+    trainings_free: {
+      badge: "免费访问",
+      title: "免费 openDstellar 培训",
+      subtitle: "免费开始您的 SAP 学习。我们的免费 openDstellar 资料库让每个人都能获取基础知识。",
+      cta: "访问免费课程",
+      modules: [
+        { title: "SAP 基础导航", desc: "熟悉 SAP GUI、Fiori 启动面板和核心导航模式。", duration: "2小时", icon: "🧭" },
+        { title: "ERP 简介", desc: "了解什么是 ERP、企业为何使用它以及 SAP 在企业格局中的定位。", duration: "3小时", icon: "🏢" },
+        { title: "SAP 数据模型基础", desc: "学习 SAP 中的客户端、公司代码、工厂和其他关键组织元素。", duration: "2.5小时", icon: "🗂️" },
+        { title: "SAP 财务基础", desc: "非技术性概述财务流程如何在 SAP S/4HANA 中运转。", duration: "3小时", icon: "💰" },
+        { title: "SAP 供应链", desc: "使用 SAP 模块介绍采购、库存 and 物流。", duration: "3.5小时", icon: "🔗" },
+        { title: "SAP 职业路径", desc: "探索不同的 SAP 职业轨道——从顾问到开发人员到架构师。", duration: "1小时", icon: "🚀" }
+      ],
+      videos_title: "免费视频课程",
+      videos: [
+        { title: "SAP 基础导航操作", duration: "2小时", instructor: "Sarah Jenkins, 资深 SAP 架构师" },
+        { title: "ERP 系统概念简介", duration: "3小时", instructor: "Marcus Vance, 首席执行官 & SAP 行业专家" },
+        { title: "SAP 数据模型底层逻辑", duration: "2.5小时", instructor: "Sanjay Mehta, SAP 架构部主管" },
+        { title: "SAP S/4HANA 财务模块入门", duration: "3小时", instructor: "Elena Rostova 博士, 首席技术官" },
+        { title: "SAP 供应链与物流运作", duration: "3.5小时", instructor: "Sanjay Mehta, SAP 架构部主管" },
+        { title: "SAP 咨询师职业发展与路径规划", duration: "1小时", instructor: "Marcus Vance, 首席执行官 & SAP 行业专家" }
+      ]
     }
   },
   de: {
@@ -859,6 +1102,87 @@ export const TRANSLATIONS = {
       title: "Sport-Sponsoring",
       subtitle: "Geschwindigkeit, Präzision und ingenieurstechnische Exzellenz.",
       desc: "Dstellar ist stolzer Sponsor der Formula E und weltweiter E-Sports-Ligen. Wir sind überzeugt, dass Höchstleistungen auf der Rennstrecke die Effizienz der von uns entworfenen Softwarearchitekturen widerspiegeln."
+    },
+    trainings_hub: {
+      badge: "DSTELLAR AKADEMIE",
+      title: "Lernzentrum",
+      subtitle: "Ihr Tor zur SAP-Kompetenz. Entdecken Sie kuratierte Lernpfade, entwickelt von zertifizierten SAP-Architekten.",
+      cta: "Jetzt Lernen",
+      pathways: [
+        { title: "SAP S/4HANA Grundlagen", desc: "Beherrschen Sie die Grundlagen der nächsten ERP-Generation von SAP mit praxisnahen Übungen.", level: "Intermediate", duration: "40 Std." },
+        { title: "FICO für Finanzführungskräfte", desc: "Tiefgehende Einblicke in Finanzbuchhaltung und Controlling — vom Hauptbuch bis zur Kostenstellenrechnung.", level: "Advanced", duration: "56 Std." },
+        { title: "SAP Fiori UX Design", desc: "Erstellen Sie intuitive Unternehmensanwendungen mit SAP Fiori-Prinzipien und SAPUI5-Komponenten.", level: "Intermediate", duration: "32 Std." },
+        { title: "ABAP Clean Code", desc: "Schreiben Sie modernen, wartbaren ABAP-Code nach Clean-Core-Prinzipien und Best Practices.", level: "Advanced", duration: "48 Std." },
+        { title: "Supply Chain Excellence", desc: "Optimieren Sie Ihre Lieferkette mit SAP MM, WM und EWM — von der Beschaffung bis zur Lagerausführung.", level: "Intermediate", duration: "36 Std." },
+        { title: "KI in SAP-Umgebungen", desc: "Nutzen Sie SAP Joule und integrierte KI-Fähigkeiten zur Optimierung Ihrer Unternehmensabläufe.", level: "Specialist", duration: "24 Std." }
+      ]
+    },
+    trainings_courses: {
+      badge: "ZERTIFIZIERTE SCHULUNG",
+      title: "Zertifizierte SAP-Kurse",
+      subtitle: "Branchenweit anerkannte Zertifizierungen, die Ihre SAP-Expertise bestätigen und Ihre Karriere beschleunigen.",
+      cta: "Jetzt Anmelden",
+      courses: [
+        { code: "SAP-FICO-001", title: "SAP Finanzbuchhaltung (FI)", desc: "Umfasst Hauptbuch, Kreditoren, Debitoren, Anlagenrechnung und Monatsabschluss.", level: "Professional", duration: "5 Tage" },
+        { code: "SAP-CO-002", title: "SAP Controlling (CO)", desc: "Kostenstellenrechnung, Profitcenterrechnung, Innenaufträge und Produktkostenplanung.", level: "Professional", duration: "4 Tage" },
+        { code: "SAP-SD-003", title: "SAP Vertrieb & Verteilung (SD)", desc: "Auftragsabwicklung, Preisfindung, Lieferung, Fakturierung und Kreditmanagement.", level: "Professional", duration: "5 Tage" },
+        { code: "SAP-MM-004", title: "SAP Materialwirtschaft (MM)", desc: "Beschaffungsprozess, Bestandsverwaltung, Rechnungsprüfung und Lieferantenverwaltung.", level: "Associate", duration: "4 Tage" },
+        { code: "SAP-S4H-005", title: "SAP S/4HANA Migration", desc: "Migrationsszenarien, Konvertierungsansätze, Systemlandschaft und Go-Live-Strategien.", level: "Expert", duration: "6 Tage" },
+        { code: "SAP-AI-006", title: "SAP KI & Joule Integration", desc: "Implementierung KI-gesteuerter Geschäftsprozesse mit SAP Business AI und Joule.", level: "Specialist", duration: "3 Tage" }
+      ]
+    },
+    trainings_prep: {
+      badge: "PRÜFUNGSVORBEREITUNG",
+      title: "Zertifizierungsvorbereitung",
+      subtitle: "Strukturierte Vorbereitungsprogramme, damit Sie SAP-Zertifizierungsprüfungen beim ersten Versuch bestehen.",
+      cta: "Vorbereitung Starten",
+      programs: [
+        { exam: "C_TS4FI_2023", title: "SAP Certified Associate – SAP S/4HANA Finanzbuchhaltung", topics: ["Hauptbuch", "Kreditoren & Debitoren", "Anlagenrechnung", "Bankenbuchhaltung"], passRate: "94%", duration: "3 Wochen" },
+        { exam: "C_TS4CO_2023", title: "SAP Certified Associate – SAP S/4HANA Management Accounting", topics: ["Kostenstellen", "Profitcenter", "Innenaufträge", "Produktkosten"], passRate: "91%", duration: "3 Wochen" },
+        { exam: "C_TS410_2022", title: "SAP Certified Associate – Geschäftsprozessintegration", topics: ["Procure-to-Pay", "Order-to-Cash", "Plan-to-Produce", "Hire-to-Retire"], passRate: "89%", duration: "4 Wochen" }
+      ],
+      questions: [
+        { q: "Welche der folgenden ist die ERP-Suite der nächsten Generation von SAP?", options: ["SAP ECC", "SAP S/4HANA", "SAP Business One", "SAP R/3"], correct: 1 },
+        { q: "Welche Tabelle ist in SAP S/4HANA Finance die einzige Quelle der Wahrheit für alle Buchhaltungsdaten?", options: ["BKPF", "BSEG", "ACDOCA", "COEP"], correct: 2 },
+        { q: "Was bedeutet 'Clean Core' in der modernen SAP-Architektur?", options: ["Löschen aller Datenbankprotokolle", "Ausführen der Datenbank nur on-premises", "Trennen von benutzerdefinierten Modifikationen vom Standardcode mithilfe von APIs und BTP", "Verwenden einer sauberen grafischen Benutzeroberfläche"], correct: 2 }
+      ],
+      question_label: "Frage",
+      timer_label: "Verbleibende Zeit",
+      score_label: "Ihr Testergebnis"
+    },
+    trainings_program: {
+      badge: "BILDUNGSPARTNERSCHAFT",
+      title: "Bildungspartner-Programm",
+      subtitle: "Werden Sie Partner der Dstellar Academy und bieten Sie erstklassige SAP-Schulungen an Ihrer Einrichtung an.",
+      cta: "Jetzt Bewerben",
+      tiers: [
+        { name: "Bronze", price: "Kostenlos", features: ["Zugang zu Lernmaterialien", "Gebrandete Kursvorlagen", "Online-Dozenten-Portal", "Bis zu 50 Teilnehmer/Jahr"] },
+        { name: "Silber", price: "2.200 €/Jahr", features: ["Alles aus Bronze", "Co-gebrandete Zertifizierungen", "Dedizierter Partnermanager", "Bis zu 250 Teilnehmer/Jahr", "LMS-Integration"] },
+        { name: "Gold", price: "5.500 €/Jahr", features: ["Alles aus Silber", "Dozentenschulung vor Ort", "Individuelle Lehrplanerstellung", "Unbegrenzte Teilnehmer", "Umsatzbeteiligungsmodell", "Premier-Listungseintrag"] }
+      ]
+    },
+    trainings_free: {
+      badge: "KOSTENLOSER ZUGANG",
+      title: "Kostenloses openDstellar-Training",
+      subtitle: "Starten Sie Ihr SAP-Lernen kostenlos. Unsere freie openDstellar-Bibliothek gewährt jedem Zugang zu Grundlagenwissen.",
+      cta: "Kostenlose Kurse Aufrufen",
+      modules: [
+        { title: "SAP-Grundnavigation", desc: "Lernen Sie das SAP GUI, den Fiori-Launchpad und grundlegende Navigationsmuster kennen.", duration: "2 Std.", icon: "🧭" },
+        { title: "Einführung in ERP", desc: "Verstehen Sie, was ERP bedeutet, warum Unternehmen es nutzen und wie SAP in die Unternehmenslandschaft passt.", duration: "3 Std.", icon: "🏢" },
+        { title: "SAP-Datenmodell-Grundlagen", desc: "Erlernen Sie Mandanten, Buchungskreise, Werke und andere wichtige Organisationselemente in SAP.", duration: "2,5 Std.", icon: "🗂️" },
+        { title: "Finanzgrundlagen in SAP", desc: "Ein nicht-technischer Überblick über Finanzprozesse in SAP S/4HANA.", duration: "3 Std.", icon: "💰" },
+        { title: "Supply Chain in SAP", desc: "Einführung in Einkauf, Lagerbestand und Logistik mit SAP-Modulen.", duration: "3,5 Std.", icon: "🔗" },
+        { title: "SAP-Karrierepfade", desc: "Erkunden Sie verschiedene SAP-Karrierewege — vom Berater über den Entwickler bis zum Architekten.", duration: "1 Std.", icon: "🚀" }
+      ],
+      videos_title: "Kostenlose Videovorträge",
+      videos: [
+        { title: "SAP-Grundnavigation", duration: "2 Std.", instructor: "Sarah Jenkins, Leitende SAP-Architektin" },
+        { title: "Einführung in ERP-Systeme", duration: "3 Std.", instructor: "Marcus Vance, CEO & SAP-Veteran" },
+        { title: "SAP-Datenmodell-Grundlagen", duration: "2,5 Std.", instructor: "Sanjay Mehta, Leiter der SAP-Architektur" },
+        { title: "Finanzgrundlagen in SAP S/4HANA", duration: "3 Std.", instructor: "Dr. Elena Rostova, CTO" },
+        { title: "Lieferkette & Logistik in SAP", duration: "3,5 Std.", instructor: "Sanjay Mehta, Leiter der SAP-Architektur" },
+        { title: "Karrierepfade in der SAP-Beratung", duration: "1 Std.", instructor: "Marcus Vance, CEO & SAP-Veteran" }
+      ]
     }
   },
   fr: {
@@ -1074,6 +1398,87 @@ export const TRANSLATIONS = {
       title: "Sponsorings Sportifs",
       subtitle: "Vitesse, précision et excellence technique.",
       desc: "Dstellar est un fier sponsor officiel de la Formula E et des ligues d'e-sports mondiales. Nous pensons que l'ingénierie de pointe en course automobile reflète la performance des architectures logicielles que nous concevons."
+    },
+    trainings_hub: {
+      badge: "ACADÉMIE DSTELLAR",
+      title: "Centre d'Apprentissage",
+      subtitle: "Votre porte d'entrée vers la maîtrise de SAP. Explorez des parcours d'apprentissage conçus par des architectes SAP certifiés.",
+      cta: "Commencer à Apprendre",
+      pathways: [
+        { title: "Fondamentaux SAP S/4HANA", desc: "Maîtrisez les fondamentaux de la plateforme ERP de nouvelle génération de SAP avec des exercices pratiques.", level: "Intermediate", duration: "40 h" },
+        { title: "FICO pour Dirigeants Financiers", desc: "Plongez dans les modules de Comptabilité Financière et Contrôle — du Grand Livre aux centres de coûts.", level: "Advanced", duration: "56 h" },
+        { title: "Conception UX SAP Fiori", desc: "Créez des applications d'entreprise intuitives avec les principes SAP Fiori et les composants SAPUI5.", level: "Intermediate", duration: "32 h" },
+        { title: "ABAP Code Propre", desc: "Rédigez un code ABAP moderne et maintenable en suivant les principes clean-core.", level: "Advanced", duration: "48 h" },
+        { title: "Excellence Supply Chain", desc: "Optimisez votre chaîne logistique avec SAP MM, WM et EWM — de l'approvisionnement à l'exécution en entrepôt.", level: "Intermediate", duration: "36 h" },
+        { title: "IA dans les Environnements SAP", desc: "Tirez parti de SAP Joule et des capacités IA intégrées pour optimiser vos flux de travail.", level: "Specialist", duration: "24 h" }
+      ]
+    },
+    trainings_courses: {
+      badge: "FORMATION CERTIFIÉE",
+      title: "Cours SAP Certifiés",
+      subtitle: "Des certifications reconnues par l'industrie qui valident votre expertise SAP et accélèrent votre carrière.",
+      cta: "S'inscrire Maintenant",
+      courses: [
+        { code: "SAP-FICO-001", title: "SAP Comptabilité Financière (FI)", desc: "Couvre le grand livre, les fournisseurs, les clients, la comptabilité des immobilisations et la clôture mensuelle.", level: "Professional", duration: "5 jours" },
+        { code: "SAP-CO-002", title: "SAP Contrôle de Gestion (CO)", desc: "Comptabilité des centres de coûts, des centres de profits, ordres internes et planification des coûts.", level: "Professional", duration: "4 jours" },
+        { code: "SAP-SD-003", title: "SAP Ventes & Distribution (SD)", desc: "Traitement des commandes, tarification, livraison, facturation et gestion du crédit.", level: "Professional", duration: "5 jours" },
+        { code: "SAP-MM-004", title: "SAP Gestion des Matériaux (MM)", desc: "Cycle d'achat, gestion des stocks, contrôle des factures et gestion des fournisseurs.", level: "Associate", duration: "4 jours" },
+        { code: "SAP-S4H-005", title: "Migration SAP S/4HANA", desc: "Scénarios de migration, approches de conversion, transformation du paysage système et stratégies de démarrage.", level: "Expert", duration: "6 jours" },
+        { code: "SAP-AI-006", title: "SAP IA & Intégration Joule", desc: "Implémentation de processus métier basés sur l'IA avec SAP Business AI et Joule.", level: "Specialist", duration: "3 jours" }
+      ]
+    },
+    trainings_prep: {
+      badge: "PRÉPARATION EXAMEN",
+      title: "Préparation aux Certifications",
+      subtitle: "Programmes de préparation structurés pour réussir les examens de certification SAP dès la première tentative.",
+      cta: "Démarrer la Préparation",
+      programs: [
+        { exam: "C_TS4FI_2023", title: "SAP Certified Associate – SAP S/4HANA Comptabilité Financière", topics: ["Grand Livre", "Fournisseurs & Clients", "Comptabilité Immobilisations", "Comptabilité Bancaire"], passRate: "94%", duration: "3 semaines" },
+        { exam: "C_TS4CO_2023", title: "SAP Certified Associate – SAP S/4HANA Contrôle de Gestion", topics: ["Centres de Coûts", "Centres de Profits", "Ordres Internes", "Coûts Produits"], passRate: "91%", duration: "3 semaines" },
+        { exam: "C_TS410_2022", title: "SAP Certified Associate – Intégration Processus Métier", topics: ["Procure-to-Pay", "Order-to-Cash", "Plan-to-Produce", "Hire-to-Retire"], passRate: "89%", duration: "4 semaines" }
+      ],
+      questions: [
+        { q: "Lequel des éléments suivants est la suite ERP de nouvelle génération de SAP?", options: ["SAP ECC", "SAP S/4HANA", "SAP Business One", "SAP R/3"], correct: 1 },
+        { q: "Dans SAP S/4HANA Finance, quelle table est la source unique de vérité pour toutes les données comptables?", options: ["BKPF", "BSEG", "ACDOCA", "COEP"], correct: 2 },
+        { q: "Que signifie 'Clean Core' dans l'architecture SAP moderne?", options: ["Supprimer tous les journaux de base de données", "Exécuter la base de données uniquement sur site", "Séparer les modifications personnalisées du code standard à l'aide d'APIs et de BTP", "Utiliser une interface graphique épurée"], correct: 2 }
+      ],
+      question_label: "Question",
+      timer_label: "Temps restant",
+      score_label: "Votre score blanc"
+    },
+    trainings_program: {
+      badge: "PARTENARIAT ÉDUCATIF",
+      title: "Programme Partenaire Éducatif",
+      subtitle: "Devenez partenaire de l'Académie Dstellar pour délivrer des formations SAP de classe mondiale dans votre établissement.",
+      cta: "Postuler Maintenant",
+      tiers: [
+        { name: "Bronze", price: "Gratuit", features: ["Accès aux matériaux pédagogiques", "Modèles de cours branding", "Portail formateurs en ligne", "Jusqu'à 50 étudiants/an"] },
+        { name: "Argent", price: "2 200 €/an", features: ["Tout du Bronze", "Certifications co-brandées", "Responsable partenaire dédié", "Jusqu'à 250 étudiants/an", "Intégration LMS"] },
+        { name: "Or", price: "5 500 €/an", features: ["Tout de l'Argent", "Formation formateurs sur site", "Développement curriculum personnalisé", "Étudiants illimités", "Modèle de partage des revenus", "Listing premium"] }
+      ]
+    },
+    trainings_free: {
+      badge: "ACCÈS GRATUIT",
+      title: "Formation Gratuite openDstellar",
+      subtitle: "Commencez votre apprentissage SAP sans frais. Notre bibliothèque gratuite openDstellar donne à chacun accès aux connaissances fondamentales.",
+      cta: "Accéder aux Cours Gratuits",
+      modules: [
+        { title: "Navigation de Base SAP", desc: "Familiarisez-vous avec le SAP GUI, le Fiori launchpad et les schémas de navigation principaux.", duration: "2 h", icon: "🧭" },
+        { title: "Introduction à l'ERP", desc: "Comprenez ce qu'est l'ERP, pourquoi les entreprises l'utilisent et comment SAP s'intègre dans l'écosystème d'entreprise.", duration: "3 h", icon: "🏢" },
+        { title: "Fondamentaux du Modèle de Données SAP", desc: "Apprenez les mandants, sociétés, usines et autres éléments organisationnels clés dans SAP.", duration: "2,5 h", icon: "🗂️" },
+        { title: "Bases Financières dans SAP", desc: "Un aperçu non technique du fonctionnement des processus financiers dans SAP S/4HANA.", duration: "3 h", icon: "💰" },
+        { title: "Supply Chain dans SAP", desc: "Introduction aux achats, stocks et logistique à l'aide des modules SAP.", duration: "3,5 h", icon: "🔗" },
+        { title: "Parcours de Carrière SAP", desc: "Explorez les différentes carrières SAP — du consultant au développeur en passant par l'architecte.", duration: "1 h", icon: "🚀" }
+      ],
+      videos_title: "Cours Vidéo Gratuits",
+      videos: [
+        { title: "Bases de la Navigation SAP", duration: "2 h", instructor: "Sarah Jenkins, Architecte SAP Principale" },
+        { title: "Introduction aux Systèmes ERP", duration: "3 h", instructor: "Marcus Vance, CEO & Vétéran SAP" },
+        { title: "Fondamentaux du Modèle de Données SAP", duration: "2,5 h", instructor: "Sanjay Mehta, Directeur de l'Architecture SAP" },
+        { title: "Bases de la Finance dans SAP S/4HANA", duration: "3 h", instructor: "Dr Elena Rostova, CTO" },
+        { title: "Chaîne Logistique & Flux dans SAP", duration: "3,5 h", instructor: "Sanjay Mehta, Directeur de l'Architecture SAP" },
+        { title: "Parcours de Carrière dans le Conseil SAP", duration: "1 h", instructor: "Marcus Vance, CEO & Vétéran SAP" }
+      ]
     }
   },
   ja: {
@@ -1289,6 +1694,91 @@ export const TRANSLATIONS = {
       title: "スポーツ協賛",
       subtitle: "スピード、精密さ、工程の融合。",
       desc: "Dstellarは、世界各地のFormula Eおよびeスポーツリーグの公式スポンサーです。サーキットにおける極限の精密機械設計は、私たちがエンタープライズ顧客のために設計する超高性能ソフトウェアアーキテクチャに通じるものがあると確信しています。"
+    },
+    trainings_hub: {
+      badge: "DSTELLAR アカデミー",
+      title: "ラーニングハブ",
+      subtitle: "SAPマスターへのゲートウェイ。認定SAPアーキテクトと業界スペシャリストによって設計された、厳選された学習パスウェイを探索してください。",
+      cta: "学習を開始する",
+      pathways: [
+        { title: "SAP S/4HANA 基礎", desc: "実践演習と実例を用いて、SAPの次世代ERPプラットフォームの基礎をマスターします。", level: "Intermediate", duration: "40時間" },
+        { title: "財務リーダーのためのFICO", desc: "総勘定元帳からコストセンター会計まで、財務会計および管理会計モジュールを深く学びます。", level: "Advanced", duration: "56時間" },
+        { title: "SAP Fiori UX デザイン", desc: "SAP Fioriの原則とSAPUI5コンポーネントを使用して、直感的な企業向けアプリを構築します。", level: "Intermediate", duration: "32時間" },
+        { title: "ABAP クリーンコード", desc: "クリーンコアの原則とベストプラクティスに従って、最新で保守可能なABAPコードを作成します。", level: "Advanced", duration: "48時間" },
+        { title: "サプライチェーン・エクセレンス", desc: "調達から倉庫実行まで、SAP MM、WM、およびEWMを使用してサプライチェーンを最適化します。", level: "Intermediate", duration: "36時間" },
+        { title: "SAP環境におけるAI", desc: "SAP Jouleと組み込みAI機能を活用して、エンタープライズワークフローを強化します。", level: "Specialist", duration: "24時間" }
+      ]
+    },
+    trainings_courses: {
+      badge: "認定トレーニング",
+      title: "公式SAP認定コース",
+      subtitle: "SAPの専門知識を証明し、キャリアの成長を加速させる、業界で認められた認定資格です。",
+      cta: "今すぐ登録",
+      courses: [
+        { code: "SAP-FICO-001", title: "SAP 財務会計 (FI)", desc: "総勘定元帳、買掛金管理、売掛金管理、固定資産会計、および月末締め処理をカバーします。", level: "Professional", duration: "5日間" },
+        { code: "SAP-CO-002", title: "SAP 管理会計 (CO)", desc: "コストセンター会計、利益センター会計、内部注文、および製品原価計画を学びます。", level: "Professional", duration: "4日間" },
+        { code: "SAP-SD-003", title: "SAP 販売管理 (SD)", desc: "受注処理、価格設定、配送、請求、および与信管理を学びます。", level: "Professional", duration: "5日間" },
+        { code: "SAP-MM-004", title: "SAP 在庫購買管理 (MM)", desc: "調達サイクル、在庫管理、請求書照合、および仕入先管理を学びます。", level: "Associate", duration: "4日間" },
+        { code: "SAP-S4H-005", title: "SAP S/4HANA 移行", desc: "移行シナリオ、コンバージョンアプローチ、システムランドスケープ変換、および本番稼働移行戦略を学びます。", level: "Expert", duration: "6日間" },
+        { code: "SAP-AI-006", title: "SAP AI & Joule 統合", desc: "SAP Business AIとJouleコパイロット機能を使用して、AI主導のビジネスプロセスを実装します。", level: "Specialist", duration: "3日間" }
+      ]
+    },
+    trainings_prep: {
+      badge: "試験対策",
+      title: "Dstellar 試験合格支援",
+      subtitle: "SAP認定試験に一発合格するための、構造化された試験対策プログラムです。",
+      cta: "対策を開始",
+      programs: [
+        { exam: "C_TS4FI_2023", title: "SAP 認定アソシエイト – SAP S/4HANA Financial Accounting", topics: ["総勘定元帳", "買掛金・売掛金", "固定資産会計", "銀行会計"], passRate: "94%", duration: "3週間" },
+        { exam: "C_TS4CO_2023", title: "SAP 認定アソシエイト – SAP S/4HANA Management Accounting", topics: ["コストセンター", "利益センター", "内部注文", "製品原価計算"], passRate: "91%", duration: "3週間" },
+        { exam: "C_TS410_2022", title: "SAP 認定アソシエイト – ビジネスプロセス統合", topics: ["Procure-to-Pay", "Order-to-Cash", "Plan-to-Produce", "Hire-to-Retire"], passRate: "89%", duration: "4週間" }
+      ],
+      questions: [
+        { q: "SAPの次世代ERPスイートは次のうちどれですか？", options: ["SAP ECC", "SAP S/4HANA", "SAP Business One", "SAP R/3"], correct: 1 },
+        { q: "SAP S/4HANA Financeにおいて、すべての会計データの単一のデータソース（Single Source of Truth）となるテーブルはどれですか？", options: ["BKPF", "BSEG", "ACDOCA", "COEP"], correct: 2 },
+        { q: "現代のSAPアーキテクチャにおいて「クリーンコア（Clean Core）」とは何を指しますか？", options: ["すべてのデータベースログを削除すること", "データベースをオンプレミスのみで実行すること", "APIやBTPを使用して、カスタムの修正を標準コードから分離して維持すること", "クリーンなグラフィックインターフェースを使用すること"], correct: 2 }
+      ],
+      question_label: "質問",
+      timer_label: "残り時間",
+      score_label: "模擬試験スコア"
+    },
+    trainings_program: {
+      badge: "教育パートナーシップ",
+      title: "教育機関パートナープログラム",
+      subtitle: "Dstellarアカデミーと提携して、貴校や社内研修施設で世界クラスのSAPトレーニングを提供します。",
+      cta: "今すぐ申請",
+      tiers: [
+        { name: "ブロンズ", price: "無料", features: ["学習教材へのアクセス", "ブランド付きコースウェアテンプレート", "オンラインインストラクターポータル", "年間最大50名まで"] },
+        { name: "シルバー", price: "360,000円/年", features: ["ブロンズの全機能", "共同ブランド認定証", "専任のパートナーマネージャー", "年間最大250名まで", "LMS統合のサポート"] },
+        { name: "ゴールド", price: "900,000円/年", features: ["シルバーの全機能", "現地での講師トレーニング", "カスタムカリキュラム開発", "学生数制限なし", "収益分配モデル", "プレミアムプレイスメント掲載"] }
+      ],
+      form_title: "パートナーシップ申請",
+      form_name: "機関・企業名",
+      form_email: "アカデミックメールアドレス",
+      form_org: "機関の種類"
+    },
+    trainings_free: {
+      badge: "無料アクセス",
+      title: "無料 openDstellarトレーニング",
+      subtitle: "費用をかけずにSAP学習を始めましょう。無料のopenDstellarライブラリにより、どなたでも基礎知識にアクセスできます。",
+      cta: "無料コースにアクセス",
+      modules: [
+        { title: "SAP基本ナビゲーション", desc: "SAP GUI、Fiori起動パッド、および主要なナビゲーションパターンを体験します。", duration: "2時間", icon: "🧭" },
+        { title: "ERP入門", desc: "ERPの意味、企業がそれを使用する理由、およびエンタープライズ環境におけるSAPの位置づけを理解します。", duration: "3時間", icon: "🏢" },
+        { title: "SAPデータモデルの基礎", desc: "クライアント、会社コード、プラント、およびSAPのその他の主要な組織要素について学びます。", duration: "2.5時間", icon: "🗂️" },
+        { title: "SAPの財務基礎", desc: "SAP S/4HANAにおける財務プロセスの流れに関する非技術的な概要を学びます。", duration: "3時間", icon: "💰" },
+        { title: "SAPのサプライチェーン", desc: "SAPモジュールを使用した調達、在庫、および物流の概要を学びます。", duration: "3.5時間", icon: "🔗" },
+        { title: "SAPキャリアパスウェイ", desc: "コンサルタントから開発者、アーキテクトまで、さまざまなSAPキャリアトラックを探索します。", duration: "1時間", icon: "🚀" }
+      ],
+      videos_title: "無料ビデオ講義",
+      videos: [
+        { title: "SAP基本ナビゲーション", duration: "2時間", instructor: "Sarah Jenkins (リードSAPアーキテクト)" },
+        { title: "ERPシステム入門", duration: "3時間", instructor: "Marcus Vance (CEO・SAPベテラン)" },
+        { title: "SAPデータモデルの基礎", duration: "2.5時間", instructor: "Sanjay Mehta (SAPアーテクチャ責任者)" },
+        { title: "SAP S/4HANAにおける財務基礎", duration: "3時間", instructor: "Elena Rostova博士 (CTO)" },
+        { title: "SAPにおけるサプライチェーンと物流", duration: "3.5時間", instructor: "Sanjay Mehta (SAPアーキテクチャ責任者)" },
+        { title: "SAPコンサルタントのキャリアパス", duration: "1時間", instructor: "Marcus Vance (CEO・SAPベテラン)" }
+      ]
     }
   }
 };
