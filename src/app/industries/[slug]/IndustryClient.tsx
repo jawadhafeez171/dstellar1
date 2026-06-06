@@ -364,6 +364,201 @@ const VIBRANT_GRADIENTS: Record<string, string> = {
   'construction': 'linear-gradient(135deg, #ffffff 0%, #fbbf24 50%, #d97706 100%)'
 };
 
+const CHALLENGES_LOCALIZATION: Record<string, {
+  title: string;
+  subtitle: string;
+  items: Array<{ title: string; desc: string }>;
+}> = {
+  en: {
+    title: "Key Industry Challenges We Solve",
+    subtitle: "Overcoming legacy complexities, operational bottlenecks, and compliance overhead.",
+    items: [
+      { title: "Legacy System Technical Debt", desc: "Monolithic ERP systems filled with custom modifications make upgrades expensive. We help separate the core to keep upgrades clean." },
+      { title: "Siloed Supply Chain Data", desc: "Disconnected logistics, warehouse, and supplier operations limit visibility. We link edge sensors directly to core financials." },
+      { title: "Evolving Global Compliance", desc: "Navigating international regulations, audits, and carbon reporting. We automate compliance tracking directly in S/4HANA." }
+    ]
+  },
+  es: {
+    title: "Desafíos Clave de la Industria que Resolvemos",
+    subtitle: "Superando complejidades heredadas, cuellos de botella operativos y costos de cumplimiento.",
+    items: [
+      { title: "Deuda Técnica de Sistemas Heredados", desc: "Los sistemas ERP monolíticos con modificaciones personalizadas encarecen las actualizaciones. Ayudamos a mantener limpio el núcleo." },
+      { title: "Datos de Cadena de Suministro Aislados", desc: "Las operaciones desconectadas de logística y proveedores limitan la visibilidad. Vinculamos sensores de borde con finanzas." },
+      { title: "Cumplimiento Global en Evolución", desc: "Navegar por regulaciones internacionales e informes de carbono. Automatizamos el cumplimiento dentro de S/4HANA." }
+    ]
+  },
+  zh: {
+    title: "我们解决的核心行业挑战",
+    subtitle: "克服历史系统复杂度、运营瓶颈和合规审计成本。",
+    items: [
+      { title: "老旧系统技术债", desc: "充满定制化修改的单体 ERP 系统使升级成本高昂。我们帮助重构干净的核心系统。" },
+      { title: "孤立的供应链数据", desc: "脱节的物流、仓储与供应商协同限制了业务可见性。我们将边缘传感器直接连接到财务核心。" },
+      { title: "复杂的全球合规要求", desc: "应对多国监管、合规审计及碳排放报告。我们在 S/4HANA 中自动执行合规性跟踪。" }
+    ]
+  },
+  de: {
+    title: "Herausforderungen der Branche, die wir lösen",
+    subtitle: "Überwindung von Altlasten, operativen Engpässen und Compliance-Kosten.",
+    items: [
+      { title: "Technische Schulden in Altsystemen", desc: "Monolithische ERP-Systeme mit benutzerdefinierten Änderungen erschweren Upgrades. Wir helfen, den Kern sauber zu halten." },
+      { title: "Siloartige Lieferkettendaten", desc: "Getrennte Logistik- und Lieferantenprozesse schränken die Transparenz ein. Wir verbinden IoT-Sensoren direkt mit den Finanzdaten." },
+      { title: "Dynamische globale Compliance", desc: "Einhaltung internationaler Vorschriften und CO2-Berichterstattung. Wir automatisieren die Compliance-Überwachung in S/4HANA." }
+    ]
+  },
+  fr: {
+    title: "Défis Majeurs du Secteur que Nous Résolvons",
+    subtitle: "Surmonter les complexités des systèmes hérités, les goulots d'étranglement et la conformité.",
+    items: [
+      { title: "Dette Technique des Systèmes Hérités", desc: "Les systèmes ERP monolithiques avec de multiples modifications rendent les mises à niveau coûteuses. Nous aidons à isoler le noyau propre." },
+      { title: "Données Logistiques Cloisonnées", desc: "Le manque d'intégration entre logistique, entrepôt et fournisseur limite la visibilité. Nous connectons les capteurs au cœur financier." },
+      { title: "Conformité Globale Évolutive", desc: "Naviguer dans les réglementations internationales et bilans carbone. Nous automatisons les rapports réglementaires dans S/4HANA." }
+    ]
+  },
+  ja: {
+    title: "解決する主な業界の課題",
+    subtitle: "レガシーシステム複雑性、業務ボトルネック、コンプライアンス管理負担の解消。",
+    items: [
+      { title: "レガシーシステムの技術的負債", desc: "アドオンだらけのモノリシックなERPはバージョンアップコストを高騰させます。コアをクリーン化しアップグレードを容易にします。" },
+      { title: "サイロ化されたサプライチェーン", desc: "分断された物流、倉庫、サプライヤー連携が可視性を制限します。エッジセンサーとコア財務を直結させます。" },
+      { title: "進化するグローバル法規制合規", desc: "国際的な法規制、監査、環境炭素報告への対応。S/4HANA上でコンプライアンス追跡を自動化します。" }
+    ]
+  }
+};
+
+const ROADMAP_LOCALIZATION: Record<string, {
+  title: string;
+  subtitle: string;
+  steps: Array<{ phase: string; title: string; desc: string }>;
+}> = {
+  en: {
+    title: "Transformation Roadmap",
+    subtitle: "Our proven step-by-step methodology to migrate, extend, and innovate.",
+    steps: [
+      { phase: "Phase 1", title: "Discovery & Core Assessment", desc: "We perform an extensive audit of your custom code footprint, database sizing, and S/4HANA readiness checklist." },
+      { phase: "Phase 2", title: "Clean Core Sandbox & BTP Extension", desc: "We move custom integrations side-by-side onto SAP Business Technology Platform (BTP), keeping your core ERP central clean." },
+      { phase: "Phase 3", title: "Production Orchestration & Cutover", desc: "Automated regression testing, final dry-run simulations, and seamless deployment with zero business disruption." }
+    ]
+  },
+  es: {
+    title: "Ruta de Transformación",
+    subtitle: "Nuestra metodología probada paso a paso para migrar, extender e innovar.",
+    steps: [
+      { phase: "Fase 1", title: "Descubrimiento y Evaluación del Núcleo", desc: "Realizamos una auditoría exhaustiva del código personalizado, tamaño de base de datos y preparación para S/4HANA." },
+      { phase: "Fase 2", title: "Extensión BTP y Núcleo Limpio", desc: "Movemos las integraciones personalizadas a SAP Business Technology Platform (BTP), manteniendo limpio el ERP central." },
+      { phase: "Fase 3", title: "Orquestación de Producción y Puesta en Marcha", desc: "Pruebas de regresión automatizadas, simulaciones de lanzamiento y despliegue sin interrupciones del negocio." }
+    ]
+  },
+  zh: {
+    title: "数字化转型路线图",
+    subtitle: "我们经过验证的迁移、扩展与创新三步法方法论。",
+    steps: [
+      { phase: "第一阶段", title: "评估与发现", desc: "我们对您的自定义代码、数据库大小进行全面审计，并输出 S/4HANA 准备就绪度检查清单。" },
+      { phase: "第二阶段", title: "干净核心与 BTP 扩展", desc: "我们将自定义的集成应用移至 SAP 业务技术平台 (BTP) 侧，保持核心 ERP 系统的「干净核心」。" },
+      { phase: "第三阶段", title: "生产割接与上线部署", desc: "自动化回归测试、上线演练模拟以及零业务中断的平稳生产系统切换上线。" }
+    ]
+  },
+  de: {
+    title: "Transformations-Roadmap",
+    subtitle: "Unsere bewährte Schritt-für-Schritt-Methodik zur Migration, Erweiterung und Innovation.",
+    steps: [
+      { phase: "Phase 1", title: "Analyse & Core-Bewertung", desc: "Wir führen ein detailliertes Audit Ihrer benutzerdefinierten Codes und Ihrer S/4HANA-Bereitschaft durch." },
+      { phase: "Phase 2", title: "Clean Core Sandbox & BTP-Erweiterung", desc: "Wir verlagern kundenspezifische Integrationen auf die SAP Business Technology Platform (BTP), um das Kern-ERP sauber zu halten." },
+      { phase: "Phase 3", title: "Produktions-Orchestrierung & Cutover", desc: "Automatisierte Regressionstests, Go-Live-Simulationen und nahtlose Bereitstellung ohne Betriebsunterbrechung." }
+    ]
+  },
+  fr: {
+    title: "Feuille de Route de Transformation",
+    subtitle: "Notre méthodologie éprouvée étape par étape pour migrer, étendre et innover.",
+    steps: [
+      { phase: "Phase 1", title: "Cadrage & Audit du Core", desc: "Nous réalisons un audit approfondi de vos codes personnalisés, de la taille des bases de données et de l'éligibilité S/4HANA." },
+      { phase: "Phase 2", title: "Sandbox Clean Core & Extensions BTP", desc: "Nous déplaçons les développements spécifiques sur SAP BTP pour conserver un ERP propre et standard." },
+      { phase: "Phase 3", title: "Orchestration & Lancement de la Production", desc: "Tests de régression automatisés, simulations de bascule à blanc et déploiement sans interruption d'activité." }
+    ]
+  },
+  ja: {
+    title: "トランスフォーメーション・ロードマップ",
+    subtitle: "移行、拡張、イノベーションを推進する実証済みのステップバイステップ手法。",
+    steps: [
+      { phase: "フェーズ 1", title: "現状分析とコアアセスメント", desc: "カスタムコード의 監査、データベース容量の分析、S/4HANA移行準備状態の評価を行います。" },
+      { phase: "フェーズ 2", title: "クリーンコア化とBTP拡張", desc: "アドオン開発をSAP Business Technology Platform (BTP) 上へサイドバイサイドで移行し、コアERPを標準状態に保ちます。" },
+      { phase: "フェーズ 3", title: "本番オーケストレーションと移行切替", desc: "自動回帰テスト、本番移行の事前リハーサル、業務停止ゼロでのスムーズな稼働開始を実現します。" }
+    ]
+  }
+};
+
+const ECOSYSTEM_LOCALIZATION: Record<string, {
+  title: string;
+  subtitle: string;
+  items: Array<{ name: string; category: string; desc: string }>;
+}> = {
+  en: {
+    title: "Technology Ecosystem Stack",
+    subtitle: "We leverage industry-leading platforms and tools to drive robust architectures.",
+    items: [
+      { name: "SAP S/4HANA Cloud", category: "Core ERP", desc: "Clean core financial and logistics ledger." },
+      { name: "SAP BTP", category: "Platform & Extensions", desc: "Side-by-side app development and API integration." },
+      { name: "AWS / Azure / GCP", category: "Hyperscalers", desc: "Highly scalable cloud compute infrastructure." },
+      { name: "Framer Motion", category: "Frontend Animation", desc: "Dynamic, smooth fluid micro-animations." },
+      { name: "TypeScript & Next.js", category: "Application Stack", desc: "Statically built type-safe secure user interfaces." }
+    ]
+  },
+  es: {
+    title: "Pila de Ecosistema Tecnológico",
+    subtitle: "Aprovechamos plataformas y herramientas líderes para impulsar arquitecturas robustas.",
+    items: [
+      { name: "SAP S/4HANA Cloud", category: "ERP Central", desc: "Libro mayor financiero y logístico de núcleo limpio." },
+      { name: "SAP BTP", category: "Plataforma y Extensiones", desc: "Desarrollo de aplicaciones y gestión de APIs." },
+      { name: "AWS / Azure / GCP", category: "Nubes a Escala", desc: "Infraestructura informática de nube escalable." },
+      { name: "Framer Motion", category: "Animación de Interfaz", desc: "Microanimaciones fluidas, dinámicas y suaves." },
+      { name: "TypeScript & Next.js", category: "Pila de Aplicación", desc: "Interfaces de usuario estáticas y seguras." }
+    ]
+  },
+  zh: {
+    title: "技术生态技术栈",
+    subtitle: "我们利用行业领先的平台与工具来驱动高健壮度的企业级架构。",
+    items: [
+      { name: "SAP S/4HANA Cloud", category: "核心 ERP", desc: "干净核心财务与业务主数据账套。" },
+      { name: "SAP BTP", category: "平台与扩展能力", desc: "Side-by-side 应用开发及 API 中台集成。" },
+      { name: "AWS / Azure / GCP", category: "主流云基础架构", desc: "高弹性、高可扩展的云主机与网络设施。" },
+      { name: "Framer Motion", category: "前端动画", desc: "动态、流畅的微动效交互体验。" },
+      { name: "TypeScript & Next.js", category: "应用技术栈", desc: "静态编译、类型安全且高安全性的用户界面。" }
+    ]
+  },
+  de: {
+    title: "Technologie-Ökosystem",
+    subtitle: "Wir nutzen führende Plattformen für robuste Unternehmensarchitekturen.",
+    items: [
+      { name: "SAP S/4HANA Cloud", category: "Kern-ERP", desc: "Sauberer Kern für Finanz- und Logistikbuchhaltung." },
+      { name: "SAP BTP", category: "Plattform & Integration", desc: "Side-by-side-App-Entwicklung und API-Management." },
+      { name: "AWS / Azure / GCP", category: "Infrastruktur", desc: "Skalierbare Cloud-Compute-Infrastruktur." },
+      { name: "Framer Motion", category: "Frontend-Animation", desc: "Flüssige, dynamische Mikroanimationen." },
+      { name: "TypeScript & Next.js", category: "Anwendungs-Stack", desc: "Statisch generierte, typsichere Benutzeroberflächen." }
+    ]
+  },
+  fr: {
+    title: "Écosystème Technologique",
+    subtitle: "Nous exploitons les meilleures plateformes pour propulser des architectures robustes.",
+    items: [
+      { name: "SAP S/4HANA Cloud", category: "ERP Central", desc: "Comptabilité financière et logistique Clean Core." },
+      { name: "SAP BTP", category: "Plateforme & Extensions", desc: "Développement d'applications et orchestrateur d'API." },
+      { name: "AWS / Azure / GCP", category: "Hébergement Cloud", desc: "Infrastructure de calcul cloud hautement évolutive." },
+      { name: "Framer Motion", category: "Animations Frontend", desc: "Micro-animations fluides, dynamiques et réactives." },
+      { name: "TypeScript & Next.js", category: "Socle Technique", desc: "Interfaces utilisateur sécurisées et typées." }
+    ]
+  },
+  ja: {
+    title: "テクノロジーエコシステムスタック",
+    subtitle: "堅牢なアーキテクチャを実現するため、業界トップクラスのプラットフォームを採用しています。",
+    items: [
+      { name: "SAP S/4HANA Cloud", category: "コア ERP", desc: "クリーンコア化された財務・物流統合台帳。" },
+      { name: "SAP BTP", category: "拡張開発プラットフォーム", desc: "アドオン開発およびAPI統合コントロール。" },
+      { name: "AWS / Azure / GCP", category: "クラウド基盤", desc: "高度にスケール可能なクラウドコンピューティングインフラ。" },
+      { name: "Framer Motion", category: "フロントエンド演出", desc: "スムーズで美しい、流動的なマイクロアニメーション効果。" },
+      { name: "TypeScript & Next.js", category: "アプリケーション構成", desc: "静的ビルドによる、型安全で高セキュリティなフロント画面。" }
+    ]
+  }
+};
+
 export default function IndustryClient({ slug }: { slug: string }) {
   const { language } = useLanguage();
   const router = useRouter();
@@ -379,6 +574,9 @@ export default function IndustryClient({ slug }: { slug: string }) {
   const langKey = INDUSTRY_TRANSLATIONS[language] ? language : 'en';
   const data: IndustryDetail = INDUSTRY_TRANSLATIONS[langKey][slug];
   const gradient = data ? (VIBRANT_GRADIENTS[slug] || data.gradientClass) : '';
+  const chalData = CHALLENGES_LOCALIZATION[langKey] || CHALLENGES_LOCALIZATION['en'];
+  const roadmapData = ROADMAP_LOCALIZATION[langKey] || ROADMAP_LOCALIZATION['en'];
+  const ecoData = ECOSYSTEM_LOCALIZATION[langKey] || ECOSYSTEM_LOCALIZATION['en'];
 
   useEffect(() => {
     if (data) {
@@ -535,6 +733,36 @@ export default function IndustryClient({ slug }: { slug: string }) {
           </div>
         </section>
 
+        {/* KEY CHALLENGES SECTION */}
+        <section className="ind-challenges-section">
+          <div className="ind-inner">
+            <h2 className="ind-section-heading">{chalData.title}</h2>
+            <p className="ind-section-subtitle" style={{ color: 'rgba(255,255,255,0.6)', marginTop: '-20px', marginBottom: '36px', maxWidth: '600px', fontSize: '1.02rem', lineHeight: '1.5' }}>
+              {chalData.subtitle}
+            </p>
+            <div className="ind-challenge-grid">
+              {chalData.items.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  className="ind-challenge-card"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: idx * 0.1 }}
+                  whileHover={{ borderColor: `${data.themeColor}50`, boxShadow: `0 8px 30px ${data.themeColor}10` }}
+                >
+                  <div className="ind-challenge-icon-tag" style={{ color: data.themeColor, fontSize: '0.75rem', fontWeight: '800', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '16px' }}>
+                    0{idx + 1} / Problem
+                  </div>
+                  <h3 className="ind-challenge-title">{item.title}</h3>
+                  <p className="ind-challenge-desc">{item.desc}</p>
+                  <div className="ind-challenge-decor-line" style={{ background: `linear-gradient(90deg, ${data.themeColor}, transparent)` }} />
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* CORE SOLUTIONS SECTION */}
         <section className="ind-solutions-section" id="solutions-grid-section">
           <div className="ind-inner">
@@ -581,6 +809,36 @@ export default function IndustryClient({ slug }: { slug: string }) {
           </div>
         </section>
 
+        {/* ROADMAP SECTION */}
+        <section className="ind-roadmap-section">
+          <div className="ind-inner">
+            <h2 className="ind-section-heading" style={{ textAlign: 'center' }}>{roadmapData.title}</h2>
+            <p className="ind-section-subtitle" style={{ color: 'rgba(255,255,255,0.6)', marginTop: '-20px', marginBottom: '48px', textAlign: 'center', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', fontSize: '1.02rem', lineHeight: '1.5' }}>
+              {roadmapData.subtitle}
+            </p>
+            <div className="ind-roadmap-timeline">
+              {roadmapData.steps.map((step, idx) => (
+                <motion.div
+                  key={idx}
+                  className="ind-roadmap-step"
+                  initial={{ opacity: 0, x: idx % 2 === 0 ? -30 : 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: idx * 0.15 }}
+                >
+                  <div className="ind-roadmap-dot" style={{ color: data.themeColor, borderColor: `${data.themeColor}60`, background: `radial-gradient(circle, ${data.themeColor}20 0%, #07051d 100%)`, boxShadow: `0 0 15px ${data.themeColor}30` }}>
+                    {step.phase}
+                  </div>
+                  <div className="ind-roadmap-content">
+                    <h3 className="ind-roadmap-step-title">{step.title}</h3>
+                    <p className="ind-roadmap-step-desc">{step.desc}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* CASE STUDY PLAYBOOK CARD */}
         <section className="ind-playbook-section">
           <div className="ind-inner">
@@ -602,6 +860,33 @@ export default function IndustryClient({ slug }: { slug: string }) {
                 </div>
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* TECHNOLOGY ECOSYSTEM SECTION */}
+        <section className="ind-ecosystem-section">
+          <div className="ind-inner">
+            <h2 className="ind-section-heading" style={{ textAlign: 'center' }}>{ecoData.title}</h2>
+            <p className="ind-section-subtitle" style={{ color: 'rgba(255,255,255,0.6)', marginTop: '-20px', marginBottom: '48px', textAlign: 'center', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', fontSize: '1.02rem', lineHeight: '1.5' }}>
+              {ecoData.subtitle}
+            </p>
+            <div className="ind-ecosystem-grid">
+              {ecoData.items.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  className="ind-ecosystem-card"
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: idx * 0.08 }}
+                  whileHover={{ borderColor: `${data.themeColor}40`, y: -4, boxShadow: `0 8px 25px ${data.themeColor}08` }}
+                >
+                  <span className="ind-ecosystem-cat" style={{ color: data.themeColor }}>{item.category}</span>
+                  <h3 className="ind-ecosystem-name">{item.name}</h3>
+                  <p className="ind-ecosystem-desc">{item.desc}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -1276,8 +1561,209 @@ export default function IndustryClient({ slug }: { slug: string }) {
           to { transform: rotate(360deg); }
         }
 
+        /* Challenges Section */
+        .ind-challenges-section {
+          padding-top: 50px;
+          padding-bottom: 60px;
+        }
+
+        .ind-challenge-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 24px;
+        }
+
+        .ind-challenge-card {
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.06);
+          border-radius: 20px;
+          padding: 32px 30px;
+          transition: all 0.3s ease;
+          position: relative;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .ind-challenge-card:hover {
+          background: rgba(255, 255, 255, 0.04);
+          transform: translateY(-4px);
+        }
+
+        .ind-challenge-title {
+          font-size: 1.15rem;
+          font-weight: 700;
+          color: #fff;
+          margin: 0 0 12px 0;
+        }
+
+        .ind-challenge-desc {
+          font-size: 0.9rem;
+          color: rgba(255, 255, 255, 0.65);
+          line-height: 1.6;
+          margin: 0;
+        }
+
+        .ind-challenge-decor-line {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          opacity: 0.8;
+        }
+
+        /* Roadmap Section */
+        .ind-roadmap-section {
+          padding-top: 60px;
+          padding-bottom: 70px;
+        }
+
+        .ind-roadmap-timeline {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          max-width: 800px;
+          margin: 0 auto;
+          position: relative;
+        }
+
+        .ind-roadmap-timeline::before {
+          content: '';
+          position: absolute;
+          left: 36px;
+          top: 20px;
+          bottom: 20px;
+          width: 2px;
+          background: rgba(255, 255, 255, 0.08);
+        }
+
+        .ind-roadmap-step {
+          display: flex;
+          gap: 24px;
+          position: relative;
+        }
+
+        .ind-roadmap-dot {
+          width: 74px;
+          height: 74px;
+          border-radius: 50%;
+          border: 2px solid;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 0.82rem;
+          font-weight: 700;
+          z-index: 1;
+          flex-shrink: 0;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+          text-transform: uppercase;
+        }
+
+        .ind-roadmap-content {
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 16px;
+          padding: 24px 30px;
+          flex-grow: 1;
+          transition: all 0.3s ease;
+          backdrop-filter: blur(8px);
+        }
+
+        .ind-roadmap-step:hover .ind-roadmap-content {
+          background: rgba(255, 255, 255, 0.04);
+          border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .ind-roadmap-step-title {
+          font-size: 1.2rem;
+          font-weight: 700;
+          margin: 0 0 8px 0;
+          color: #fff;
+        }
+
+        .ind-roadmap-step-desc {
+          font-size: 0.92rem;
+          color: rgba(255, 255, 255, 0.6);
+          line-height: 1.6;
+          margin: 0;
+        }
+
+        /* Ecosystem Section */
+        .ind-ecosystem-section {
+          padding-top: 60px;
+          padding-bottom: 70px;
+        }
+
+        .ind-ecosystem-grid {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 20px;
+        }
+
+        .ind-ecosystem-card {
+          background: rgba(255, 255, 255, 0.02);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 20px;
+          padding: 24px 20px;
+          text-align: center;
+          transition: all 0.3s ease;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          min-height: 160px;
+          backdrop-filter: blur(8px);
+        }
+
+        .ind-ecosystem-card:hover {
+          background: rgba(255, 255, 255, 0.04);
+          transform: translateY(-4px);
+        }
+
+        .ind-ecosystem-cat {
+          font-size: 0.72rem;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+
+        .ind-ecosystem-name {
+          font-size: 1.05rem;
+          font-weight: 700;
+          color: #fff;
+          margin: 0 0 8px 0;
+        }
+
+        .ind-ecosystem-desc {
+          font-size: 0.82rem;
+          color: rgba(255, 255, 255, 0.5);
+          line-height: 1.4;
+          margin: 0;
+        }
+
         /* Responsive Layouts */
         @media (max-width: 968px) {
+          .ind-challenge-grid {
+            grid-template-columns: 1fr;
+            gap: 16px;
+          }
+
+          .ind-roadmap-timeline::before {
+            left: 24px;
+          }
+
+          .ind-roadmap-dot {
+            width: 50px;
+            height: 50px;
+            font-size: 0.65rem;
+          }
+
+          .ind-ecosystem-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+          }
+
           .ind-hero-split {
             grid-template-columns: 1fr;
             text-align: center;
@@ -1305,6 +1791,26 @@ export default function IndustryClient({ slug }: { slug: string }) {
           .ind-solutions-grid {
             grid-template-columns: 1fr;
             gap: 16px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .ind-ecosystem-grid {
+            grid-template-columns: 1fr;
+          }
+          .ind-roadmap-timeline::before {
+            display: none;
+          }
+          .ind-roadmap-step {
+            flex-direction: column;
+            gap: 12px;
+          }
+          .ind-roadmap-dot {
+            width: auto;
+            height: auto;
+            border-radius: 8px;
+            padding: 4px 12px;
+            align-self: flex-start;
           }
         }
       `}</style>

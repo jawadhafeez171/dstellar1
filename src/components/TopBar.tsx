@@ -308,6 +308,67 @@ const PARTNERS_LINKS: Record<string, string> = {
   'アウトソーシングパートナー': '/partners/outsourcing'
 };
 
+const SAP_CONSULTING_LINKS: Record<string, string> = {
+  // English
+  'S/4HANA Implementations': '/sap-consulting/s4hana',
+  'Finance & Controlling (FICO)': '/sap-consulting/fico',
+  'Sales & Logistics (SD · MM · WM)': '/sap-consulting/logistics',
+  'Production & Planning (PP)': '/sap-consulting/production',
+  'SuccessFactors (HR)': '/sap-consulting/successfactors',
+  'ABAP & Fiori Custom Development': '/sap-consulting/abap-fiori',
+  'SAP Integration & API Suite': '/sap-consulting/integration',
+  'Ariba & Supply Chain Solutions': '/sap-consulting/ariba-supply-chain',
+
+  // Spanish
+  'Implementaciones S/4HANA': '/sap-consulting/s4hana',
+  'Finanzas y Control de Gestión (FICO)': '/sap-consulting/fico',
+  'Ventas y Logística (SD · MM · WM)': '/sap-consulting/logistics',
+  'Planificación de la Producción (PP)': '/sap-consulting/production',
+  'SuccessFactors (RRHH)': '/sap-consulting/successfactors',
+  'Desarrollo Personalizado ABAP y Fiori': '/sap-consulting/abap-fiori',
+  'Suite de Integración y API SAP': '/sap-consulting/integration',
+  'Soluciones de Cadena de Suministro y Ariba': '/sap-consulting/ariba-supply-chain',
+
+  // Chinese
+  'S/4HANA 系统实施': '/sap-consulting/s4hana',
+  '财务与成本管理 (FICO)': '/sap-consulting/fico',
+  '销售与物流管理 (SD · MM · WM)': '/sap-consulting/logistics',
+  '生产与计划管理 (PP)': '/sap-consulting/production',
+  'SuccessFactors 人力资源系统': '/sap-consulting/successfactors',
+  'ABAP 与 Fiori 定制化开发': '/sap-consulting/abap-fiori',
+  'SAP 集成与 API 套件': '/sap-consulting/integration',
+  'Ariba 采购与供应链解决方案': '/sap-consulting/ariba-supply-chain',
+
+  // German
+  'S/4HANA-Implementierungen': '/sap-consulting/s4hana',
+  'Finanzen & Controlling (FICO)': '/sap-consulting/fico',
+  'Vertrieb & Logistik (SD · MM · WM)': '/sap-consulting/logistics',
+  'Produktion & Planung (PP)': '/sap-consulting/production',
+  'ABAP & Fiori Eigenentwicklungen': '/sap-consulting/abap-fiori',
+  'SAP-Integrations & API-Suite': '/sap-consulting/integration',
+  'Ariba & Supply-Chain-Lösungen': '/sap-consulting/ariba-supply-chain',
+
+  // French
+  'Intégrations S/4HANA': '/sap-consulting/s4hana',
+  'Finance & Contrôle de Gestion (FICO)': '/sap-consulting/fico',
+  'Ventes & Logistique (SD · MM · WM)': '/sap-consulting/logistics',
+  'Planification de la Production (PP)': '/sap-consulting/production',
+  'SuccessFactors (RH)': '/sap-consulting/successfactors',
+  'Développement ABAP & Fiori sur Mesure': '/sap-consulting/abap-fiori',
+  "Suite d'Intégration & APIs SAP": '/sap-consulting/integration',
+  'Solutions Ariba & Chaîne Logistique': '/sap-consulting/ariba-supply-chain',
+
+  // Japanese
+  'S/4HANA移行・新規導入': '/sap-consulting/s4hana',
+  '財務会計・管理会計 (FICO)': '/sap-consulting/fico',
+  '販売管理・在庫購買・倉庫管理 (SD · MM · WM)': '/sap-consulting/logistics',
+  '生産管理 (PP)': '/sap-consulting/production',
+  'SuccessFactors (人事)': '/sap-consulting/successfactors',
+  'ABAP & Fiori カスタム開発': '/sap-consulting/abap-fiori',
+  'SAP統合＆APIスイート': '/sap-consulting/integration',
+  'Ariba & サプライチェーン解決策': '/sap-consulting/ariba-supply-chain'
+};
+
 const TRAININGS_LINKS: Record<string, string> = {
   // English (also covers Spanish & French Learning Hub)
   'Dstellar Learning Hub': '/trainings/hub',
@@ -446,7 +507,7 @@ export function TopBar() {
                     <div className="mega-split">
                       <div className={isGrid ? 'mega-links-grid' : 'mega-links'}>
                         {n.children.map((c: string) => {
-                          const href = INDUSTRIES_LINKS[c] || DISCOVER_LINKS[c] || CAREERS_LINKS[c] || COMMUNITY_LINKS[c] || PARTNERS_LINKS[c] || TRAININGS_LINKS[c] || '#';
+                          const href = INDUSTRIES_LINKS[c] || SAP_CONSULTING_LINKS[c] || DISCOVER_LINKS[c] || CAREERS_LINKS[c] || COMMUNITY_LINKS[c] || PARTNERS_LINKS[c] || TRAININGS_LINKS[c] || '#';
                           return <a key={c} href={href}>{c}</a>;
                         })}
 
