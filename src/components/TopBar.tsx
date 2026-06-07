@@ -411,6 +411,119 @@ const TRAININGS_LINKS: Record<string, string> = {
   '無料 openDstellarトレーニング': '/trainings/free'
 };
 
+const SERVICES_SUPPORT_LINKS: Record<string, string> = {
+  // English
+  'Artificial Intelligence & ML': '/services-support/ai-ml',
+  'Cloud Migration & DevSecOps': '/services-support/cloud-devsecops',
+  'Cybersecurity & Compliance': '/services-support/cybersecurity-compliance',
+  'Digital Transformation': '/services-support/digital-transformation',
+  'Technology Advisory Services': '/services-support/technology-advisory',
+  'Premium Support & Managed AMS': '/services-support/premium-support-ams',
+  'Dstellar Help Portal': '/services-support/help-portal',
+
+  // Spanish
+  'Inteligencia Artificial y ML': '/services-support/ai-ml',
+  'Migración Cloud y DevSecOps': '/services-support/cloud-devsecops',
+  'Ciberseguridad y Cumplimiento': '/services-support/cybersecurity-compliance',
+  'Transformación Digital': '/services-support/digital-transformation',
+  'Servicios de Asesoría Tecnológica': '/services-support/technology-advisory',
+  'Soporte Premium y AMS Gestionado': '/services-support/premium-support-ams',
+  'Portal de Ayuda Dstellar': '/services-support/help-portal',
+
+  // Chinese
+  '人工智能与机器学习': '/services-support/ai-ml',
+  '云迁移与 DevSecOps': '/services-support/cloud-devsecops',
+  '网络安全与合规审计': '/services-support/cybersecurity-compliance',
+  '企业数字化转型': '/services-support/digital-transformation',
+  'IT 战略咨询服务': '/services-support/technology-advisory',
+  '尊享支持与托管运维 (AMS)': '/services-support/premium-support-ams',
+  'Dstellar 帮助中心': '/services-support/help-portal',
+
+  // German
+  'Künstliche Intelligenz & ML': '/services-support/ai-ml',
+  'Cloud-Migration & DevSecOps': '/services-support/cloud-devsecops',
+  'Cybersicherheit & Compliance': '/services-support/cybersecurity-compliance',
+  'Digitale Transformation': '/services-support/digital-transformation',
+  'Technologie-Beratung': '/services-support/technology-advisory',
+  'Premium-Support & Managed AMS': '/services-support/premium-support-ams',
+  'Dstellar Hilfe-Portal': '/services-support/help-portal',
+
+  // French
+  'Intelligence Artificielle & ML': '/services-support/ai-ml',
+  'Migration Cloud & DevSecOps': '/services-support/cloud-devsecops',
+  'Cybersécurité & Conformité': '/services-support/cybersecurity-compliance',
+  'Transformation Numérique': '/services-support/digital-transformation',
+  'Services de Conseil Technologique': '/services-support/technology-advisory',
+  'Support Premium & AMS Géré': '/services-support/premium-support-ams',
+  'Portail d\'Aide Dstellar': '/services-support/help-portal',
+
+  // Japanese
+  '人工知能＆機械学習': '/services-support/ai-ml',
+  'クラウド移行＆DevSecOps': '/services-support/cloud-devsecops',
+  'サイバーセキュリティ＆コンプライアンス': '/services-support/cybersecurity-compliance',
+  'デジタルトランスフォーメーション': '/services-support/digital-transformation',
+  'テクノロジー・アドバイザリー': '/services-support/technology-advisory',
+  'プレミアムサポート＆AMS': '/services-support/premium-support-ams',
+  'Dstellarヘルプポータル': '/services-support/help-portal'
+};
+
+const PRODUCTS_LINKS: Record<string, string> = {
+  // English
+  'Custom Software Development': '/products/custom-software',
+  'DSTELLAR ERP': '/products/erp',
+  'DSTELLAR E-Commerce': '/products/ecommerce',
+  'DSTELLAR Healthcare Suite': '/products/healthcare',
+  'DSTELLAR Logistics & Warehouse': '/products/logistics-warehouse',
+  'DSTELLAR Sales & Accounting': '/products/sales-accounting',
+  'Business Intelligence & Analytics': '/products/bi-analytics',
+  'Mobile & Web Applications': '/products/mobile-web-apps',
+
+  // Spanish
+  'Desarrollo de Software a Medida': '/products/custom-software',
+  'ERP DSTELLAR': '/products/erp',
+  'E-Commerce DSTELLAR': '/products/ecommerce',
+  'Suite de Salud DSTELLAR': '/products/healthcare',
+  'Logística y Almacenes DSTELLAR': '/products/logistics-warehouse',
+  'Ventas y Contabilidad DSTELLAR': '/products/sales-accounting',
+  'Inteligencia de Negocios y Analítica': '/products/bi-analytics',
+  'Aplicaciones Móviles y Web': '/products/mobile-web-apps',
+
+  // Chinese
+  '定制软件开发': '/products/custom-software',
+  'DSTELLAR ERP 系统': '/products/erp',
+  'DSTELLAR 电子商务 system': '/products/ecommerce',
+  'DSTELLAR 电子商务系统': '/products/ecommerce',
+  'DSTELLAR 医疗健康套件': '/products/healthcare',
+  'DSTELLAR 物流与仓储系统': '/products/logistics-warehouse',
+  'DSTELLAR 销售与财务系统': '/products/sales-accounting',
+  '商业智能与数据分析': '/products/bi-analytics',
+  '移动与 Web 应用程序': '/products/mobile-web-apps',
+
+  // German
+  'Individuelle Softwareentwicklung': '/products/custom-software',
+  'DSTELLAR Logistik & Lager': '/products/logistics-warehouse',
+  'DSTELLAR Vertrieb & Buchhaltung': '/products/sales-accounting',
+  'Business Intelligence & Analysen': '/products/bi-analytics',
+  'Mobile & Web-Apps': '/products/mobile-web-apps',
+
+  // French
+  'Développement de Logiciels sur Mesure': '/products/custom-software',
+  'Suite Santé DSTELLAR': '/products/healthcare',
+  'Logistique & Entrepôt DSTELLAR': '/products/logistics-warehouse',
+  'Ventes & Comptabilité DSTELLAR': '/products/sales-accounting',
+  'Business Intelligence & Analytique': '/products/bi-analytics',
+  'Applications Mobiles & Web': '/products/mobile-web-apps',
+
+  // Japanese
+  'カスタムソフトウェア開発': '/products/custom-software',
+  'DSTELLAR Eコマース': '/products/ecommerce',
+  'DSTELLAR ヘルスケアスイート': '/products/healthcare',
+  'DSTELLAR 物流・倉庫': '/products/logistics-warehouse',
+  'DSTELLAR 販売・会計': '/products/sales-accounting',
+  'ビジネスインテリジェンス・分析': '/products/bi-analytics',
+  'モバイル＆Webアプリ': '/products/mobile-web-apps'
+};
+
 const PROMO_LINKS: Record<string, string> = {
   // English
   'Partners': '/partners/become',
@@ -507,7 +620,7 @@ export function TopBar() {
                     <div className="mega-split">
                       <div className={isGrid ? 'mega-links-grid' : 'mega-links'}>
                         {n.children.map((c: string) => {
-                          const href = INDUSTRIES_LINKS[c] || SAP_CONSULTING_LINKS[c] || DISCOVER_LINKS[c] || CAREERS_LINKS[c] || COMMUNITY_LINKS[c] || PARTNERS_LINKS[c] || TRAININGS_LINKS[c] || '#';
+                          const href = INDUSTRIES_LINKS[c] || PRODUCTS_LINKS[c] || SAP_CONSULTING_LINKS[c] || DISCOVER_LINKS[c] || CAREERS_LINKS[c] || COMMUNITY_LINKS[c] || PARTNERS_LINKS[c] || TRAININGS_LINKS[c] || SERVICES_SUPPORT_LINKS[c] || '#';
                           return <a key={c} href={href}>{c}</a>;
                         })}
 

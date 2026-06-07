@@ -241,6 +241,42 @@ function ConsultingIcon({ type, color }: { type: string; color: string }) {
   }
 }
 
+// Asset mappings for SAP Consulting pages
+const CONSULTING_ASSETS_MAP: Record<string, { capabilitiesBg: string; playbookBg: string }> = {
+  s4hana: {
+    capabilitiesBg: '/assets/green_ledger_dashboard.png',
+    playbookBg: '/assets/green_ledger_dashboard.png',
+  },
+  fico: {
+    capabilitiesBg: '/assets/solutions/sol_capital-markets.png',
+    playbookBg: '/assets/ind_capital-markets.png',
+  },
+  logistics: {
+    capabilitiesBg: '/assets/solutions/sol_consumer-products.png',
+    playbookBg: '/assets/ind_consumer-products.png',
+  },
+  production: {
+    capabilitiesBg: '/assets/solutions/sol_manufacturing-industrial.png',
+    playbookBg: '/assets/ind_manufacturing-industrial.png',
+  },
+  successfactors: {
+    capabilitiesBg: '/assets/discover_val_client.png',
+    playbookBg: '/assets/why_join_culture.png',
+  },
+  'abap-fiori': {
+    capabilitiesBg: '/assets/discover_val_tech.png',
+    playbookBg: '/assets/discover_val_tech.png',
+  },
+  integration: {
+    capabilitiesBg: '/assets/discover_vision.png',
+    playbookBg: '/assets/discover_vision.png',
+  },
+  'ariba-supply-chain': {
+    capabilitiesBg: '/assets/solutions/sol_construction.png',
+    playbookBg: '/assets/ind_construction.png',
+  },
+};
+
 export default function ConsultingClient({ slug }: { slug: string }) {
   const { language } = useLanguage();
   const router = useRouter();
@@ -254,6 +290,10 @@ export default function ConsultingClient({ slug }: { slug: string }) {
 
   // Fetch translation content
   const langKey = CONSULTING_TRANSLATIONS[language] ? language : 'en';
+  const assets = CONSULTING_ASSETS_MAP[slug] || {
+    capabilitiesBg: '/assets/discover_who_we_are.png',
+    playbookBg: '/assets/why_join_culture.png',
+  };
   const rawData: ConsultingDetail = CONSULTING_TRANSLATIONS[langKey][slug] || CONSULTING_TRANSLATIONS['en'][slug];
 
   // Override design to match the Careers Job Search page color palette
@@ -409,13 +449,27 @@ export default function ConsultingClient({ slug }: { slug: string }) {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: idx * 0.1 }}
-                  whileHover={{ y: -6 }}
                 >
-                  <div className="con-cap-icon-box" style={{ background: `${data.themeColor}12`, borderColor: `${data.themeColor}30` }}>
-                    <ConsultingIcon type={cap.icon} color={data.themeColor} />
+                  {/* Underlay Image (Triptych Composite Pattern) */}
+                  <div 
+                    className="con-cap-banner-box"
+                    style={{
+                      backgroundImage: `url(${assets.capabilitiesBg})`,
+                      backgroundPosition: idx === 0 ? '0% 50%' : idx === 1 ? '50% 50%' : '100% 50%',
+                    }}
+                  />
+                  
+                  {/* Frosted and Gold Glow overlays */}
+                  <div className="con-cap-overlay" />
+                  <div className="con-cap-glow-overlay" style={{ background: `radial-gradient(circle at 50% 100%, ${data.themeColor}1a 0%, transparent 60%)` }} />
+                  
+                  <div className="con-cap-card-content">
+                    <div className="con-cap-icon-box" style={{ background: `${data.themeColor}12`, borderColor: `${data.themeColor}30` }}>
+                      <ConsultingIcon type={cap.icon} color={data.themeColor} />
+                    </div>
+                    <h3 className="con-cap-title">{cap.title}</h3>
+                    <p className="con-cap-desc">{cap.desc}</p>
                   </div>
-                  <h3 className="con-cap-title">{cap.title}</h3>
-                  <p className="con-cap-desc">{cap.desc}</p>
                 </motion.div>
               ))}
             </div>
@@ -431,7 +485,11 @@ export default function ConsultingClient({ slug }: { slug: string }) {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
+              style={{
+                backgroundImage: `url(${assets.playbookBg})`,
+              }}
             >
+              <div className="con-playbook-wash-overlay" />
               <div className="con-playbook-content">
                 <span className="con-playbook-tag" style={{ color: data.themeColor, borderColor: `${data.themeColor}40` }}>{data.playbook.tag}</span>
                 <h3 className="con-playbook-title">{data.playbook.title}</h3>
@@ -794,19 +852,64 @@ export default function ConsultingClient({ slug }: { slug: string }) {
         }
 
         .con-cap-card {
+          position: relative;
+          overflow: hidden;
           background: #ffffff !important;
           border: 1px solid rgba(245, 158, 11, 0.1) !important;
           border-radius: 20px;
-          padding: 36px 30px;
+          padding: 0 !important;
           transition: all 0.3s ease;
           backdrop-filter: blur(8px);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02) !important;
         }
 
+        .con-cap-banner-box {
+          position: absolute;
+          inset: 0;
+          background-size: 300% 100%;
+          background-repeat: no-repeat;
+          opacity: 0.12;
+          transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s;
+          z-index: 0;
+        }
+
+        .con-cap-card:hover .con-cap-banner-box {
+          transform: scale(1.08);
+          opacity: 0.22;
+        }
+
+        .con-cap-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(to bottom, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.95));
+          z-index: 1;
+        }
+
+        .con-cap-glow-overlay {
+          position: absolute;
+          inset: 0;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          z-index: 2;
+        }
+
+        .con-cap-card:hover .con-cap-glow-overlay {
+          opacity: 1;
+        }
+
+        .con-cap-card-content {
+          position: relative;
+          z-index: 3;
+          padding: 36px 30px;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+        }
+
         .con-cap-card:hover {
           background: #fffdf7 !important;
           border-color: rgba(245, 158, 11, 0.5) !important;
-          transform: translateY(-4px);
+          transform: translateY(-5px);
           box-shadow: 0 15px 35px rgba(245, 158, 11, 0.06) !important;
         }
 
@@ -844,12 +947,34 @@ export default function ConsultingClient({ slug }: { slug: string }) {
         }
 
         .con-playbook-card {
-          background: #ffffff !important;
+          position: relative;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
           border: 1px solid rgba(245, 158, 11, 0.1) !important;
           border-radius: 24px;
-          padding: 40px;
+          padding: 0 !important;
+          overflow: hidden;
           backdrop-filter: blur(8px);
           box-shadow: 0 15px 40px rgba(0, 0, 0, 0.02) !important;
+        }
+
+        .con-playbook-wash-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.97) 100%) !important;
+          z-index: 0;
+          transition: background 0.3s ease;
+        }
+
+        .con-playbook-card:hover .con-playbook-wash-overlay {
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.94) 100%) !important;
+        }
+
+        .con-playbook-content {
+          position: relative;
+          z-index: 1;
+          padding: 40px;
         }
 
         .con-playbook-tag {

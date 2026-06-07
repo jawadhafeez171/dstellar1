@@ -1,12 +1,16 @@
 import { PARTNERS_TRANSLATIONS } from './partnersTranslations';
 import { CAREERS_TRANSLATIONS } from './careersTranslations';
 import { COMMUNITY_TRANSLATIONS } from './communityTranslations';
+import { SERVICES_SUPPORT_TRANSLATIONS } from './servicesSupportTranslations';
+import { PRODUCTS_TRANSLATIONS } from './productsTranslations';
 
 export const TRANSLATIONS = {
   en: {
     ...PARTNERS_TRANSLATIONS.en,
     ...CAREERS_TRANSLATIONS.en,
     ...COMMUNITY_TRANSLATIONS.en,
+    ...SERVICES_SUPPORT_TRANSLATIONS.en,
+    ...PRODUCTS_TRANSLATIONS.en,
     // UI strings
     inside_dstellar: "Inside Dstellar",
     watch_reel: "90 SEC · WATCH",
@@ -306,6 +310,8 @@ export const TRANSLATIONS = {
     ...PARTNERS_TRANSLATIONS.es,
     ...CAREERS_TRANSLATIONS.es,
     ...COMMUNITY_TRANSLATIONS.es,
+    ...SERVICES_SUPPORT_TRANSLATIONS.es,
+    ...PRODUCTS_TRANSLATIONS.es,
     // UI strings
     inside_dstellar: "Dentro de Dstellar",
     watch_reel: "90 SEG · VER REEL",
@@ -605,6 +611,8 @@ export const TRANSLATIONS = {
     ...PARTNERS_TRANSLATIONS.zh,
     ...CAREERS_TRANSLATIONS.zh,
     ...COMMUNITY_TRANSLATIONS.zh,
+    ...SERVICES_SUPPORT_TRANSLATIONS.zh,
+    ...PRODUCTS_TRANSLATIONS.zh,
     // UI strings
     inside_dstellar: "走进 Dstellar",
     watch_reel: "90 秒 · 播放演示视频",
@@ -904,6 +912,8 @@ export const TRANSLATIONS = {
     ...PARTNERS_TRANSLATIONS.de,
     ...CAREERS_TRANSLATIONS.de,
     ...COMMUNITY_TRANSLATIONS.de,
+    ...SERVICES_SUPPORT_TRANSLATIONS.de,
+    ...PRODUCTS_TRANSLATIONS.de,
     // UI strings
     inside_dstellar: "Blick hinter Dstellar",
     watch_reel: "90 SEK · VIDEO ABSPIELEN",
@@ -1203,6 +1213,8 @@ export const TRANSLATIONS = {
     ...PARTNERS_TRANSLATIONS.fr,
     ...CAREERS_TRANSLATIONS.fr,
     ...COMMUNITY_TRANSLATIONS.fr,
+    ...SERVICES_SUPPORT_TRANSLATIONS.fr,
+    ...PRODUCTS_TRANSLATIONS.fr,
     // UI strings
     inside_dstellar: "À l'intérieur de Dstellar",
     watch_reel: "90 SEC · REGARDER",
@@ -1502,6 +1514,8 @@ export const TRANSLATIONS = {
     ...PARTNERS_TRANSLATIONS.ja,
     ...CAREERS_TRANSLATIONS.ja,
     ...COMMUNITY_TRANSLATIONS.ja,
+    ...SERVICES_SUPPORT_TRANSLATIONS.ja,
+    ...PRODUCTS_TRANSLATIONS.ja,
     // UI strings
     inside_dstellar: "Dstellarについて",
     watch_reel: "90秒 · 動画を見る",
