@@ -67,7 +67,7 @@ export const TRANSLATIONS = {
 
     // Dynamic Lists from data.ts
     nav: [
-      { label: 'Industries', children: ['Automotive','Consumer Products','Electronic & High Tech','Manufacturing & Industrial','Energy & Utilities','Life Sciences & Healthcare','Government & Public Sector','Capital Markets','Travel & Hospitality','Construction'] },
+      { label: 'Industries', children: ["Automotive","Consumer Products","Electronic & High Tech","Government & Public Sector","Media & Entertainment","Telecommunications","Distribution & Wholesale","Energy & Utilities","Manufacturing & Industrial","Retail","Hotel Management","Capital Markets","Life Sciences & Healthcare","Information Services","Public Services","Travel, Transport & Hospitality","Construction","Education"] },
       { label: 'Products', children: ['Custom Software Development','DSTELLAR ERP','DSTELLAR E-Commerce','DSTELLAR Healthcare Suite','DSTELLAR Logistics & Warehouse','DSTELLAR Sales & Accounting','Business Intelligence & Analytics','Mobile & Web Applications'] },
       { label: 'SAP Consulting', children: ['S/4HANA Implementations','Finance & Controlling (FICO)','Sales & Logistics (SD · MM · WM)','Production & Planning (PP)','SuccessFactors (HR)','ABAP & Fiori Custom Development','SAP Integration & API Suite','Ariba & Supply Chain Solutions'] },
       { label: 'Services & Support', children: ['Artificial Intelligence & ML','Cloud Migration & DevSecOps','Cybersecurity & Compliance','Digital Transformation','Technology Advisory Services','Premium Support & Managed AMS','Dstellar Help Portal'] },
@@ -368,7 +368,7 @@ export const TRANSLATIONS = {
 
     // Dynamic Lists from data.ts
     nav: [
-      { label: 'Sectores', children: ['Automotriz','Productos de Consumo','Electrónica y Alta Tecnología','Manufactura e Industrial','Energía y Servicios Públicos','Ciencias de la Vida y Salud','Gobierno y Sector Público','Mercados de Capitales','Viajes y Hospitalidad','Construcción'] },
+      { label: 'Sectores', children: ["Automotriz","Productos de Consumo","Electrónica y Alta Tecnología","Gobierno y Sector Público","Medios y Entretenimiento","Telecomunicaciones","Distribución y Venta al por Mayor","Energía y Servicios Públicos","Manufactura e Industrial","Comercio Minorista (Retail)","Gestión Hotelera","Mercados de Capitales","Ciencias de la Vida y Salud","Servicios de Información","Servicios Públicos","Viajes, Transporte y Hospitalidad","Construcción","Educación"] },
       { label: 'Productos', children: ['Desarrollo de Software a Medida','ERP DSTELLAR','E-Commerce DSTELLAR','Suite de Salud DSTELLAR','Logística y Almacenes DSTELLAR','Ventas y Contabilidad DSTELLAR','Inteligencia de Negocios y Analítica','Aplicaciones Móviles y Web'] },
       { label: 'Consultoría SAP', children: ['Implementaciones S/4HANA','Finanzas y Control de Gestión (FICO)','Ventas y Logística (SD · MM · WM)','Planificación de la Producción (PP)','SuccessFactors (RRHH)','Desarrollo Personalizado ABAP y Fiori','Suite de Integración y API SAP','Soluciones de Cadena de Suministro y Ariba'] },
       { label: 'Servicios y Soporte', children: ['Inteligencia Artificial y ML','Migración Cloud y DevSecOps','Ciberseguridad y Cumplimiento','Transformación Digital','Servicios de Asesoría Tecnológica','Soporte Premium y AMS Gestionado','Portal de Ayuda Dstellar'] },
@@ -669,7 +669,7 @@ export const TRANSLATIONS = {
 
     // Dynamic Lists from data.ts
     nav: [
-      { label: '服务行业', children: ['汽车制造','消费品行业','电子与高科技','装备制造与工业','能源与公用事业','生命科学与医疗健康','政府与公共部门','资本市场','旅游与酒店管理','建筑与工程'] },
+      { label: '服务行业', children: ["汽车制造","消费品行业","电子与高科技","政府与公共部门","媒体与娱乐","网络通信","分销与批发","能源与公用事业","装备制造与工业","零售商贸","酒店管理","资本市场","生命科学与医疗健康","信息服务","公共服务","旅游交通与物流","建筑与工程","教育培训"] },
       { label: '产品中心', children: ['定制软件开发','DSTELLAR ERP 系统','DSTELLAR 电子商务系统','DSTELLAR 医疗健康套件','DSTELLAR 物流与仓储系统','DSTELLAR 销售与财务系统','商业智能与数据分析','移动与 Web 应用程序'] },
       { label: 'SAP 咨询服务', children: ['S/4HANA 系统实施','财务与成本管理 (FICO)','销售与物流管理 (SD · MM · WM)','生产与计划管理 (PP)','SuccessFactors 人力资源系统','ABAP 与 Fiori 定制化开发','SAP 集成与 API 套件','Ariba 采购与供应链解决方案'] },
       { label: '服务与支持', children: ['人工智能与机器学习','云迁移与 DevSecOps','网络安全与合规审计','企业数字化转型','IT 战略咨询服务','尊享支持与托管运维 (AMS)','Dstellar 帮助中心'] },
@@ -970,7 +970,7 @@ export const TRANSLATIONS = {
 
     // Dynamic Lists from data.ts
     nav: [
-      { label: 'Branchen', children: ['Automobilindustrie','Konsumgüter','Elektronik & High-Tech','Fertigung & Industrie','Energie & Versorger','Life Sciences & Gesundheit','Staat & Öffentlicher Sektor','Kapitalmärkte','Reisen & Gastgewerbe','Bauwesen'] },
+      { label: 'Branchen', children: ["Automobilindustrie","Konsumgüter","Elektronik & High-Tech","Staat & Öffentlicher Sektor","Medien & Unterhaltung","Telekommunikation","Vertrieb & Großhandel","Energie & Versorger","Fertigung & Industrie","Einzelhandel (Retail)","Hotelmanagement","Kapitalmärkte","Life Sciences & Gesundheit","Informationsdienste","Öffentliche Dienste","Reisen, Transport & Logistik","Bauwesen","Bildungswesen"] },
       { label: 'Produkte', children: ['Individuelle Softwareentwicklung','DSTELLAR ERP','DSTELLAR E-Commerce','DSTELLAR Healthcare Suite','DSTELLAR Logistik & Lager','DSTELLAR Vertrieb & Buchhaltung','Business Intelligence & Analysen','Mobile & Web-Apps'] },
       { label: 'SAP-Beratung', children: ['S/4HANA-Implementierungen','Finanzen & Controlling (FICO)','Vertrieb & Logistik (SD · MM · WM)','Produktion & Planung (PP)','SuccessFactors (HR)','ABAP & Fiori Eigenentwicklungen','SAP-Integrations & API-Suite','Ariba & Supply-Chain-Lösungen'] },
       { label: 'Dienstleistungen & Support', children: ['Künstliche Intelligenz & ML','Cloud-Migration & DevSecOps','Cybersicherheit & Compliance','Digitale Transformation','Technologie-Beratung','Premium-Support & Managed AMS','Dstellar Hilfe-Portal'] },
@@ -1271,7 +1271,7 @@ export const TRANSLATIONS = {
 
     // Dynamic Lists from data.ts
     nav: [
-      { label: 'Industries', children: ['Automobile','Produits de Consommation','Électronique & Haute Technologie','Fabrication & Industrie','Énergie & Services Publics','Sciences de la Vie & Santé','Gouvernement & Secteur Public','Marchés de Capitaux','Voyages & Hôtellerie','Construction'] },
+      { label: 'Industries', children: ["Automobile","Produits de Consommation","Électronique & Haute Technologie","Gouvernement & Secteur Public","Médias & Divertissement","Télécommunications","Distribution & Vente en Gros","Énergie & Services Publics","Fabrication & Industrie","Vente au Détail (Retail)","Gestion Hôtelière","Marchés de Capitaux","Sciences de la Vie & Santé","Services d'Information","Services Publics","Voyages, Transport & Logistique","Construction","Éducation"] },
       { label: 'Produits', children: ['Développement de Logiciels sur Mesure','DSTELLAR ERP','E-Commerce DSTELLAR','Suite Santé DSTELLAR','Logistique & Entrepôt DSTELLAR','Ventes & Comptabilité DSTELLAR','Business Intelligence & Analytique','Applications Mobiles & Web'] },
       { label: 'Conseil SAP', children: ['Intégrations S/4HANA','Finance & Contrôle de Gestion (FICO)','Ventes & Logistique (SD · MM · WM)','Planification de la Production (PP)','SuccessFactors (RH)','Développement ABAP & Fiori sur Mesure','Suite d\'Intégration & APIs SAP','Solutions Ariba & Chaîne Logistique'] },
       { label: 'Services & Support', children: ['Intelligence Artificielle & ML','Migration Cloud & DevSecOps','Cybersécurité & Conformité','Transformation Numérique','Services de Conseil Technologique','Support Premium & AMS Géré','Portail d\'Aide Dstellar'] },
@@ -1572,7 +1572,7 @@ export const TRANSLATIONS = {
 
     // Dynamic Lists from data.ts
     nav: [
-      { label: '提供中の業界', children: ['自動車産業','消費財','電子・ハイテク','製造・産業機械','電力・ガス・水道','ライフサイエンス・ヘルスケア','政府・公共機関','資本市場','旅行・ホスピタリティ','建設・エンジニアリング'] },
+      { label: '提供中の業界', children: ["自動車産業","消費財","電子・ハイテク","政府・公共機関","メディア＆エンターテインメント","電気通信","流通・卸売","電力・ガス・水道","製造・産業機械","小売 (Retail)","ホテル管理","資本市場","ライフサイエンス・ヘルスケア","情報サービス","公共サービス","旅行・輸送・運行管理","建設・エンジニアリング","教育・学習支援"] },
       { label: 'プロダクト', children: ['カスタムソフトウェア開発','DSTELLAR ERP','DSTELLAR Eコマース','DSTELLAR ヘルスケアスイート','DSTELLAR 物流・倉庫','DSTELLAR 販売・会計','ビジネスインテリジェンス・分析','モバイル＆Webアプリ'] },
       { label: 'SAPコンサルティング', children: ['S/4HANA移行・新規導入','財務会計・管理会計 (FICO)','販売管理・在庫購買・倉庫管理 (SD · MM · WM)','生産管理 (PP)','SuccessFactors (人事)','ABAP & Fiori カスタム開発','SAP統合＆APIスイート','Ariba & サプライチェーン解決策'] },
       { label: 'サービス＆サポート', children: ['人工知能＆機械学習','クラウド移行＆DevSecOps','サイバーセキュリティ＆コンプライアンス','デジタルトランスフォーメーション','テクノロジー・アドバイザリー','プレミアムサポート＆AMS','Dstellarヘルプポータル'] },

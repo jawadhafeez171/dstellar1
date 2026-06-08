@@ -77,6 +77,15 @@ const INDUSTRIES_LINKS: Record<string, string> = {
   'Capital Markets': '/industries/capital-markets',
   'Travel & Hospitality': '/industries/travel-hospitality',
   'Construction': '/industries/construction',
+  'Media & Entertainment': '/industries/media-entertainment',
+  'Telecommunications': '/industries/telecommunications',
+  'Distribution & Wholesale': '/industries/distribution-wholesale',
+  'Retail': '/industries/retail',
+  'Hotel Management': '/industries/hotel-management',
+  'Information Services': '/industries/information-services',
+  'Public Services': '/industries/public-services',
+  'Travel, Transport & Hospitality': '/industries/travel-hospitality',
+  'Education': '/industries/education',
 
   // Spanish
   'Automotriz': '/industries/automotive',
@@ -89,6 +98,15 @@ const INDUSTRIES_LINKS: Record<string, string> = {
   'Mercados de Capitales': '/industries/capital-markets',
   'Viajes y Hospitalidad': '/industries/travel-hospitality',
   'Construcción': '/industries/construction',
+  'Medios y Entretenimiento': '/industries/media-entertainment',
+  'Telecomunicaciones': '/industries/telecommunications',
+  'Distribución y Venta al por Mayor': '/industries/distribution-wholesale',
+  'Comercio Minorista (Retail)': '/industries/retail',
+  'Gestión Hotelera': '/industries/hotel-management',
+  'Servicios de Información': '/industries/information-services',
+  'Servicios Públicos': '/industries/public-services',
+  'Viajes, Transporte y Hospitalidad': '/industries/travel-hospitality',
+  'Educación': '/industries/education',
 
   // Chinese
   '汽车制造': '/industries/automotive',
@@ -101,6 +119,18 @@ const INDUSTRIES_LINKS: Record<string, string> = {
   '资本市场': '/industries/capital-markets',
   '旅游与酒店管理': '/industries/travel-hospitality',
   '建筑与工程': '/industries/construction',
+  '媒体与娱乐': '/industries/media-entertainment',
+  '电信行业': '/industries/telecommunications',
+  '网络通信': '/industries/telecommunications',
+  '分销与批发': '/industries/distribution-wholesale',
+  '零售行业': '/industries/retail',
+  '零售商贸': '/industries/retail',
+  '酒店管理': '/industries/hotel-management',
+  '信息服务': '/industries/information-services',
+  '公共服务': '/industries/public-services',
+  '旅游交通与物流': '/industries/travel-hospitality',
+  '教育行业': '/industries/education',
+  '教育培训': '/industries/education',
 
   // German
   'Automobilindustrie': '/industries/automotive',
@@ -113,6 +143,15 @@ const INDUSTRIES_LINKS: Record<string, string> = {
   'Kapitalmärkte': '/industries/capital-markets',
   'Reisen & Gastgewerbe': '/industries/travel-hospitality',
   'Bauwesen': '/industries/construction',
+  'Medien & Unterhaltung': '/industries/media-entertainment',
+  'Telekommunikation': '/industries/telecommunications',
+  'Vertrieb & Großhandel': '/industries/distribution-wholesale',
+  'Einzelhandel (Retail)': '/industries/retail',
+  'Hotelmanagement': '/industries/hotel-management',
+  'Informationsdienste': '/industries/information-services',
+  'Öffentliche Dienste': '/industries/public-services',
+  'Reisen, Transport & Logistik': '/industries/travel-hospitality',
+  'Bildungswesen': '/industries/education',
 
   // French
   'Automobile': '/industries/automotive',
@@ -124,6 +163,15 @@ const INDUSTRIES_LINKS: Record<string, string> = {
   'Gouvernement & Secteur Public': '/industries/government-public-sector',
   'Marchés de Capitaux': '/industries/capital-markets',
   'Voyages & Hôtellerie': '/industries/travel-hospitality',
+  'Médias & Divertissement': '/industries/media-entertainment',
+  'Télécommunications': '/industries/telecommunications',
+  'Distribution & Vente en Gros': '/industries/distribution-wholesale',
+  'Vente au Détail (Retail)': '/industries/retail',
+  'Gestion Hôtelière': '/industries/hotel-management',
+  'Services d\'Information': '/industries/information-services',
+  'Services Publics': '/industries/public-services',
+  'Voyages, Transport & Logistique': '/industries/travel-hospitality',
+  'Éducation': '/industries/education',
 
   // Japanese
   '自動車産業': '/industries/automotive',
@@ -137,6 +185,16 @@ const INDUSTRIES_LINKS: Record<string, string> = {
   '資本市場': '/industries/capital-markets',
   '旅行・ホスピタリティ': '/industries/travel-hospitality',
   '建設・エンジニアリング': '/industries/construction'
+,
+  'メディア＆エンターテインメント': '/industries/media-entertainment',
+  '電気通信': '/industries/telecommunications',
+  '流通・卸売': '/industries/distribution-wholesale',
+  '小売 (Retail)': '/industries/retail',
+  'ホテル管理': '/industries/hotel-management',
+  '情報サービス': '/industries/information-services',
+  '公共サービス': '/industries/public-services',
+  '旅行・輸送・運行管理': '/industries/travel-hospitality',
+  '教育・学習支援': '/industries/education'
 };
 
 const DISCOVER_LINKS: Record<string, string> = {

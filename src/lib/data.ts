@@ -2,7 +2,7 @@
 
 export const DSTELLAR_DATA = {
   nav: [
-    { label: 'Industries', children: ['Automotive','Consumer Products','Electronic & High Tech','Manufacturing & Industrial','Energy & Utilities','Life Sciences & Healthcare','Government & Public Sector','Capital Markets','Travel & Hospitality','Construction'] },
+    { label: 'Industries', children: ["Automotive","Consumer Products","Electronic & High Tech","Government & Public Sector","Media & Entertainment","Telecommunications","Distribution & Wholesale","Energy & Utilities","Manufacturing & Industrial","Retail","Hotel Management","Capital Markets","Life Sciences & Healthcare","Information Services","Public Services","Travel, Transport & Hospitality","Construction","Education"] },
     { label: 'Products', children: ['Custom Software Development','DSTELLAR ERP','DSTELLAR E-Commerce','DSTELLAR Healthcare Suite','DSTELLAR Logistics & Warehouse','DSTELLAR Sales & Accounting','Business Intelligence & Analytics','Mobile & Web Applications'] },
     { label: 'SAP Consulting', children: ['S/4HANA Implementations','Finance & Controlling (FICO)','Sales & Logistics (SD · MM · WM)','Production & Planning (PP)','SuccessFactors (HR)','ABAP & Fiori Custom Development','SAP Integration & API Suite','Ariba & Supply Chain Solutions'] },
     { label: 'Services & Support', children: ['Artificial Intelligence & ML','Cloud Migration & DevSecOps','Cybersecurity & Compliance','Digital Transformation','Technology Advisory Services','Premium Support & Managed AMS','Dstellar Help Portal'] },

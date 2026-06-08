@@ -13,6 +13,14 @@ export async function generateStaticParams() {
     'capital-markets',
     'travel-hospitality',
     'construction',
+    'media-entertainment',
+    'telecommunications',
+    'distribution-wholesale',
+    'retail',
+    'hotel-management',
+    'information-services',
+    'public-services',
+    'education',
   ];
   return slugs.map((slug) => ({ slug }));
 }

@@ -339,6 +339,142 @@ function SolutionIcon({ type, color }: { type: string; color: string }) {
           <path d="M18 2l4 4" {...strokeProps} />
         </svg>
       );
+    case 'film':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18" {...strokeProps} />
+          <line x1="7" y1="2" x2="7" y2="22" {...strokeProps} />
+          <line x1="17" y1="2" x2="17" y2="22" {...strokeProps} />
+          <line x1="2" y1="12" x2="22" y2="12" {...strokeProps} />
+          <line x1="2" y1="7" x2="7" y2="7" {...strokeProps} />
+          <line x1="2" y1="17" x2="7" y2="17" {...strokeProps} />
+          <line x1="17" y1="17" x2="22" y2="17" {...strokeProps} />
+          <line x1="17" y1="7" x2="22" y2="7" {...strokeProps} />
+        </svg>
+      );
+    case 'music':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <path d="M9 18V5l12-2v13" {...strokeProps} />
+          <circle cx="6" cy="18" r="3" {...strokeProps} />
+          <circle cx="18" cy="16" r="3" {...strokeProps} />
+        </svg>
+      );
+    case 'play':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <polygon points="5 3 19 12 5 21 5 3" {...strokeProps} />
+        </svg>
+      );
+    case 'phone':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" {...strokeProps} />
+        </svg>
+      );
+    case 'wifi':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01" {...strokeProps} />
+        </svg>
+      );
+    case 'box':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" {...strokeProps} />
+          <polyline points="3.27 6.96 12 12.01 20.73 6.96" {...strokeProps} />
+          <line x1="12" y1="22.08" x2="12" y2="12" {...strokeProps} />
+        </svg>
+      );
+    case 'archive':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <polyline points="21 8 21 21 3 21 3 8" {...strokeProps} />
+          <rect x="1" y="3" width="22" height="5" rx="1" ry="1" {...strokeProps} />
+          <line x1="10" y1="12" x2="14" y2="12" {...strokeProps} />
+        </svg>
+      );
+    case 'shopping-bag':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" {...strokeProps} />
+          <line x1="3" y1="6" x2="21" y2="6" {...strokeProps} />
+          <path d="M16 10a4 4 0 0 1-8 0" {...strokeProps} />
+        </svg>
+      );
+    case 'credit-card':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <rect x="1" y="4" width="22" height="16" rx="2" ry="2" {...strokeProps} />
+          <line x1="1" y1="10" x2="23" y2="10" {...strokeProps} />
+          <line x1="5" y1="15" x2="9" y2="15" {...strokeProps} />
+        </svg>
+      );
+    case 'key':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.778-7.778zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3-3.5 3.5z" {...strokeProps} />
+        </svg>
+      );
+    case 'coffee':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" {...strokeProps} /><line x1="6" y1="1" x2="6" y2="4" {...strokeProps} /><line x1="10" y1="1" x2="10" y2="4" {...strokeProps} /><line x1="14" y1="1" x2="14" y2="4" {...strokeProps} />
+        </svg>
+      );
+    case 'bed':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <path d="M3 7v14M21 7v14M2 17h20M2 8h20M6 12h5a2 2 0 0 1 2 2v3H6v-5z" {...strokeProps} />
+        </svg>
+      );
+    case 'server':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <rect x="2" y="2" width="20" height="8" rx="2" ry="2" {...strokeProps} />
+          <rect x="2" y="14" width="20" height="8" rx="2" ry="2" {...strokeProps} />
+          <line x1="6" y1="6" x2="6.01" y2="6" {...strokeProps} />
+          <line x1="6" y1="18" x2="6.01" y2="18" {...strokeProps} />
+        </svg>
+      );
+    case 'info':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <circle cx="12" cy="12" r="10" {...strokeProps} />
+          <line x1="12" y1="16" x2="12" y2="12" {...strokeProps} />
+          <line x1="12" y1="8" x2="12.01" y2="8" {...strokeProps} />
+        </svg>
+      );
+    case 'users':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" {...strokeProps} /><circle cx="9" cy="7" r="4" {...strokeProps} /><path d="M23 21v-2a4 4 0 0 0-3-3.87" {...strokeProps} /><path d="M16 3.13a4 4 0 0 1 0 7.75" {...strokeProps} />
+        </svg>
+      );
+    case 'briefcase':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2" {...strokeProps} /><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" {...strokeProps} />
+        </svg>
+      );
+    case 'book':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" {...strokeProps} /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" {...strokeProps} />
+        </svg>
+      );
+    case 'award':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <circle cx="12" cy="8" r="7" {...strokeProps} /><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" {...strokeProps} />
+        </svg>
+      );
+    case 'compass':
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28">
+          <circle cx="12" cy="12" r="10" {...strokeProps} /><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" {...strokeProps} />
+        </svg>
+      );
     default:
       return (
         <svg viewBox="0 0 24 24" width="28" height="28">
@@ -361,7 +497,15 @@ const VIBRANT_GRADIENTS: Record<string, string> = {
   'government-public-sector': 'linear-gradient(135deg, #ffffff 0%, #93c5fd 50%, #3b82f6 100%)',
   'capital-markets': 'linear-gradient(135deg, #ffffff 0%, #fbbf24 50%, #f59e0b 100%)',
   'travel-hospitality': 'linear-gradient(120deg, #ffffff 0%, #c084fc 50%, #a855f7 100%)',
-  'construction': 'linear-gradient(135deg, #ffffff 0%, #fbbf24 50%, #d97706 100%)'
+  'construction': 'linear-gradient(135deg, #ffffff 0%, #fbbf24 50%, #d97706 100%)',
+  'media-entertainment': 'linear-gradient(135deg, #ffffff 0%, #f472b6 50%, #db2777 100%)',
+  'telecommunications': 'linear-gradient(135deg, #ffffff 0%, #67e8f9 50%, #0891b2 100%)',
+  'distribution-wholesale': 'linear-gradient(135deg, #ffffff 0%, #fcd34d 50%, #d97706 100%)',
+  'retail': 'linear-gradient(135deg, #ffffff 0%, #6ee7b7 50%, #059669 100%)',
+  'hotel-management': 'linear-gradient(135deg, #ffffff 0%, #c084fc 50%, #7c3aed 100%)',
+  'information-services': 'linear-gradient(135deg, #ffffff 0%, #93c5fd 50%, #2563eb 100%)',
+  'public-services': 'linear-gradient(135deg, #ffffff 0%, #a5b4fc 50%, #4f46e5 100%)',
+  'education': 'linear-gradient(135deg, #ffffff 0%, #fdba74 50%, #ea580c 100%)'
 };
 
 const CHALLENGES_LOCALIZATION: Record<string, {

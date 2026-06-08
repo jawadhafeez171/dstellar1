@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { DSTELLAR_DATA as D } from '@/lib/data';
 import { useLanguage } from '@/context/LanguageContext';
+import Link from 'next/link';
 
 const INDUSTRY_GLYPHS: Record<string, React.ReactNode> = {
   'Automotive': (<g><rect x="14" y="32" width="52" height="14" rx="4" /><circle cx="24" cy="50" r="6" /><circle cx="56" cy="50" r="6" /><path d="M20 32 L26 22 L54 22 L60 32" /></g>),
@@ -103,9 +104,11 @@ export function Industries() {
                 <div className="ind-tags">
                   {[t('ind_tag_s4'), t('ind_tag_addons'), t('ind_tag_ams'), t('ind_tag_analytics')].map(t => <span key={t} className="ind-tag">{t}</span>)}
                 </div>
-                <button className="cta-btn" style={{ marginTop: 24, background: 'var(--ink)', color: 'var(--paper)' }}>
-                  {t('playbook_cta').replace('{name}', ind.name)}
-                </button>
+                <Link href={`/industries/${originalInd.name === 'Travel, Transport & Hospitality' ? 'travel-hospitality' : originalInd.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}>
+                  <button className="cta-btn" style={{ marginTop: 24, background: 'var(--ink)', color: 'var(--paper)' }}>
+                    {t('playbook_cta').replace('{name}', ind.name)}
+                  </button>
+                </Link>
               </div>
             </motion.div>
           </AnimatePresence>

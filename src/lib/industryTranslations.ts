@@ -346,6 +346,254 @@ export const INDUSTRY_TRANSLATIONS: Record<string, Record<string, IndustryDetail
       msgPlaceholder: 'Describe your infrastructure or project system needs...',
       submitBtn: 'Send Message',
       successMsg: 'Message sent. Our industrial construction experts will call you.'
+    },
+    'media-entertainment': {
+      slug: 'media-entertainment',
+      badge: 'Media & Entertainment',
+      title: 'Media & Content Monetization',
+      subtitle: 'Digital rights management, real-time royalties processing, and omnichannel content monetization.',
+      overview: 'Dstellar transforms media and entertainment organizations by optimizing digital asset value chains, streamlining complex licensing royalties, and running subscription billing models at scale using SAP Billing and Revenue Innovation Management (BRIM).',
+      gradientClass: 'linear-gradient(135deg, #180828 0%, #ec4899 45%, #e11d48 100%)',
+      themeColor: '#ec4899',
+      stats: [
+        { value: '35%', label: 'Royalty Processing Speedup' },
+        { value: '25M+', label: 'Daily Content Subscribers' },
+        { value: '$2B+', label: 'Royalties Distributed Annually' }
+      ],
+      solutions: [
+        { title: 'Rights & Royalty Audits', desc: 'Automate tracking of IP licensing agreements, royalty payouts, and auditing inside SAP BRIM.', icon: 'film' },
+        { title: 'Subscription Invoicing', desc: 'Process billing logic for millions of dynamic digital content subscribers with high concurrency.', icon: 'music' },
+        { title: 'Content Distribution Data', desc: 'Synchronize global streaming telemetry with finance ledgers for real-time profitability analytics.', icon: 'play' }
+      ],
+      playbook: {
+        tag: 'Case Study',
+        title: 'Modernizing Streaming Royalties',
+        desc: 'How Dstellar built a high-speed billing pipeline processing 10 million streaming events daily and integrated it with SAP General Ledger.',
+        metrics: '100% royalty payment accuracy achieved.'
+      },
+      inquiryTitle: 'Contact Our Media Specialists',
+      namePlaceholder: 'Your Name',
+      emailPlaceholder: 'Email Address',
+      msgPlaceholder: 'Tell us about your project...',
+      submitBtn: 'Send Inquiry',
+      successMsg: 'Thank you! Our media team will contact you shortly.'
+    },
+    'telecommunications': {
+      slug: 'telecommunications',
+      badge: 'Telecommunications',
+      title: 'Telecommunications OSS/BSS Orchestration',
+      subtitle: 'Dynamic subscriber billing, network infrastructure management, and telecom telemetry analytics.',
+      overview: 'Dstellar integrates core network activities with enterprise ERP platforms, allowing telecommunication operators to manage high-volume billing streams, optimize cell tower maintenance cycles, and predict subscriber churn in real-time.',
+      gradientClass: 'linear-gradient(135deg, #091e3a 0%, #06b6d4 45%, #3b82f6 100%)',
+      themeColor: '#06b6d4',
+      stats: [
+        { value: '99.999%', label: 'Core Billing System Uptime' },
+        { value: '50M+', label: 'Active Subscribers Managed' },
+        { value: '15%', label: 'Reduction in Network Opex' }
+      ],
+      solutions: [
+        { title: 'High-Volume Billing', desc: 'Ingest billing telemetry for voice, data, and value-added services directly into SAP BRIM.', icon: 'phone' },
+        { title: 'Network Asset Management', desc: 'Coordinate cell tower, fiber optic line, and hardware maintenance with SAP Plant Maintenance.', icon: 'wifi' },
+        { title: 'Churn Analytics Engine', desc: 'Apply ML modeling to subscriber traffic patterns and billing history to forecast customer retention.', icon: 'activity' }
+      ],
+      playbook: {
+        tag: 'Network Scale',
+        title: '5G Network Rollout Integration',
+        desc: 'How Dstellar helped a national telecom operator integrate capital expenditure tracking with cell tower provisioning workflows.',
+        metrics: 'Time-to-market for new towers cut from 6 months to 6 weeks.'
+      },
+      inquiryTitle: 'Contact Our Telecom Specialists',
+      namePlaceholder: 'Your Name',
+      emailPlaceholder: 'Email Address',
+      msgPlaceholder: 'Tell us about your project...',
+      submitBtn: 'Send Inquiry',
+      successMsg: 'Thank you! Our telecom team will contact you shortly.'
+    },
+    'distribution-wholesale': {
+      slug: 'distribution-wholesale',
+      badge: 'Distribution & Wholesale',
+      title: 'High-Velocity Wholesale Distribution',
+      subtitle: 'Order-to-cash acceleration, smart warehouse logistics, and global supplier coordination.',
+      overview: 'Dstellar optimizes supply chain logistics and warehouse velocities for large-scale distributors. We integrate SAP Extended Warehouse Management (EWM) with real-time transportation networks to eliminate order-fulfillment bottlenecks.',
+      gradientClass: 'linear-gradient(135deg, #1c1917 0%, #f59e0b 45%, #ea580c 100%)',
+      themeColor: '#f59e0b',
+      stats: [
+        { value: '45%', label: 'Faster Order Fulfillment' },
+        { value: '100k+', label: 'SKUs Optimized Daily' },
+        { value: '22%', label: 'Reduction in Carrying Costs' }
+      ],
+      solutions: [
+        { title: 'Extended Warehouse Velocity', desc: 'Optimize pick-pack-ship sequences using automated routing and spatial mapping in SAP EWM.', icon: 'box' },
+        { title: 'Omnichannel Order Pipelines', desc: 'Consolidate orders from regional partners, distributors, and online channels into a single ledger.', icon: 'truck' },
+        { title: 'Supplier Collaboration Portal', desc: 'Automate purchase orders and delivery acknowledgments with wholesale vendor networks.', icon: 'archive' }
+      ],
+      playbook: {
+        tag: 'Case Study',
+        title: 'Automating Global Supply Chains',
+        desc: 'Dstellar built a central replenishment planner that automatically triggers vendor purchase orders when inventory levels drop below dynamic thresholds.',
+        metrics: 'Out-of-stock occurrences reduced by 98%.'
+      },
+      inquiryTitle: 'Contact Our Distribution Specialists',
+      namePlaceholder: 'Your Name',
+      emailPlaceholder: 'Email Address',
+      msgPlaceholder: 'Tell us about your project...',
+      submitBtn: 'Send Inquiry',
+      successMsg: 'Thank you! Our distribution team will contact you shortly.'
+    },
+    'retail': {
+      slug: 'retail',
+      badge: 'Retail',
+      title: 'Unified Retail & Commerce Integration',
+      subtitle: 'Omnichannel retail inventory, checkout POS integration, and customer loyalty tracking.',
+      overview: 'Dstellar bridges the gap between digital e-commerce channels and physical retail storefronts. We implement unified SAP Retail platforms that provide real-time inventory visibility and customer loyalty records across all touchpoints.',
+      gradientClass: 'linear-gradient(135deg, #022c22 0%, #10b981 45%, #84cc16 100%)',
+      themeColor: '#10b981',
+      stats: [
+        { value: '99.8%', label: 'Inventory Stock Accuracy' },
+        { value: '12M+', label: 'Loyalty Profiles Synced' },
+        { value: '30%', label: 'Increase in Customer Retention' }
+      ],
+      solutions: [
+        { title: 'Unified Commerce Stock', desc: 'Track shelf stock, store storage, and web order reserves instantly in a central ledger.', icon: 'shopping-bag' },
+        { title: 'Dynamic Price Engine', desc: 'Synchronize retail pricing, coupon rules, and promotion campaigns across all stores.', icon: 'tag' },
+        { title: 'Omnichannel Checkout POS', desc: 'Integrate front-of-house point-of-sale systems with SAP financials for real-time sales reporting.', icon: 'credit-card' }
+      ],
+      playbook: {
+        tag: 'Retail Growth',
+        title: 'Real-Time Stock Sync',
+        desc: 'How Dstellar helped a multi-national retail chain synchronize e-commerce storefronts with physical shop-floor inventory records.',
+        metrics: 'Fulfillment errors decreased by 85%.'
+      },
+      inquiryTitle: 'Contact Our Retail Specialists',
+      namePlaceholder: 'Your Name',
+      emailPlaceholder: 'Email Address',
+      msgPlaceholder: 'Tell us about your project...',
+      submitBtn: 'Send Inquiry',
+      successMsg: 'Thank you! Our retail team will contact you shortly.'
+    },
+    'hotel-management': {
+      slug: 'hotel-management',
+      badge: 'Hotel Management',
+      title: 'Hotel Management & Guest Operations',
+      subtitle: 'Real-time booking engines, property management systems, and revenue yield optimization.',
+      overview: 'Dstellar builds integrated hospitality solutions that link guest-facing property management interfaces with core financial ledgers. We optimize booking allocations, automate procurement, and streamline billing for global hotel operators.',
+      gradientClass: 'linear-gradient(135deg, #1e1b4b 0%, #8b5cf6 45%, #d946ef 100%)',
+      themeColor: '#8b5cf6',
+      stats: [
+        { value: '98%', label: 'Guest Satisfaction Index' },
+        { value: '15M+', label: 'Bookings Managed Annually' },
+        { value: '18%', label: 'Increase in Revenue per Room' }
+      ],
+      solutions: [
+        { title: 'Property Management ERP', desc: 'Connect room cleaning status, check-ins, and guest charges directly to SAP billing.', icon: 'key' },
+        { title: 'Yield & Pricing Engine', desc: 'Deploy automated pricing algorithms linked to occupancy trends and seasonal event calendars.', icon: 'coffee' },
+        { title: 'Integrated Hotel Operations', desc: 'Streamline frontdesk workflows, restaurant billing, and spa booking under a single customer record.', icon: 'bed' }
+      ],
+      playbook: {
+        tag: 'Hospitality Upgrade',
+        title: 'Unified Resort Operations',
+        desc: 'How Dstellar designed a single customer identifier system that tracks room charges, restaurant orders, and activity bookings across 50 resorts.',
+        metrics: 'Billing errors cut down to under 0.1%.'
+      },
+      inquiryTitle: 'Contact Our Hospitality Specialists',
+      namePlaceholder: 'Your Name',
+      emailPlaceholder: 'Email Address',
+      msgPlaceholder: 'Tell us about your project...',
+      submitBtn: 'Send Inquiry',
+      successMsg: 'Thank you! Our hotel management team will contact you shortly.'
+    },
+    'information-services': {
+      slug: 'information-services',
+      badge: 'Information Services',
+      title: 'Information & Data Services',
+      subtitle: 'Monetizing data assets, high-performance API portals, and subscription billing systems.',
+      overview: 'Dstellar helps data brokers, credit bureaus, and information providers package and monetize their digital assets. We design high-speed API delivery layers and automate recurring subscription accounting in SAP.',
+      gradientClass: 'linear-gradient(135deg, #0f172a 0%, #3b82f6 45%, #00d4c8 100%)',
+      themeColor: '#3b82f6',
+      stats: [
+        { value: '10B+', label: 'API Requests Processed Daily' },
+        { value: '99.999%', label: 'Query Delivery Reliability' },
+        { value: '40%', label: 'Reduction in Subscription Churn' }
+      ],
+      solutions: [
+        { title: 'Dynamic API Monetization', desc: 'Track developer API usage and meter billings in real-time inside SAP Billing (BRIM).', icon: 'database' },
+        { title: 'High-Performance Architecture', desc: 'Scale content caches and search index arrays to handle millions of queries per second.', icon: 'server' },
+        { title: 'Structured Metadata Hub', desc: 'Organize raw dataset records, client permissions, and access logs securely in SAP HANA.', icon: 'info' }
+      ],
+      playbook: {
+        tag: 'Data Scale',
+        title: 'Monetizing Global Credit Data',
+        desc: 'How Dstellar integrated a credit scoring platform API with SAP BRIM, automating billing cycles for 5,000 corporate clients.',
+        metrics: 'Invoice generation window cut from 5 days to 2 minutes.'
+      },
+      inquiryTitle: 'Contact Our Data Specialists',
+      namePlaceholder: 'Your Name',
+      emailPlaceholder: 'Email Address',
+      msgPlaceholder: 'Tell us about your project...',
+      submitBtn: 'Send Inquiry',
+      successMsg: 'Thank you! Our data team will contact you shortly.'
+    },
+    'public-services': {
+      slug: 'public-services',
+      badge: 'Public Services',
+      title: 'Public Services & Civic Infrastructure',
+      subtitle: 'Community support, case management, and civic program administration.',
+      overview: 'Dstellar empowers local government agencies and non-profit organizations to run efficient civic services. We automate case tracking, manage social program budgets, and ensure audit compliance in municipal projects.',
+      gradientClass: 'linear-gradient(135deg, #030712 0%, #6366f1 45%, #4338ca 100%)',
+      themeColor: '#6366f1',
+      stats: [
+        { value: '10M+', label: 'Citizens Supported' },
+        { value: '100%', label: 'Program Audit Compliance' },
+        { value: '50%', label: 'Reduction in Case Intake Latency' }
+      ],
+      solutions: [
+        { title: 'Citizen Service Portals', desc: 'Fiori portals enabling citizens to apply for support and track case status securely online.', icon: 'users' },
+        { title: 'Civic Program Budgets', desc: 'Track government grant allocations and program expenses in SAP Funds Management.', icon: 'shield' },
+        { title: 'Social Case Management', desc: 'Coordinate multi-agency case workflows, client milestones, and services delivery databases.', icon: 'briefcase' }
+      ],
+      playbook: {
+        tag: 'Civic Impact',
+        title: 'Automating Welfare Delivery',
+        desc: 'How Dstellar helped a municipal government automate welfare intake processing, verifying applicant criteria and distributing grants.',
+        metrics: 'Application processing backlog reduced by 90%.'
+      },
+      inquiryTitle: 'Contact Our Civic Specialists',
+      namePlaceholder: 'Your Name',
+      emailPlaceholder: 'Email Address',
+      msgPlaceholder: 'Tell us about your project...',
+      submitBtn: 'Send Inquiry',
+      successMsg: 'Thank you! Our public services team will contact you shortly.'
+    },
+    'education': {
+      slug: 'education',
+      badge: 'Education',
+      title: 'Education & Campus Management',
+      subtitle: 'Student lifecycle tracking, digital admissions, and learning management integrations.',
+      overview: 'Dstellar designs scalable education systems for universities and school networks. We implement student information systems, automate registrar workflows, and integrate learning management software with core financials.',
+      gradientClass: 'linear-gradient(135deg, #2a0800 0%, #ea580c 45%, #eab308 100%)',
+      themeColor: '#ea580c',
+      stats: [
+        { value: '250k+', label: 'Active Students Managed' },
+        { value: '95%', label: 'Admissions Processing Speed' },
+        { value: '100%', label: 'LMS Data Synchronization' }
+      ],
+      solutions: [
+        { title: 'Student Lifecycle ERP', desc: 'Manage courses catalog, enrollment, grading, and registrar logs in SAP Student Lifecycle.', icon: 'book' },
+        { title: 'Registrar Automation', desc: 'Automate tuition invoice generation, scholarship applications, and student accounts.', icon: 'award' },
+        { title: 'Unified Learning Hub', desc: 'Integrate external LMS like Canvas and Moodle with backend academic and finance databases.', icon: 'compass' }
+      ],
+      playbook: {
+        tag: 'Campus Upgrade',
+        title: 'Unified Campus Cloud',
+        desc: 'How Dstellar migrated a multi-campus university state system from legacy student databases into a unified SAP Cloud environment.',
+        metrics: 'Student enrollment wait times dropped by 70%.'
+      },
+      inquiryTitle: 'Contact Our Education Specialists',
+      namePlaceholder: 'Your Name',
+      emailPlaceholder: 'Email Address',
+      msgPlaceholder: 'Tell us about your project...',
+      submitBtn: 'Send Inquiry',
+      successMsg: 'Thank you! Our education team will contact you shortly.'
     }
   },
   es: {
@@ -658,6 +906,254 @@ export const INDUSTRY_TRANSLATIONS: Record<string, Record<string, IndustryDetail
       msgPlaceholder: 'Describa sus necesidades de infraestructura o sistemas de proyectos...',
       submitBtn: 'Enviar Mensaje',
       successMsg: 'Mensaje enviado. Nuestros expertos en construcción industrial le llamarán.'
+    },
+    'media-entertainment': {
+      slug: 'media-entertainment',
+      badge: 'Medios y Entretenimiento',
+      title: 'Monetización de Contenidos y Medios',
+      subtitle: 'Gestión de derechos digitales, procesamiento de regalías en tiempo real y monetización de contenidos omnicanal.',
+      overview: 'Dstellar transforma las organizaciones de medios y entretenimiento mediante la optimización de las cadenas de valor de activos digitales, la simplificación de las complejas regalías de licencias y la ejecución de modelos de facturación por suscripción a escala con SAP BRIM.',
+      gradientClass: 'linear-gradient(135deg, #180828 0%, #ec4899 45%, #e11d48 100%)',
+      themeColor: '#ec4899',
+      stats: [
+        { value: '35%', label: 'Aceleración de Regalías' },
+        { value: '25M+', label: 'Suscriptores Diarios' },
+        { value: '$2B+', label: 'Regalías Distribuidas Anualmente' }
+      ],
+      solutions: [
+        { title: 'Auditoría de Derechos y Regalías', desc: 'Automatice el seguimiento de acuerdos de licencias de propiedad intelectual y pagos de regalías dentro de SAP BRIM.', icon: 'film' },
+        { title: 'Facturación de Suscripciones', desc: 'Procese la lógica de facturación para millones de suscriptores de contenido digital dinámico con alta concurrencia.', icon: 'music' },
+        { title: 'Datos de Distribución de Contenido', desc: 'Sincronice la telemetría de transmisión global con los libros financieros para obtener análisis de rentabilidad en tiempo real.', icon: 'play' }
+      ],
+      playbook: {
+        tag: 'Caso de Éxito',
+        title: 'Modernización de Regalías de Transmisión',
+        desc: 'Cómo Dstellar construyó un flujo de facturación de alta velocidad que procesa 10 millones de eventos de transmisión diarios y lo integró con SAP General Ledger.',
+        metrics: '100% de precisión en el pago de regalías lograda.'
+      },
+      inquiryTitle: 'Contacte a Nuestros Especialistas en Medios',
+      namePlaceholder: 'Su Nombre',
+      emailPlaceholder: 'Dirección de Correo',
+      msgPlaceholder: 'Cuéntenos sobre su proyecto de derechos digitales o facturación...',
+      submitBtn: 'Enviar Consulta',
+      successMsg: '¡Gracias! Nuestro equipo de medios se pondrá en contacto con usted en breve.'
+    },
+    'telecommunications': {
+      slug: 'telecommunications',
+      badge: 'Telecomunicaciones',
+      title: 'Orquestación de OSS/BSS de Telecomunicaciones',
+      subtitle: 'Facturación dinámica de suscriptores, gestión de infraestructura de red y analítica de telemetría de telecomunicaciones.',
+      overview: 'Dstellar integra actividades de red central con ERP empresariales, permitiendo a los operadores de telecomunicaciones gestionar flujos de facturación de gran volumen, optimizar los ciclos de mantenimiento de torres y predecir la pérdida de suscriptores en tiempo real.',
+      gradientClass: 'linear-gradient(135deg, #091e3a 0%, #06b6d4 45%, #3b82f6 100%)',
+      themeColor: '#06b6d4',
+      stats: [
+        { value: '99.999%', label: 'Disponibilidad del Sistema' },
+        { value: '50M+', label: 'Suscriptores Activos' },
+        { value: '15%', label: 'Reducción de Gastos de Red' }
+      ],
+      solutions: [
+        { title: 'Facturación a Gran Escala', desc: 'Realice la ingesta de telemetría de facturación para voz, datos y servicios de valor añadido directamente en SAP BRIM.', icon: 'phone' },
+        { title: 'Gestión de Activos de Red', desc: 'Coordine el mantenimiento de antenas, líneas de fibra óptica y hardware con SAP Plant Maintenance.', icon: 'wifi' },
+        { title: 'Motor de Análisis de Deserción', desc: 'Aplique modelos de aprendizaje automático (ML) a los patrones de tráfico para pronosticar la retención de clientes.', icon: 'activity' }
+      ],
+      playbook: {
+        tag: 'Escala de Red',
+        title: 'Integración de Despliegue de Red 5G',
+        desc: 'Cómo Dstellar ayudó a un operador nacional de telecomunicaciones a integrar el seguimiento de CAPEX con los flujos de aprovisionamiento de antenas.',
+        metrics: 'Tiempo de comercialización de nuevas antenas reducido de 6 meses a 6 semanas.'
+      },
+      inquiryTitle: 'Contacte a Nuestros Especialistas en Telecomunicaciones',
+      namePlaceholder: 'Su Nombre',
+      emailPlaceholder: 'Dirección de Correo',
+      msgPlaceholder: 'Describa sus desafíos de red o facturación...',
+      submitBtn: 'Enviar Consulta',
+      successMsg: '¡Gracias! Nuestro equipo de telecomunicaciones se pondrá en contacto con usted en breve.'
+    },
+    'distribution-wholesale': {
+      slug: 'distribution-wholesale',
+      badge: 'Distribución y Mayorista',
+      title: 'Distribución Mayorista de Alta Velocidad',
+      subtitle: 'Aceleración de ciclo order-to-cash, logística inteligente de almacén y coordinación global de proveedores.',
+      overview: 'Dstellar optimiza la logística de la cadena de suministro y la velocidad de almacenamiento para distribuidores a gran escala. Integramos SAP Extended Warehouse Management (EWM) con redes de transporte en tiempo real para eliminar cuellos de botella.',
+      gradientClass: 'linear-gradient(135deg, #1c1917 0%, #f59e0b 45%, #ea580c 100%)',
+      themeColor: '#f59e0b',
+      stats: [
+        { value: '45%', label: 'Fulfillment de Pedidos Más Rápido' },
+        { value: '100k+', label: 'SKUs Optimizados Al Día' },
+        { value: '22%', label: 'Reducción en Costo de Almacenamiento' }
+      ],
+      solutions: [
+        { title: 'Velocidad de Almacén Extendida', desc: 'Optimice las secuencias de preparación y envío mediante enrutamiento automático y mapas en SAP EWM.', icon: 'box' },
+        { title: 'Canal de Pedidos Omnicanal', desc: 'Consolide pedidos de socios regionales, distribuidores y canales en línea en un solo libro mayor.', icon: 'truck' },
+        { title: 'Portal de Colaboración de Proveedores', desc: 'Automatice las órdenes de compra y los acuses de recibo de entrega con las redes de proveedores.', icon: 'archive' }
+      ],
+      playbook: {
+        tag: 'Estudio de Caso',
+        title: 'Automatización de Cadenas de Suministro',
+        desc: 'Dstellar construyó un planificador de reabastecimiento central que activa órdenes de compra automáticas de proveedores cuando los niveles caen por debajo de umbrales dinámicos.',
+        metrics: 'Incidencias de falta de stock reducidas en un 98%.'
+      },
+      inquiryTitle: 'Contacte a Nuestros Especialistas en Distribución',
+      namePlaceholder: 'Su Nombre',
+      emailPlaceholder: 'Dirección de Correo',
+      msgPlaceholder: 'Describa sus necesidades logísticas o de distribución...',
+      submitBtn: 'Enviar Consulta',
+      successMsg: '¡Gracias! Nuestro equipo de distribución se pondrá en contacto con usted en breve.'
+    },
+    'retail': {
+      slug: 'retail',
+      badge: 'Comercio Minorista (Retail)',
+      title: 'Integración Unificada de Retail y Comercio',
+      subtitle: 'Inventario omnicanal de retail, integración de sistemas POS de caja e historial de fidelización de clientes.',
+      overview: 'Dstellar cierra la brecha entre los canales de comercio electrónico digital y las tiendas minoristas físicas. Implementamos plataformas unificadas SAP Retail que brindan visibilidad del inventario en tiempo real y perfiles de clientes en todos los puntos de contacto.',
+      gradientClass: 'linear-gradient(135deg, #022c22 0%, #10b981 45%, #84cc16 100%)',
+      themeColor: '#10b981',
+      stats: [
+        { value: '99.8%', label: 'Precisión del Inventario' },
+        { value: '12M+', label: 'Perfiles de Fidelización Sincronizados' },
+        { value: '30%', label: 'Aumento de Retención' }
+      ],
+      solutions: [
+        { title: 'Inventario Unificado', desc: 'Realice el seguimiento de existencias en tienda, almacén y reservas web al instante en un libro centralizado.', icon: 'shopping-bag' },
+        { title: 'Motor de Precios Dinámico', desc: 'Sincronice precios, reglas de cupones y campañas promocionales en todas las tiendas físicas y virtuales.', icon: 'tag' },
+        { title: 'Integración POS de Caja', desc: 'Integre los sistemas de punto de venta front-of-house con SAP Finance para obtener reportes de ventas diarios.', icon: 'credit-card' }
+      ],
+      playbook: {
+        tag: 'Crecimiento de Retail',
+        title: 'Sincronización de Stock en Tiempo Real',
+        desc: 'Cómo Dstellar ayudó a una cadena minorista multinacional a sincronizar el portal de comercio electrónico con los inventarios de las tiendas físicas.',
+        metrics: 'Los errores de entrega y stock bajaron en un 85%.'
+      },
+      inquiryTitle: 'Contacte a Nuestros Especialistas en Retail',
+      namePlaceholder: 'Su Nombre',
+      emailPlaceholder: 'Dirección de Correo',
+      msgPlaceholder: 'Cuéntenos sobre sus desafíos en tiendas o e-commerce...',
+      submitBtn: 'Enviar Consulta',
+      successMsg: '¡Gracias! Nuestro equipo de comercio minorista se pondrá en contacto con usted en breve.'
+    },
+    'hotel-management': {
+      slug: 'hotel-management',
+      badge: 'Gestión Hotelera',
+      title: 'Gestión Hotelera y Operaciones de Huéspedes',
+      subtitle: 'Motores de reserva en tiempo real, sistemas de gestión de propiedades y rendimiento de ingresos.',
+      overview: 'Dstellar construye soluciones integradas que vinculan las interfaces de gestión de propiedades con los libros financieros centrales. Optimizamos la asignación de reservas, automatizamos las compras y agilizamos la facturación para operadores globales.',
+      gradientClass: 'linear-gradient(135deg, #1e1b4b 0%, #8b5cf6 45%, #d946ef 100%)',
+      themeColor: '#8b5cf6',
+      stats: [
+        { value: '98%', label: 'Índice de Satisfacción del Huésped' },
+        { value: '15M+', label: 'Reservas Gestionadas' },
+        { value: '18%', label: 'Aumento en Ingreso por Habitación' }
+      ],
+      solutions: [
+        { title: 'ERP de Gestión de Propiedades', desc: 'Conecte el estado de limpieza de habitaciones, check-ins y cargos directamente a la facturación de SAP.', icon: 'key' },
+        { title: 'Motor de Precios Dinámico', desc: 'Implemente algoritmos de tarifas vinculados a tendencias de ocupación y calendarios de eventos.', icon: 'coffee' },
+        { title: 'Operaciones Integradas', desc: 'Agilice los flujos de recepción, la facturación de restaurantes y las reservas de spa bajo un único perfil de cliente.', icon: 'bed' }
+      ],
+      playbook: {
+        tag: 'Modernización',
+        title: 'Operaciones de Resorts Unificadas',
+        desc: 'Cómo Dstellar diseñó un identificador de cliente único que rastrea consumos de habitación, pedidos de restaurantes y actividades en 50 centros vacacionales.',
+        metrics: 'Errores de facturación reducidos a menos de 0.1%.'
+      },
+      inquiryTitle: 'Contacte a Nuestros Especialistas en Hotelería',
+      namePlaceholder: 'Su Nombre',
+      emailPlaceholder: 'Dirección de Correo',
+      msgPlaceholder: 'Describa sus desafíos de administración o facturación...',
+      submitBtn: 'Enviar Consulta',
+      successMsg: '¡Gracias! Nuestro equipo de hotelería se pondrá en contacto con usted en breve.'
+    },
+    'information-services': {
+      slug: 'information-services',
+      badge: 'Servicios de Información',
+      title: 'Servicios de Datos e Información',
+      subtitle: 'Monetización de activos de datos, portales API de alto rendimiento y facturación por suscripción.',
+      overview: 'Dstellar ayuda a los proveedores de información y burós de crédito a empaquetar y monetizar sus activos de datos. Diseñamos capas de entrega de API de alta velocidad y automatizamos la contabilidad de suscripción en SAP.',
+      gradientClass: 'linear-gradient(135deg, #0f172a 0%, #3b82f6 45%, #00d4c8 100%)',
+      themeColor: '#3b82f6',
+      stats: [
+        { value: '10B+', label: 'Consultas API Diarias' },
+        { value: '99.999%', label: 'Confiabilidad de Entrega' },
+        { value: '40%', label: 'Reducción de Pérdida de Clientes' }
+      ],
+      solutions: [
+        { title: 'Monetización de APIs', desc: 'Realice el seguimiento de consumo de APIs de desarrolladores y facture consumos dinámicos en SAP BRIM.', icon: 'database' },
+        { title: 'Arquitectura de Alta Capacidad', desc: 'Escale caches de contenido y arreglos de índices para manejar millones de solicitudes por segundo.', icon: 'server' },
+        { title: 'Centro de Datos Estructurado', desc: 'Organice registros de datos sin procesar, accesos de clientes e historial de consultas de forma segura en SAP HANA.', icon: 'info' }
+      ],
+      playbook: {
+        tag: 'Escala de Datos',
+        title: 'Monetización de Datos de Crédito',
+        desc: 'Cómo Dstellar integró la API de una plataforma de calificación crediticia con SAP BRIM, automatizando la facturación para 5,000 clientes corporativos.',
+        metrics: 'Ventana de facturación reducida de 5 días a solo 2 minutos.'
+      },
+      inquiryTitle: 'Contacte a Nuestros Especialistas en Datos',
+      namePlaceholder: 'Su Nombre',
+      emailPlaceholder: 'Dirección de Correo',
+      msgPlaceholder: 'Describa sus necesidades de API o estructuración de datos...',
+      submitBtn: 'Enviar Consulta',
+      successMsg: '¡Gracias! Nuestro equipo de servicios de información se comunicará con usted.'
+    },
+    'public-services': {
+      slug: 'public-services',
+      badge: 'Servicios Públicos',
+      title: 'Servicios Públicos e Infraestructura Cívica',
+      subtitle: 'Soporte comunitario, gestión de casos y administración de programas cívicos municipales.',
+      overview: 'Dstellar capacita a agencias gubernamentales locales y ONGs para ejecutar servicios públicos eficientes. Automatizamos el seguimiento de casos sociales, gestionamos presupuestos de programas y garantizamos el cumplimiento de auditorías.',
+      gradientClass: 'linear-gradient(135deg, #030712 0%, #6366f1 45%, #4338ca 100%)',
+      themeColor: '#6366f1',
+      stats: [
+        { value: '10M+', label: 'Ciudadanos Apoyados' },
+        { value: '100%', label: 'Cumplimiento de Auditorías' },
+        { value: '50%', label: 'Aceleración de Procesamiento de Casos' }
+      ],
+      solutions: [
+        { title: 'Portales de Servicio al Ciudadano', desc: 'Portales Fiori que permiten a los ciudadanos solicitar apoyo y consultar el estado de sus trámites en línea.', icon: 'users' },
+        { title: 'Presupuestos de Programas', desc: 'Realice el seguimiento de subvenciones del gobierno y gastos de ayuda en SAP Funds Management.', icon: 'shield' },
+        { title: 'Gestión de Casos Sociales', desc: 'Coordine flujos de casos multiagencia, hitos de solicitantes y entrega de servicios.', icon: 'briefcase' }
+      ],
+      playbook: {
+        tag: 'Impacto Cívico',
+        title: 'Automatización de Ayudas Sociales',
+        desc: 'Cómo Dstellar ayudó a un ayuntamiento municipal a automatizar el ingreso de solicitudes de bienestar, validando criterios y entregando fondos.',
+        metrics: 'Atrasos en el procesamiento reducidos en un 90%.'
+      },
+      inquiryTitle: 'Contacte a Nuestros Especialistas en Servicios Públicos',
+      namePlaceholder: 'Su Nombre',
+      emailPlaceholder: 'Dirección de Correo',
+      msgPlaceholder: 'Describa los programas de su institución o agencia cívica...',
+      submitBtn: 'Enviar Consulta',
+      successMsg: '¡Gracias! Nuestro equipo de servicios públicos se pondrá en contacto con usted en breve.'
+    },
+    'education': {
+      slug: 'education',
+      badge: 'Educación',
+      title: 'Educación y Gestión de Campus',
+      subtitle: 'Seguimiento del ciclo de vida del estudiante, admisiones digitales e integración de LMS.',
+      overview: 'Dstellar diseña sistemas educativos escalables para universidades y redes escolares. Implementamos sistemas de información de estudiantes, automatizamos el trabajo de registro y coordinamos el LMS con finanzas.',
+      gradientClass: 'linear-gradient(135deg, #2a0800 0%, #ea580c 45%, #eab308 100%)',
+      themeColor: '#ea580c',
+      stats: [
+        { value: '250k+', label: 'Estudiantes Activos' },
+        { value: '95%', label: 'Velocidad de Admisiones' },
+        { value: '100%', label: 'Sincronización LMS' }
+      ],
+      solutions: [
+        { title: 'ERP de Ciclo de Vida Estudiantil', desc: 'Gestione el catálogo de asignaturas, matrículas, notas y registros de secretaría en SAP Student Lifecycle.', icon: 'book' },
+        { title: 'Automatización de Registro', desc: 'Automatice la facturación de matrículas y pensiones, solicitudes de becas y cuentas de estudiantes.', icon: 'award' },
+        { title: 'Centro de Aprendizaje Integrado', desc: 'Integre LMS externos como Canvas o Moodle con las bases de datos académicas y de finanzas.', icon: 'compass' }
+      ],
+      playbook: {
+        tag: 'Modernización',
+        title: 'Campus en la Nube Unificado',
+        desc: 'Cómo Dstellar migró el sistema estatal de una universidad de múltiples campus desde bases de datos heredadas a la nube unificada de SAP.',
+        metrics: 'Tiempos de espera de matriculación reducidos en un 70%.'
+      },
+      inquiryTitle: 'Contacte a Nuestros Especialistas en Educación',
+      namePlaceholder: 'Su Nombre',
+      emailPlaceholder: 'Dirección de Correo',
+      msgPlaceholder: 'Describa los requisitos de su institución o universidad...',
+      submitBtn: 'Enviar Consulta',
+      successMsg: '¡Gracias! Nuestro equipo de educación se pondrá en contacto con usted en breve.'
     }
   },
   zh: {
@@ -970,6 +1466,254 @@ export const INDUSTRY_TRANSLATIONS: Record<string, Record<string, IndustryDetail
       msgPlaceholder: '请简述您的基建项目分布或物资调配瓶颈...',
       submitBtn: '发送消息',
       successMsg: '消息已发送。我们的工业基建专家会尽快与您联系。'
+    },
+    'media-entertainment': {
+      slug: 'media-entertainment',
+      badge: '媒体与娱乐',
+      title: '媒体与内容变现系统',
+      subtitle: '数字版权管理、实时版税结算以及全渠道内容变现。',
+      overview: 'Dstellar 协助媒体与娱乐机构优化数字资产价值链，简化复杂的 IP 授权版税计算，并利用 SAP 计费与收入创新管理 (BRIM) 运行超大规模订阅计费模型。',
+      gradientClass: 'linear-gradient(135deg, #180828 0%, #ec4899 45%, #e11d48 100%)',
+      themeColor: '#ec4899',
+      stats: [
+        { value: '35%', label: '版税处理提速' },
+        { value: '25M+', label: '日活内容订阅用户' },
+        { value: '$2B+', label: '年均发放版税额' }
+      ],
+      solutions: [
+        { title: '版权与版税审计', desc: '在 SAP BRIM 中实现知识产权授权协议、版税支付 and 合规审计的自动化跟踪。', icon: 'film' },
+        { title: '订阅账单与发票', desc: '支持高并发处理数百万动态数字内容订阅用户的计费逻辑和发票生成。', icon: 'music' },
+        { title: '内容分发数据集成', desc: '将全球流媒体播发遥测数据与财务账套同步，实现实时的内容盈利性分析。', icon: 'play' }
+      ],
+      playbook: {
+        tag: '成功案例',
+        title: '流媒体版税系统现代化',
+        desc: 'Dstellar 如何构建日均处理 1000 万流媒体播放事件的高速计费管道，并将其与 SAP 总账无缝集成。',
+        metrics: '实现 100% 的版税支付准确率。'
+      },
+      inquiryTitle: '联系我们的媒体行业专家',
+      namePlaceholder: '您的姓名',
+      emailPlaceholder: '电子邮箱',
+      msgPlaceholder: '请告诉我们您的数字版权或计费项目需求...',
+      submitBtn: '发送咨询',
+      successMsg: '谢谢！我们的媒体团队会尽快与您取得联系。'
+    },
+    'telecommunications': {
+      slug: 'telecommunications',
+      badge: '电信行业',
+      title: '电信级 OSS/BSS 系统协同',
+      subtitle: '动态订户计费管理、通信基础设施运维以及电信遥测流量数据分析。',
+      overview: 'Dstellar 将通信运营商的核心网络活动与企业级 ERP 平台集成，协助电信运营商高效管理超海量话单和费率计算流，优化基站维护周期，并实现实时的订户流失预测。',
+      gradientClass: 'linear-gradient(135deg, #091e3a 0%, #06b6d4 45%, #3b82f6 100%)',
+      themeColor: '#06b6d4',
+      stats: [
+        { value: '99.999%', label: '核心计费系统可用率' },
+        { value: '50M+', label: '在网活跃用户数' },
+        { value: '15%', label: '降低网络运营开支 (Opex)' }
+      ],
+      solutions: [
+        { title: '超高并发计费引擎', desc: '直接将语音、流量数据及增值服务的通话详单 (CDR) 实时接入 SAP BRIM 计费系统。', icon: 'phone' },
+        { title: '网络资产与设备维护', desc: '利用 SAP Plant Maintenance (PM) 模块协调信号基站、光纤网络和网元硬件的定期维护保养。', icon: 'wifi' },
+        { title: '订户流失预测分析', desc: '对订户的网络流量模式和缴费信用记录运行机器学习预测建模，以预测离网意向。', icon: 'activity' }
+      ],
+      playbook: {
+        tag: '网络规模',
+        title: '5G 网络大规模部署集成',
+        desc: 'Dstellar 如何协助某国家级电信运营商将资本支出预算跟踪与 5G 基站设备上线审批工作流合并。',
+        metrics: '新建基站从立项 to 开通的周期由 6 个月缩短至 6 周。'
+      },
+      inquiryTitle: '联系我们的电信网络专家',
+      namePlaceholder: '您的姓名',
+      emailPlaceholder: '电子邮箱',
+      msgPlaceholder: '请描述您的网络资产或电信级计费需求...',
+      submitBtn: '发送咨询',
+      successMsg: '谢谢！我们的电信行业顾问会尽快联系您。'
+    },
+    'distribution-wholesale': {
+      slug: 'distribution-wholesale',
+      badge: '分销与批发',
+      title: '敏捷供应链与批发分销系统',
+      subtitle: '加速销售到收款流程、智能仓储物流管控以及全球供应商高效协同。',
+      overview: 'Dstellar 针对大型分销和批发企业优化其供应链流向及仓库物料周转率。我们将 SAP 高级仓库管理系统 (EWM) 与实时运输网络集成，全面消除订单履约的技术瓶颈。',
+      gradientClass: 'linear-gradient(135deg, #1c1917 0%, #f59e0b 45%, #ea580c 100%)',
+      themeColor: '#f59e0b',
+      stats: [
+        { value: '45%', label: '订单履约周期缩短' },
+        { value: '100k+', label: '日均优化库存品类 (SKU)' },
+        { value: '22%', label: '降低仓储持有成本' }
+      ],
+      solutions: [
+        { title: '高级仓库流转效率', desc: '基于 SAP EWM 中的自动化路径算法和三维货位映射，彻底优化拣货、包装和出库流程。', icon: 'box' },
+        { title: '全渠道订单汇聚管道', desc: '将来自区域分销商、加盟商、线下及线上各端渠道的订单统合写入同一套财务总账。', icon: 'truck' },
+        { title: '供应商协同作业平台', desc: '实现批发采购订单自动分发以及与供应商网络之间的交期自动匹配确认。', icon: 'archive' }
+      ],
+      playbook: {
+        tag: '成功案例',
+        title: '全球供应链补货流自动化',
+        desc: 'Dstellar 为某跨国分销企业开发了中央自动补货系统，在库存水位低于预定动态指标时自动触发向上游订货的采购单。',
+        metrics: '缺货停工停料发生率降低了 98%。'
+      },
+      inquiryTitle: '联系我们的分销与物流顾问',
+      namePlaceholder: '您的姓名',
+      emailPlaceholder: '电子邮箱',
+      msgPlaceholder: '请告诉我们您的仓储物流或供应链项目计划...',
+      submitBtn: '发送咨询',
+      successMsg: '谢谢！我们的分销行业专家会尽快为您提供支持。'
+    },
+    'retail': {
+      slug: 'retail',
+      badge: '零售商贸',
+      title: '全渠道统一零售与商业集成',
+      subtitle: '全渠道实时库存共享、收银端 POS 交易集成以及消费者忠诚度管理系统。',
+      overview: 'Dstellar 致力于打通传统电商数字渠道与实体零售门店之间的屏障。我们实施统一的 SAP 零售业解决方案，在每一个触点提供实时的库存视图和客户忠诚度画像。',
+      gradientClass: 'linear-gradient(135deg, #022c22 0%, #10b981 45%, #84cc16 100%)',
+      themeColor: '#10b981',
+      stats: [
+        { value: '99.8%', label: '实时库存盘点准确率' },
+        { value: '12M+', label: '同步更新的会员画像' },
+        { value: '30%', label: '提升顾客留存复购率' }
+      ],
+      solutions: [
+        { title: '统一商贸库存共享', desc: '即时追踪门店货架、店仓以及网店冻结库存，并在 SAP 中央账套内实时自动平账。', icon: 'shopping-bag' },
+        { title: '智能动态价调规则', desc: '跨所有门店及网络渠道同步最新的零售售价、优惠券卷扣减逻辑和满减优惠活动方案。', icon: 'tag' },
+        { title: '收银 POS 账务直连', desc: '将门店收银 POS 系统数据直接连接到 SAP 财务模块，实现日结算自动化和营业额实时看盘。', icon: 'credit-card' }
+      ],
+      playbook: {
+        tag: '零售增长',
+        title: '多渠道实时大盘库存同步',
+        desc: 'Dstellar 协助某跨国时尚服装零售商打通电商品牌订单流与其实体店库存主数据的接口。',
+        metrics: '因库存差异导致的订单发货失败数大减 85%。'
+      },
+      inquiryTitle: '联系我们的零售解决方案专家',
+      namePlaceholder: '您的姓名',
+      emailPlaceholder: '电子邮箱',
+      msgPlaceholder: '请提供您的实体零售店或电商系统改造方案需求...',
+      submitBtn: '发送咨询',
+      successMsg: '谢谢！我们的零售行业服务团队会尽快与您取得联系。'
+    },
+    'hotel-management': {
+      slug: 'hotel-management',
+      badge: '酒店管理',
+      title: '酒旅运营与酒店管理系统',
+      subtitle: '实时客房预订引擎、酒店前台 PMS 系统管理以及动态收益率优化。',
+      overview: 'Dstellar 为全球酒店运营商构建一体化的酒店信息系统，实现面向宾客的酒店前后台 (PMS) 与 ERP 财务账套的数据直连。我们优化客房分配算法，实现自动化采购并简化前台账务。',
+      gradientClass: 'linear-gradient(135deg, #1e1b4b 0%, #8b5cf6 45%, #d946ef 100%)',
+      themeColor: '#8b5cf6',
+      stats: [
+        { value: '98%', label: '住客满意度指数' },
+        { value: '15M+', label: '年均处理预订间夜数' },
+        { value: '18%', label: '提升单房平均收益 (RevPAR)' }
+      ],
+      solutions: [
+        { title: '酒店前台 (PMS) ERP 集成', desc: '将实时房态（清洁/房脏）、住退登记及挂账数据直接自动写入 SAP 计费总账。', icon: 'key' },
+        { title: '动态收益率与定价引擎', desc: '基于实时入住率走势和当地季节性节假日日程部署智能房价控制算法。', icon: 'coffee' },
+        { title: '统一酒店运营平台', desc: '合并前台日常接待、餐厅餐饮挂账和康乐预订流程，归入单一住客档案管理。', icon: 'bed' }
+      ],
+      playbook: {
+        tag: '酒旅升级',
+        title: '集团型度假村一体化运营',
+        desc: 'Dstellar 针对某大型文旅度假集团部署了单一住客身份识别器 (One-ID)，统一追踪其 50 家度假村的挂账消费。',
+        metrics: '将集团日常挂账账单错误率降至 0.1% 以下。'
+      },
+      inquiryTitle: '联系我们的酒店数字化顾问',
+      namePlaceholder: '您的姓名',
+      emailPlaceholder: '电子邮箱',
+      msgPlaceholder: '请告诉我们您的酒店连锁管理或财务系统的升级需求...',
+      submitBtn: '发送咨询',
+      successMsg: '谢谢！我们的酒店行业专家会尽快联络您。'
+    },
+    'information-services': {
+      slug: 'information-services',
+      badge: '信息服务',
+      title: '信息与数据资产服务平台',
+      subtitle: '数据资产商业化封装、高并发 API 开发者门户以及订阅式自动账务管理。',
+      overview: 'Dstellar 致力于协助数据服务商、信用征征信机构及各类信息服务商打包并变现其数字资产。我们设计极速 API 分发层，并在 SAP 中自动执行周期性订阅财务核算。',
+      gradientClass: 'linear-gradient(135deg, #0f172a 0%, #3b82f6 45%, #00d4c8 100%)',
+      themeColor: '#3b82f6',
+      stats: [
+        { value: '10B+', label: '日均处理 API 调用量' },
+        { value: '99.999%', label: '海量查询响应高可用' },
+        { value: '40%', label: '降低订阅用户解约率' }
+      ],
+      solutions: [
+        { title: '动态 API 量化计费', desc: '即时收集开发者 API 真实调用指标，并在 SAP 计费模块 (BRIM) 中运行按量计算。', icon: 'database' },
+        { title: '高响应技术物理架构', desc: '建立弹性数据缓存和搜索索引集群，满足秒级数百万并发数据获取需求。', icon: 'server' },
+        { title: '元数据与索引中台', desc: '在内存数据库 SAP HANA 中安全地归集原始数据包属性、客户准入密钥和访问日志。', icon: 'info' }
+      ],
+      playbook: {
+        tag: '数据规模',
+        title: '全球征信评分数据商业化集成',
+        desc: 'Dstellar 协助某跨国征信巨头将其征信评分查询 API 对接 SAP BRIM，使 5,000 家企业级客户账单全自动出单。',
+        metrics: '开票及财务结算周期从 5 天压缩到 2 分钟。'
+      },
+      inquiryTitle: '联系我们的数据变现架构师',
+      namePlaceholder: '您的姓名',
+      emailPlaceholder: '电子邮箱',
+      msgPlaceholder: '请提供您的大数据接口或订阅模式的系统升级要件...',
+      submitBtn: '发送咨询',
+      successMsg: '谢谢！我们的数据服务行业专家将尽快答复您。'
+    },
+    'public-services': {
+      slug: 'public-services',
+      badge: '公共服务',
+      title: '公共事业与社会公益组织数字化系统',
+      subtitle: '市民社会援助工作流管理、公益项目财务预决算管控以及行政工单跟进。',
+      overview: 'Dstellar 支持地方政务机关及非营利组织运行高效的社会治理服务。我们提供自动化个案救助进度跟踪，精准管理民生工程预算，并确保完全符合公共财政审计标准。',
+      gradientClass: 'linear-gradient(135deg, #030712 0%, #6366f1 45%, #4338ca 100%)',
+      themeColor: '#6366f1',
+      stats: [
+        { value: '10M+', label: '受益市民人数' },
+        { value: '100%', label: '项目专项审计通过率' },
+        { value: '50%', label: '缩短民政工单受理响应周期' }
+      ],
+      solutions: [
+        { title: '便民政务网络窗口', desc: '基于 Fiori 开发的在线服务门户，方便群众提交社保/求助申请并查询审批节点。', icon: 'users' },
+        { title: '财政预算专项会计', desc: '在 SAP Funds Management (FM) 中追踪国家及地方政府拨款的使用合规性和支出进度。', icon: 'shield' },
+        { title: '跨部门个案管理流', desc: '协同多个民政、医疗及就业相关机构的工作流，记录服务对象援助里程碑。', icon: 'briefcase' }
+      ],
+      playbook: {
+        tag: '民生效应',
+        title: '社会救助审批发放直联工程',
+        desc: 'Dstellar 协助某民政局系统开发临时救助系统，自动对比资格库、批量发放社会专项津贴。',
+        metrics: '社会援助金申领流转积压数缩减 90%。'
+      },
+      inquiryTitle: '联系我们的公共事业项目顾问',
+      namePlaceholder: '您的姓名',
+      emailPlaceholder: '电子邮箱',
+      msgPlaceholder: '请提供您所在的市政机构或社会服务项目的具体建设要求...',
+      submitBtn: '发送咨询',
+      successMsg: '谢谢！我们的公共服务行业团队会尽快联络您的办公室。'
+    },
+    'education': {
+      slug: 'education',
+      badge: '教育',
+      title: '高等教育与教务管理系统',
+      subtitle: '学生在校全生命周期记录、数字化招生以及主流在线教学平台 (LMS) 集成。',
+      overview: 'Dstellar 为高等院校及集团型教育网络设计高度可扩展的教务平台。我们部署学生信息系统 (SIS)、实现注册办公室自动出账管理，并打通 LMS 教学系统与后台财务账套。',
+      gradientClass: 'linear-gradient(135deg, #2a0800 0%, #ea580c 45%, #eab308 100%)',
+      themeColor: '#ea580c',
+      stats: [
+        { value: '250k+', label: '活跃在校生总数' },
+        { value: '95%', label: '在线录取审批效率提速' },
+        { value: '100%', label: '教学平台 (LMS) 数据实时打通' }
+      ],
+      solutions: [
+        { title: '学籍管理与教务 ERP', desc: '在 SAP 统一系统中编排课程目录、控制选课选班流程、记录考试分数及学籍日志。', icon: 'book' },
+        { title: '财务与奖助学金自动化', desc: '实现学杂费账单批量生成和清算，支持学生奖学金在线申请和自动核扣账款。', icon: 'award' },
+        { title: '教学中台接口集成', desc: '将外部教学管理软件（如 Canvas、Moodle）与底层教务系统和财务核算数据库实时同步。', icon: 'compass' }
+      ],
+      playbook: {
+        tag: '校园升级',
+        title: '多校区统一教务云平台建设',
+        desc: 'Dstellar 协助某省属多校区综合大学将陈旧的学生数据孤岛合并，成功迁移至统一的 SAP 教育云环境。',
+        metrics: '新生开学季排队选课等待时长缩短 70%。'
+      },
+      inquiryTitle: '联系我们的教育信息化顾问',
+      namePlaceholder: '您的姓名',
+      emailPlaceholder: '电子邮箱',
+      msgPlaceholder: '请告诉我们您的大学教务管理或数字化校园改造需求...',
+      submitBtn: '发送咨询',
+      successMsg: '谢谢！我们的教育行业顾问会尽快与您取得联系。'
     }
   },
   de: {
@@ -1282,6 +2026,254 @@ export const INDUSTRY_TRANSLATIONS: Record<string, Record<string, IndustryDetail
       msgPlaceholder: 'Beschreiben Sie Ihre Projektanforderungen...',
       submitBtn: 'Nachricht senden',
       successMsg: 'Nachricht gesendet. Unsere Bauexperten werden sich telefonisch bei Ihnen melden.'
+    },
+    'media-entertainment': {
+      slug: 'media-entertainment',
+      badge: 'Medien & Unterhaltung',
+      title: 'Medien- & Content-Monetarisierung',
+      subtitle: 'Digitales Rechtemanagement, Lizenzgebührenverarbeitung in Echtzeit und Omnichannel-Monetarisierung.',
+      overview: 'Dstellar transformiert Medien- und Unterhaltungsunternehmen durch die Optimierung der Wertschöpfungsketten für digitale Assets, die Rationalisierung komplexer Lizenzgebühren und den Betrieb von Abonnement-Abrechnungsmodellen im großen Stil mit SAP BRIM.',
+      gradientClass: 'linear-gradient(135deg, #180828 0%, #ec4899 45%, #e11d48 100%)',
+      themeColor: '#ec4899',
+      stats: [
+        { value: '35%', label: 'Schnellere Lizenzabrechnung' },
+        { value: '25M+', label: 'Tägliche Inhaltsabonnenten' },
+        { value: '$2B+', label: 'Jährlich verteilte Lizenzen' }
+      ],
+      solutions: [
+        { title: 'Rechte- & Lizenzgebühren-Audits', desc: 'Automatisieren Sie die Verfolgung von IP-Lizenzvereinbarungen, Lizenzgebührenauszahlungen und Audits in SAP BRIM.', icon: 'film' },
+        { title: 'Abonnement-Abrechnung', desc: 'Verarbeiten Sie die Abrechnungslogik für Millionen dynamischer digitaler Content-Abonnenten mit hoher Parallelität.', icon: 'music' },
+        { title: 'Inhaltsverteilungsdaten', desc: 'Synchronisieren Sie globale Streaming-Telemetrie mit Finanzbüchern für Rentabilitätsanalysen in Echtzeit.', icon: 'play' }
+      ],
+      playbook: {
+        tag: 'Fallstudie',
+        title: 'Modernisierung der Streaming-Lizenzen',
+        desc: 'Wie Dstellar eine Hochgeschwindigkeits-Abrechnungspipeline aufbaute, die täglich 10 Millionen Streaming-Ereignisse verarbeitet und in das SAP Hauptbuch integriert.',
+        metrics: '100% Genauigkeit bei den Lizenzgebührenzahlungen erreicht.'
+      },
+      inquiryTitle: 'Kontaktieren Sie unsere Medien-Experten',
+      namePlaceholder: 'Ihr Name',
+      emailPlaceholder: 'E-Mail-Adresse',
+      msgPlaceholder: 'Erzählen Sie uns von Ihrem Projekt...',
+      submitBtn: 'Anfrage senden',
+      successMsg: 'Vielen Dank! Unser Medienteam wird sich in Kürze mit Ihnen in Verbindung setzen.'
+    },
+    'telecommunications': {
+      slug: 'telecommunications',
+      badge: 'Telekommunikation',
+      title: 'OSS/BSS-Orchestrierung für Telekommunikation',
+      subtitle: 'Dynamische Teilnehmerabrechnung, Netzwerk-Infrastrukturmanagement und Telekom-Telemetrieanalysen.',
+      overview: 'Dstellar integriert Kernnetzwerkaktivitäten in ERP-Plattformen, sodass Telekommunikationsanbieter hohe Abrechnungsströme verwalten, Wartungszyklen für Mobilfunkmasten optimieren und Abwanderungen in Echtzeit vorhersagen können.',
+      gradientClass: 'linear-gradient(135deg, #091e3a 0%, #06b6d4 45%, #3b82f6 100%)',
+      themeColor: '#06b6d4',
+      stats: [
+        { value: '99.999%', label: 'Uptime des Kern-Abrechnungssystems' },
+        { value: '50M+', label: 'Aktive Mobilfunkkunden' },
+        { value: '15%', label: 'Reduzierung der Netzwerk-Opex' }
+      ],
+      solutions: [
+        { title: 'Massendaten-Abrechnung', desc: 'Erfassen Sie Abrechnungstelemetrie für Sprache, Daten und Mehrwertdienste direkt in SAP BRIM.', icon: 'phone' },
+        { title: 'Netzwerkanlagen-Management', desc: 'Koordinieren Sie Mobilfunkmasten, Glasfaserleitungen und Hardwarewartung mit der SAP Instandhaltung.', icon: 'wifi' },
+        { title: 'Abwanderungs-Prognose', desc: 'Wenden Sie ML-Modelle auf Verkehrsdaten und Rechnungsverlauf an, um die Kundenbindung zu prognostizieren.', icon: 'activity' }
+      ],
+      playbook: {
+        tag: 'Netzwerkskalierung',
+        title: '5G-Netzwerk-Rollout-Integration',
+        desc: 'Wie Dstellar einen nationalen Telekommunikationsanbieter dabei unterstützte, Investitionsausgaben mit der Bereitstellung von Mobilfunkmasten zu verknüpfen.',
+        metrics: 'Time-to-Market für neue Masten von 6 Monaten auf 6 Wochen verkürzt.'
+      },
+      inquiryTitle: 'Kontaktieren Sie unsere Telekom-Spezialisten',
+      namePlaceholder: 'Ihr Name',
+      emailPlaceholder: 'E-Mail-Adresse',
+      msgPlaceholder: 'Erzählen Sie uns von Ihrem Projekt...',
+      submitBtn: 'Anfrage senden',
+      successMsg: 'Vielen Dank! Unser Telekommunikations-Team wird sich in Kürze bei Ihnen melden.'
+    },
+    'distribution-wholesale': {
+      slug: 'distribution-wholesale',
+      badge: 'Vertrieb & Großhandel',
+      title: 'Großhandelsvertrieb mit hoher Frequenz',
+      subtitle: 'Order-to-Cash-Beschleunigung, intelligente Lagerlogistik und globale Lieferantenkoordination.',
+      overview: 'Dstellar optimiert die Lieferkettenlogistik und die Lagergeschwindigkeiten für große Distributoren. Wir integrieren SAP Extended Warehouse Management (EWM) in Echtzeit-Transportnetzwerke, um Engpässe bei der Auftragsabwicklung zu beseitigen.',
+      gradientClass: 'linear-gradient(135deg, #1c1917 0%, #f59e0b 45%, #ea580c 100%)',
+      themeColor: '#f59e0b',
+      stats: [
+        { value: '45%', label: 'Schnellere Auftragsabwicklung' },
+        { value: '100k+', label: 'Täglich optimierte SKUs' },
+        { value: '22%', label: 'Reduzierung der Lagerkosten' }
+      ],
+      solutions: [
+        { title: 'Optimierte Lagergeschwindigkeit', desc: 'Optimieren Sie Kommissionier-, Verpackungs- und Versandsequenzen mithilfe von automatisiertem Routing in SAP EWM.', icon: 'box' },
+        { title: 'Omnichannel-Auftragsabwicklung', desc: 'Konsolidieren Sie Aufträge von regionalen Partnern, Distributoren und Online-Kanälen in einem einzigen Hauptbuch.', icon: 'truck' },
+        { title: 'Lieferantenportal', desc: 'Automatisieren Sie Bestellungen und Lieferbestätigungen mit Ihrem Großhandelslieferantennetzwerk.', icon: 'archive' }
+      ],
+      playbook: {
+        tag: 'Fallstudie',
+        title: 'Automatisierung globaler Lieferketten',
+        desc: 'Dstellar entwickelte einen zentralen Nachschubplaner, der automatisch Lieferantenbestellungen auslöst, wenn die Lagerbestände unter dynamische Schwellenwerte fallen.',
+        metrics: 'Out-of-Stock-Ereignisse um 98% reduziert.'
+      },
+      inquiryTitle: 'Kontaktieren Sie unsere Großhandels-Spezialisten',
+      namePlaceholder: 'Ihr Name',
+      emailPlaceholder: 'E-Mail-Adresse',
+      msgPlaceholder: 'Erzählen Sie uns von Ihrem Projekt...',
+      submitBtn: 'Anfrage senden',
+      successMsg: 'Vielen Dank! Unser Großhandels-Team wird sich in Kürze mit Ihnen in Verbindung setzen.'
+    },
+    'retail': {
+      slug: 'retail',
+      badge: 'Einzelhandel (Retail)',
+      title: 'Vereinheitlichte Einzelhandels- & Commerce-Integration',
+      subtitle: 'Omnichannel-Lagerbestand, Checkout-POS-Integration und Kundenbindungssysteme.',
+      overview: 'Dstellar schließt die Lücke zwischen Online-Kanälen und physischen Ladengeschäften. Wir implementieren einheitliche SAP Retail-Plattformen, die Bestände und Kundenprofile in Echtzeit über alle Touchpoints hinweg synchronisieren.',
+      gradientClass: 'linear-gradient(135deg, #022c22 0%, #10b981 45%, #84cc16 100%)',
+      themeColor: '#10b981',
+      stats: [
+        { value: '99.8%', label: 'Lagerbestandsgenauigkeit' },
+        { value: '12M+', label: 'Synchronisierte Kundenprofile' },
+        { value: '30%', label: 'Steigerung der Kundenbindung' }
+      ],
+      solutions: [
+        { title: 'Einheitlicher Commerce-Bestand', desc: 'Verfolgen Sie Regalbestände, Ladenlager und Online-Reservierungen sofort in einem zentralen Ledger.', icon: 'shopping-bag' },
+        { title: 'Dynamisches Preismanagement', desc: 'Synchronisieren Sie Preise, Coupon-Regeln und Werbeaktionen in Echtzeit für alle Kanäle.', icon: 'tag' },
+        { title: 'Checkout-POS-Integration', desc: 'Verbinden Sie Point-of-Sale-Kassensysteme mit SAP Finanzen für tägliche Verkaufsberichte.', icon: 'credit-card' }
+      ],
+      playbook: {
+        tag: 'Retail-Wachstum',
+        title: 'Lagerbestandsabgleich in Echtzeit',
+        desc: 'Wie Dstellar einer großen Handelskette half, E-Commerce-Plattformen und Ladenbestände in einem System abzugleichen.',
+        metrics: 'Fehler bei der Auftragsabwicklung um 85% gesenkt.'
+      },
+      inquiryTitle: 'Kontaktieren Sie unsere Einzelhandels-Spezialisten',
+      namePlaceholder: 'Ihr Name',
+      emailPlaceholder: 'E-Mail-Adresse',
+      msgPlaceholder: 'Erzählen Sie uns von Ihrem Projekt...',
+      submitBtn: 'Anfrage senden',
+      successMsg: 'Vielen Dank! Unser Retail-Team wird sich in Kürze mit Ihnen in Verbindung setzen.'
+    },
+    'hotel-management': {
+      slug: 'hotel-management',
+      badge: 'Hotelmanagement',
+      title: 'Hotelmanagement & Gästebetrieb',
+      subtitle: 'Echtzeit-Buchungssysteme, PMS-Systeme und Ertragsoptimierung.',
+      overview: 'Dstellar entwickelt integrierte Hotellösungen, die gästeorientierte Property-Management-Systeme mit den zentralen Finanzbüchern verbinden. Wir optimieren Buchungskapazitäten, automatisieren die Beschaffung und vereinfachen Abrechnungen.',
+      gradientClass: 'linear-gradient(135deg, #1e1b4b 0%, #8b5cf6 45%, #d946ef 100%)',
+      themeColor: '#8b5cf6',
+      stats: [
+        { value: '98%', label: 'Gästebewertung (CS)' },
+        { value: '15M+', label: 'Jährlich verwaltete Buchungen' },
+        { value: '18%', label: 'Steigerung des RevPAR' }
+      ],
+      solutions: [
+        { title: 'PMS & ERP Integration', desc: 'Verbinden Sie Zimmerreinigungsstatus, Check-ins und Gästekosten direkt mit der SAP Abrechnung.', icon: 'key' },
+        { title: 'Ertrags- & Preissystem', desc: 'Implementieren Sie automatisierte Tarife basierend auf Auslastungstrends und lokalen Veranstaltungskalendern.', icon: 'coffee' },
+        { title: 'Integrierte Hotelabläufe', desc: 'Verwalten Sie Rezeption, Restaurantbuchungen und Spa-Termine über eine einzige Kundenkartei.', icon: 'bed' }
+      ],
+      playbook: {
+        tag: 'Modernisierung',
+        title: 'Vereinheitlichter Resortbetrieb',
+        desc: 'Wie Dstellar ein einziges Kundenidentifikationssystem entwickelte, das Zimmerkosten, Restaurantbelege und Aktivitäten in 50 Resorts verfolgt.',
+        metrics: 'Rechnungsfehler auf unter 0,1% reduziert.'
+      },
+      inquiryTitle: 'Kontaktieren Sie unsere Hospitality-Spezialisten',
+      namePlaceholder: 'Ihr Name',
+      emailPlaceholder: 'E-Mail-Adresse',
+      msgPlaceholder: 'Erzählen Sie uns von Ihrem Projekt...',
+      submitBtn: 'Anfrage senden',
+      successMsg: 'Vielen Dank! Unser Hotelmanagement-Team wird sich in Kürze bei Ihnen melden.'
+    },
+    'information-services': {
+      slug: 'information-services',
+      badge: 'Informationsdienste',
+      title: 'Informations- & Datendienste',
+      subtitle: 'Monetarisierung von Datenwerten, High-Performance-API-Portale und Abo-Abrechnung.',
+      overview: 'Dstellar unterstützt Datenbroker, Kreditauskünfte und Informationsanbieter bei der Paketierung und Monetarisierung ihrer digitalen Werte. Wir entwerfen schnelle API-Bereitstellungsschichten und automatisieren die Abonnementbuchhaltung in SAP.',
+      gradientClass: 'linear-gradient(135deg, #0f172a 0%, #3b82f6 45%, #00d4c8 100%)',
+      themeColor: '#3b82f6',
+      stats: [
+        { value: '10B+', label: 'Tägliche API-Anfragen' },
+        { value: '99.999%', label: 'Verlässlichkeit der Datenabfrage' },
+        { value: '40%', label: 'Verringerung der Abo-Kündigungen' }
+      ],
+      solutions: [
+        { title: 'Dynamische API-Monetarisierung', desc: 'Verfolgen Sie die API-Nutzung von Entwicklern und rechnen Sie diese in Echtzeit in SAP BRIM ab.', icon: 'database' },
+        { title: 'Hochleistungs-Architektur', desc: 'Skalieren Sie Inhalts-Caches und Suchindizes für Millionen von Abfragen pro Sekunde.', icon: 'server' },
+        { title: 'Strukturiertes Metadaten-Hub', desc: 'Organisieren Sie Rohdaten, Client-Berechtigungen und Zugriffsprotokolle sicher in SAP HANA.', icon: 'info' }
+      ],
+      playbook: {
+        tag: 'Datenskalierung',
+        title: 'Monetarisierung globaler Bonitätsdaten',
+        desc: 'Wie Dstellar die API einer Bonitätsplattform in SAP BRIM integrierte und die Abrechnungszyklen für 5.000 Firmenkunden automatisierte.',
+        metrics: 'Abrechnungserstellung von 5 Tagen auf 2 Minuten verkürzt.'
+      },
+      inquiryTitle: 'Kontaktieren Sie unsere Datenspezialisten',
+      namePlaceholder: 'Ihr Name',
+      emailPlaceholder: 'E-Mail-Adresse',
+      msgPlaceholder: 'Erzählen Sie uns von Ihrem Projekt...',
+      submitBtn: 'Anfrage senden',
+      successMsg: 'Vielen Dank! Unser Datenteam wird sich in Kürze mit Ihnen in Verbindung setzen.'
+    },
+    'public-services': {
+      slug: 'public-services',
+      badge: 'Öffentliche Dienste',
+      title: 'Öffentliche Dienste & Bürger-Infrastruktur',
+      subtitle: 'Gemeinschaftshilfe, Fallmanagement und Verwaltung ziviler Programme.',
+      overview: 'Dstellar unterstützt lokale Behörden und gemeinnützige Organisationen bei der Bereitstellung effizienter ziviler Dienste. Wir automatisieren das Fallmanagement, verwalten Budgets für Sozialprogramme und sichern die Einhaltung von Audits.',
+      gradientClass: 'linear-gradient(135deg, #030712 0%, #6366f1 45%, #4338ca 100%)',
+      themeColor: '#6366f1',
+      stats: [
+        { value: '10M+', label: 'Unterstützte Bürger' },
+        { value: '100%', label: 'Einhaltung von Programm-Audits' },
+        { value: '50%', label: 'Schnellere Bearbeitungszeit' }
+      ],
+      solutions: [
+        { title: 'Bürger-Serviceportale', desc: 'Fiori-Portale, über die Bürger Unterstützung beantragen und den Status ihrer Anliegen sicher online einsehen können.', icon: 'users' },
+        { title: 'Zivile Programm-Budgets', desc: 'Verfolgen Sie Zuweisungen von Fördermitteln und Programmausgaben in der SAP Haushaltsverwaltung.', icon: 'shield' },
+        { title: 'Soziales Fallmanagement', desc: 'Koordinieren Sie behördenübergreifende Arbeitsabläufe, Klientenmeilensteine und Unterstützungsdaten.', icon: 'briefcase' }
+      ],
+      playbook: {
+        tag: 'Bürger-Nutzen',
+        title: 'Automatisierung von Sozialhilfe',
+        desc: 'Wie Dstellar eine Stadtverwaltung bei der Automatisierung der Sozialhilfeanträge unterstützte, Kriterien prüfte und Zuschüsse auszahlte.',
+        metrics: 'Rückstand bei der Antragsbearbeitung um 90% verringert.'
+      },
+      inquiryTitle: 'Kontaktieren Sie unsere Spezialisten des öffentlichen Sektors',
+      namePlaceholder: 'Ihr Name',
+      emailPlaceholder: 'E-Mail-Adresse',
+      msgPlaceholder: 'Erzählen Sie uns von Ihrem Projekt...',
+      submitBtn: 'Anfrage senden',
+      successMsg: 'Vielen Dank! Unser Team für den öffentlichen Dienst wird sich in Kürze mit Ihnen in Verbindung setzen.'
+    },
+    'education': {
+      slug: 'education',
+      badge: 'Bildungswesen',
+      title: 'Campusmanagement & Bildungswesen',
+      subtitle: 'Verfolgung des studentischen Lebenszyklus, digitale Zulassungen und LMS-Integrationen.',
+      overview: 'Dstellar entwickelt skalierbare Bildungssysteme für Universitäten und Schulnetzwerke. Wir implementieren Studenten-Informationssysteme, automatisieren Registrierungsabläufe und integrieren LMS-Software in die Finanzdaten.',
+      gradientClass: 'linear-gradient(135deg, #2a0800 0%, #ea580c 45%, #eab308 100%)',
+      themeColor: '#ea580c',
+      stats: [
+        { value: '250k+', label: 'Aktive Studenten' },
+        { value: '95%', label: 'Zulassungsbearbeitung' },
+        { value: '100%', label: 'LMS-Synchronisation' }
+      ],
+      solutions: [
+        { title: 'Studenten-Lifecycle-ERP', desc: 'Verwalten Sie Vorlesungsverzeichnisse, Einschreibungen und Noten in der SAP Student Lifecycle-Lösung.', icon: 'book' },
+        { title: 'Automatisierung für Studienbüros', desc: 'Automatisieren Sie die Erstellung von Studiengebührenrechnungen, Stipendienanträgen und Studentenkonten.', icon: 'award' },
+        { title: 'Integrierte Lernplattform', desc: 'Verbinden Sie externe LMS wie Canvas und Moodle mit akademischen und finanziellen Backend-Datenbanken.', icon: 'compass' }
+      ],
+      playbook: {
+        tag: 'Campus-Upgrade',
+        title: 'Vereinheitlichte Campus-Cloud',
+        desc: 'Wie Dstellar eine Landesuniversität mit mehreren Standorten von Altsystemen auf eine einheitliche SAP Cloud-Umgebung migrierte.',
+        metrics: 'Wartezeiten bei der Einschreibung um 70% gesenkt.'
+      },
+      inquiryTitle: 'Kontaktieren Sie unsere Bildungs-Spezialisten',
+      namePlaceholder: 'Ihr Name',
+      emailPlaceholder: 'E-Mail-Adresse',
+      msgPlaceholder: 'Erzählen Sie uns von Ihrem Projekt...',
+      submitBtn: 'Anfrage senden',
+      successMsg: 'Vielen Dank! Unser Bildungsteam wird sich in Kürze mit Ihnen in Verbindung setzen.'
     }
   },
   fr: {
@@ -1594,6 +2586,254 @@ export const INDUSTRY_TRANSLATIONS: Record<string, Record<string, IndustryDetail
       msgPlaceholder: 'Décrivez vos enjeux de gestion de projets d\'infrastructures...',
       submitBtn: 'Envoyer le Message',
       successMsg: 'Message envoyé. Nos experts en construction industrielle vont vous appeler.'
+    },
+    'media-entertainment': {
+      slug: 'media-entertainment',
+      badge: 'Médias & Divertissement',
+      title: 'Monétisation des Médias et Contenus',
+      subtitle: 'Gestion des droits numériques, traitement des redevances en temps réel et monétisation omnicanale.',
+      overview: 'Dstellar transforme les organisations de médias et de divertissement en optimisant les chaînes de valeur des actifs numériques, en rationalisant les redevances complexes et en exécutant des modèles de facturation d\'abonnements à grande échelle avec SAP BRIM.',
+      gradientClass: 'linear-gradient(135deg, #180828 0%, #ec4899 45%, #e11d48 100%)',
+      themeColor: '#ec4899',
+      stats: [
+        { value: '35%', label: 'Traitement des Redevances Accéléré' },
+        { value: '25M+', label: 'Abonnés Quotidiens' },
+        { value: '$2B+', label: 'Redevances Distribuées par An' }
+      ],
+      solutions: [
+        { title: 'Audit de Droits et Redevances', desc: 'Automatisez le suivi des accords de licence de propriété intellectuelle, des paiements de redevances et de l\'audit dans SAP BRIM.', icon: 'film' },
+        { title: 'Facturation d\'Abonnements', desc: 'Traitez la logique de facturation pour des millions d\'abonnés à des contenus numériques dynamiques avec une haute simultanéité.', icon: 'music' },
+        { title: 'Données de Distribution', desc: 'Synchronisez la télémétrie de diffusion mondiale avec les grands livres financiers pour des analyses de rentabilité en temps réel.', icon: 'play' }
+      ],
+      playbook: {
+        tag: 'Étude de Cas',
+        title: 'Modernisation des Redevances de Streaming',
+        desc: 'Comment Dstellar a construit un pipeline de facturation rapide traitant 10 millions d\'événements de streaming par jour et l\'a intégré avec SAP General Ledger.',
+        metrics: 'Précision de 100% des paiements de redevances atteinte.'
+      },
+      inquiryTitle: 'Contactez Nos Spécialistes des Médias',
+      namePlaceholder: 'Votre Nom',
+      emailPlaceholder: 'Adresse E-mail',
+      msgPlaceholder: 'Parlez-nous de votre projet de droits numériques ou de facturation...',
+      submitBtn: 'Envoyer une Demande',
+      successMsg: 'Merci ! Notre équipe médias vous contactera prochainement.'
+    },
+    'telecommunications': {
+      slug: 'telecommunications',
+      badge: 'Télécommunications',
+      title: 'Orchestration OSS/BSS Télécom',
+      subtitle: 'Facturation dynamique des abonnés, gestion des infrastructures réseau et télémétrie.',
+      overview: 'Dstellar intègre les activités réseau cœur avec les ERP d\'entreprise, permettant aux opérateurs de télécommunications de gérer des flux de facturation à haut volume, d\'optimiser les cycles de maintenance des antennes et de prédire le désabonnement en réel.',
+      gradientClass: 'linear-gradient(135deg, #091e3a 0%, #06b6d4 45%, #3b82f6 100%)',
+      themeColor: '#06b6d4',
+      stats: [
+        { value: '99.999%', label: 'Disponibilité du Système de Facturation' },
+        { value: '50M+', label: 'Abonnés Actifs Gérés' },
+        { value: '15%', label: 'Réduction des Dépenses Réseau' }
+      ],
+      solutions: [
+        { title: 'Facturation Grand Volume', desc: 'Intégrez les données de facturation pour la voix, les données et les services à valeur ajoutée dans SAP BRIM.', icon: 'phone' },
+        { title: 'Gestion des Actifs Réseau', desc: 'Coordonnez la maintenance des antennes, des lignes de fibre optique et du matériel avec SAP Plant Maintenance.', icon: 'wifi' },
+        { title: 'Analyse du Churn', desc: 'Appliquez des modèles de ML aux habitudes de trafic des abonnés pour anticiper et réduire les résiliations.', icon: 'activity' }
+      ],
+      playbook: {
+        tag: 'Échelle Réseau',
+        title: 'Intégration du Déploiement 5G',
+        desc: 'Comment Dstellar a aidé un opérateur national à intégrer le suivi des budgets d\'investissement avec les workflows de déploiement des antennes.',
+        metrics: 'Temps de mise en service des nouvelles antennes réduit de 6 mois à 6 semaines.'
+      },
+      inquiryTitle: 'Contactez Nos Spécialistes Télécom',
+      namePlaceholder: 'Votre Nom',
+      emailPlaceholder: 'Adresse E-mail',
+      msgPlaceholder: 'Décrivez votre infrastructure ou vos besoins de facturation...',
+      submitBtn: 'Envoyer une Demande',
+      successMsg: 'Merci ! Notre équipe télécom va vous contacter dans les plus brefs délais.'
+    },
+    'distribution-wholesale': {
+      slug: 'distribution-wholesale',
+      badge: 'Distribution & Vente en Gros',
+      title: 'Distribution de Gros à Flux Tendu',
+      subtitle: 'Accélération de l\'Order-to-Cash, logistique d\'entrepôt intelligente et approvisionnement.',
+      overview: 'Dstellar optimise la logistique de la chaîne d\'approvisionnement et le flux de rotation des stocks des grands distributeurs. Nous intégrons SAP Extended Warehouse Management (EWM) avec les réseaux de transport en temps réel pour éliminer les goulots d\'embouteillage.',
+      gradientClass: 'linear-gradient(135deg, #1c1917 0%, #f59e0b 45%, #ea580c 100%)',
+      themeColor: '#f59e0b',
+      stats: [
+        { value: '45%', label: 'Traitement des Commandes Accéléré' },
+        { value: '100k+', label: 'Articles (SKU) Gérés par Jour' },
+        { value: '22%', label: 'Réduction des Coûts de Stockage' }
+      ],
+      solutions: [
+        { title: 'Vitesse d\'Entrepôt Optimisée', desc: 'Optimisez les processus de prélèvement, d\'emballage et d\'expédition via l\'enroutement intelligent dans SAP EWM.', icon: 'box' },
+        { title: 'Pipeline de Commandes Unifié', desc: 'Centralisez les flux de commandes des concessionnaires régionaux, magasins et du web dans un seul livre comptable.', icon: 'truck' },
+        { title: 'Portail Collaboratif Fournisseurs', desc: 'Automatisez la passation de commandes d\'achat et la réception des livraisons avec vos réseaux de grossistes.', icon: 'archive' }
+      ],
+      playbook: {
+        tag: 'Étude de Cas',
+        title: 'Automatisation des Réapprovisionnements',
+        desc: 'Dstellar a déployé un planificateur centralisé de réapprovisionnement automatique qui émet des commandes dès que les stocks passent sous des seuils définis.',
+        metrics: 'Ruptures de stock réduites de 98%.'
+      },
+      inquiryTitle: 'Contactez Nos Spécialistes Distribution',
+      namePlaceholder: 'Votre Nom',
+      emailPlaceholder: 'Adresse E-mail',
+      msgPlaceholder: 'Parlez-nous de vos besoins en logistique ou en gestion des stocks...',
+      submitBtn: 'Envoyer une Demande',
+      successMsg: 'Merci ! Notre équipe de distribution va vous recontacter très bientôt.'
+    },
+    'retail': {
+      slug: 'retail',
+      badge: 'Vente au Détail',
+      title: 'Commerce Unifié & Vente au Détail',
+      subtitle: 'Stocks omnicanaux, intégration des systèmes POS de caisse et fidélité client.',
+      overview: 'Dstellar comble le fossé entre e-commerce et magasins physiques. Nous mettons en œuvre les plateformes standardisées SAP Retail pour fournir une visibilité en temps réel des stocks et de la fidélité client.',
+      gradientClass: 'linear-gradient(135deg, #022c22 0%, #10b981 45%, #84cc16 100%)',
+      themeColor: '#10b981',
+      stats: [
+        { value: '99.8%', label: 'Exactitude des Stocks en Temps Réel' },
+        { value: '12M+', label: 'Profils de Fidélisation Synchronisés' },
+        { value: '30%', label: 'Augmentation de la Rétention Client' }
+      ],
+      solutions: [
+        { title: 'Stock de Commerce Unifié', desc: 'Suivez le stock en rayon, en arrière-boutique et les réserves web sur un grand livre central unique.', icon: 'shopping-bag' },
+        { title: 'Moteur de Prix Dynamique', desc: 'Synchronisez les barèmes de prix, les coupons et les campagnes de promotion sur tous les canaux physiques et web.', icon: 'tag' },
+        { title: 'Système POS Intégré', desc: 'Reliez vos caisses de points de vente aux modules SAP Finance pour des analyses de chiffre d\'affaires journalières.', icon: 'credit-card' }
+      ],
+      playbook: {
+        tag: 'Croissance Retail',
+        title: 'Synchronisation des Stocks en Direct',
+        desc: 'Comment Dstellar a aidé une chaîne de magasins à synchroniser les stocks du site internet avec ceux des surfaces de vente physiques.',
+        metrics: 'Erreurs de traitement logistique diminuées de 85%.'
+      },
+      inquiryTitle: 'Contactez Nos Spécialistes Vente au Détail',
+      namePlaceholder: 'Votre Nom',
+      emailPlaceholder: 'Adresse E-mail',
+      msgPlaceholder: 'Décrivez vos enjeux de gestion de magasin ou de commerce électronique...',
+      submitBtn: 'Envoyer le Message',
+      successMsg: 'Merci ! Notre équipe commerce de détail reviendra vers vous très vite.'
+    },
+    'hotel-management': {
+      slug: 'hotel-management',
+      badge: 'Gestion Hôtelière',
+      title: 'Gestion Hôtelière & Services Clients',
+      subtitle: 'Moteurs de réservation, systèmes de gestion de propriété (PMS) et yield management.',
+      overview: 'Dstellar conçoit des solutions intégrées qui relient les interfaces PMS destinées aux clients avec le cœur comptable. Nous optimisons la répartition des réservations, automatisons les achats et fluidifions la facturation.',
+      gradientClass: 'linear-gradient(135deg, #1e1b4b 0%, #8b5cf6 45%, #d946ef 100%)',
+      themeColor: '#8b5cf6',
+      stats: [
+        { value: '98%', label: 'Indice de Satisfaction des Clients' },
+        { value: '15M+', label: 'Réservations Gérées par An' },
+        { value: '18%', label: 'Augmentation du Revenu par Chambre' }
+      ],
+      solutions: [
+        { title: 'ERP de Gestion Hôtelière PMS', desc: 'Intégrez les statuts de nettoyage des chambres, check-ins et frais des clients dans SAP Facturation.', icon: 'key' },
+        { title: 'Moteur de Tarifs Dynamiques', desc: 'Déployez des règles de tarifs automatisées basées sur les tendances d\'occupation et le calendrier local.', icon: 'coffee' },
+        { title: 'Opérations Intégrées', desc: 'Centralisez les flux d\'accueil, la facturation des restaurants et les réservations de spa sous un seul identifiant client.', icon: 'bed' }
+      ],
+      playbook: {
+        tag: 'Modernisation Hôtelière',
+        title: 'Gestion Unifiée de Complexes Touristiques',
+        desc: 'Comment Dstellar a conçu un identifiant client unique qui centralise la facturation des chambres, bars et activités de 50 complexes hôteliers.',
+        metrics: 'Erreurs de facturation ramenées à moins de 0,1%.'
+      },
+      inquiryTitle: 'Contactez Nos Spécialistes Hôtellerie',
+      namePlaceholder: 'Votre Nom',
+      emailPlaceholder: 'Adresse E-mail',
+      msgPlaceholder: 'Parlez-nous de votre séjour ou de vos besoins de facturation...',
+      submitBtn: 'Envoyer le Message',
+      successMsg: 'Merci ! Notre équipe de gestion hôtelière vous contactera dans les plus brefs délais.'
+    },
+    'information-services': {
+      slug: 'information-services',
+      badge: 'Services d\'Information',
+      title: 'Services de Données & d\'Information',
+      subtitle: 'Valorisation des données, portails API haute performance et facturation récurrente.',
+      overview: 'Dstellar aide les courtiers en données, agences de crédit et fournisseurs d\'information à monétiser leurs actifs numériques. Nous concevons des API d\'accès ultra-rapides et automatisons la comptabilité récurrente dans SAP.',
+      gradientClass: 'linear-gradient(135deg, #0f172a 0%, #3b82f6 45%, #00d4c8 100%)',
+      themeColor: '#3b82f6',
+      stats: [
+        { value: '10B+', label: 'Requêtes API Traitées par Jour' },
+        { value: '99.999%', label: 'Fiabilité de la Distribution des Données' },
+        { value: '40%', label: 'Réduction du Désabonnement' }
+      ],
+      solutions: [
+        { title: 'Monétisation des APIs', desc: 'Suivez la consommation d\'API des développeurs et facturez à l\'usage réel avec SAP BRIM.', icon: 'database' },
+        { title: 'Architecture Haute Performance', desc: 'Mettez à l\'échelle les caches et les index de recherche pour répondre à des millions d\'appels par seconde.', icon: 'server' },
+        { title: 'Hub de Métadonnées Structurées', desc: 'Structurez les bases de données brutes, droits d\'accès et logs de requêtes sur SAP HANA.', icon: 'info' }
+      ],
+      playbook: {
+        tag: 'Monétisation de Données',
+        title: 'Facturation Automatisée de Scores de Crédit',
+        desc: 'Comment Dstellar a relié l\'API de notation de crédit avec SAP BRIM, automatisant les prélèvements de 5 000 clients B2B.',
+        metrics: 'Délai d\'émission des factures ramené de 5 jours à 2 minutes.'
+      },
+      inquiryTitle: 'Contactez Nos Spécialistes des Données',
+      namePlaceholder: 'Votre Nom',
+      emailPlaceholder: 'Adresse E-mail',
+      msgPlaceholder: 'Parlez-nous de vos flux d\'intégration d\'API ou de valorisation de données...',
+      submitBtn: 'Envoyer le Message',
+      successMsg: 'Merci ! Notre équipe de services d\'information va vous recontacter rapidement.'
+    },
+    'public-services': {
+      slug: 'public-services',
+      badge: 'Services Publics',
+      title: 'Services Publics & Action Sociale',
+      subtitle: 'Soutien aux usagers, gestion des dossiers et programmes d\'aide civique.',
+      overview: 'Dstellar donne aux municipalités et aux associations les moyens de gérer efficacement leurs programmes. Nous automatisons le suivi des dossiers, contrôlons les enveloppes d\'aide et assurons la conformité comptable.',
+      gradientClass: 'linear-gradient(135deg, #030712 0%, #6366f1 45%, #4338ca 100%)',
+      themeColor: '#6366f1',
+      stats: [
+        { value: '10M+', label: 'Citoyens Accompagnés' },
+        { value: '100%', label: 'Conformité aux Audits Publics' },
+        { value: '50%', label: 'Temps de Traitement des Dossiers Divisé par 2' }
+      ],
+      solutions: [
+        { title: 'Portail des Services aux Citoyens', desc: 'Guichet en ligne Fiori pour permettre aux usagers de déposer leurs demandes d\'aides et de suivre l\'avancement.', icon: 'users' },
+        { title: 'Gestion Budgétaire Publique', desc: 'Suivez les allocations de subventions et les dépenses dans SAP Funds Management.', icon: 'shield' },
+        { title: 'Suivi des Dossiers Sociaux', desc: 'Assurez la coordination entre plusieurs administrations et le suivi des aides versées.', icon: 'briefcase' }
+      ],
+      playbook: {
+        tag: 'Impact Social',
+        title: 'Instruction Automatisée des Allocations',
+        desc: 'Comment Dstellar a aidé une métropole à automatiser l\'instruction des demandes d\'aide, vérifiant les critères et émettant les virements.',
+        metrics: 'Dossiers en attente de traitement réduits de 90%.'
+      },
+      inquiryTitle: 'Contactez Nos Spécialistes du Secteur Public',
+      namePlaceholder: 'Votre Nom',
+      emailPlaceholder: 'Adresse E-mail',
+      msgPlaceholder: 'Parlez-nous de vos besoins de dématérialisation ou de gestion budgétaire...',
+      submitBtn: 'Envoyer le Message',
+      successMsg: 'Message envoyé. Nos équipes prendront contact avec vous.'
+    },
+    'education': {
+      slug: 'education',
+      badge: 'Éducation',
+      title: 'Éducation & Gestion de Campus',
+      subtitle: 'Cycle de vie des étudiants, admissions numériques et intégrations LMS.',
+      overview: 'Dstellar conçoit des systèmes éducatifs évolutifs pour les universités et les réseaux d\'écoles. Nous déployons des systèmes d\'information sur les étudiants (SIS), automatisons la scolarité et lions le LMS avec la comptabilité.',
+      gradientClass: 'linear-gradient(135deg, #2a0800 0%, #ea580c 45%, #eab308 100%)',
+      themeColor: '#ea580c',
+      stats: [
+        { value: '250k+', label: 'Étudiants Actifs Gérés' },
+        { value: '95%', label: 'Vitesse de Traitement des Admissions' },
+        { value: '100%', label: 'Synchronisation des Données LMS' }
+      ],
+      solutions: [
+        { title: 'ERP du Cycle de Vie Étudiant', desc: 'Gérérez le catalogue des cours, les inscriptions, les relevés de notes et les dossiers scolaires dans SAP Student Lifecycle.', icon: 'book' },
+        { title: 'Automatisation Administrative', desc: 'Automatisez la facturation des frais de scolarité, les demandes de bourses et le suivi des comptes étudiants.', icon: 'award' },
+        { title: 'Hub de Formation Unifié', desc: 'Intégrez des LMS comme Canvas et Moodle avec vos bases de données académiques et financières.', icon: 'compass' }
+      ],
+      playbook: {
+        tag: 'Campus Cloud',
+        title: 'Modernisation de l\'Enseignement Supérieur',
+        desc: 'Comment Dstellar a migré le parc d\'applications d\'une université multi-campus vers un environnement SAP Cloud intégré unique.',
+        metrics: 'Délais d\'inscription administrative réduits de 70%.'
+      },
+      inquiryTitle: 'Contactez Nos Spécialistes Éducation',
+      namePlaceholder: 'Votre Nom',
+      emailPlaceholder: 'Adresse E-mail',
+      msgPlaceholder: 'Parlez-nous de vos besoins en dématérialisation ou en scolarité...',
+      submitBtn: 'Envoyer le Message',
+      successMsg: 'Message envoyé. Nos équipes reviendront vers vous.'
     }
   },
   ja: {
@@ -1906,6 +3146,254 @@ export const INDUSTRY_TRANSLATIONS: Record<string, Record<string, IndustryDetail
       msgPlaceholder: '現場のコスト管理や工事システムについてご記入ください...',
       submitBtn: 'メッセージを送信する',
       successMsg: '送信しました。建設・インフラ専任コンサルタントより追ってご連絡いたします。'
+    },
+    'media-entertainment': {
+      slug: 'media-entertainment',
+      badge: 'メディア＆エンターテインメント',
+      title: 'メディア＆コンテンツ収益化基盤',
+      subtitle: 'デジタル著作権管理、リアルタイムでのロイヤリティ計算、オムニチャネル課金。',
+      overview: 'デジタルアセットの価値チェーンを最適化し、複雑なライセンスロイヤリティ計算を合理化し、SAP BRIMを用いて大規模なサブスクリプション請求モデルを実行できるようメディア・娯楽企業を支援します。',
+      gradientClass: 'linear-gradient(135deg, #180828 0%, #ec4899 45%, #e11d48 100%)',
+      themeColor: '#ec4899',
+      stats: [
+        { value: '35%', label: 'ロイヤリティ処理の高速化' },
+        { value: '25M+', label: '日次コンテンツ購読者数' },
+        { value: '$2B+', label: '年間ロイヤリティ分配総額' }
+      ],
+      solutions: [
+        { title: '著作権・ロイヤリティ監査', desc: 'IPライセンス契約、ロイヤリティの支払管理、および監査トレースの自動化をSAP BRIM内で実現します。', icon: 'film' },
+        { title: 'サブスクリプション請求管理', desc: '何百万人もの動的デジタルコンテンツ購読者に対する請求・課金ロジックを高トランザクションで処理します。', icon: 'music' },
+        { title: 'コンテンツ配信データ統合', desc: '世界中のストリーミング視聴データと財務システムを同期し、リアルタイムでの収益性分析を提供します。', icon: 'play' }
+      ],
+      playbook: {
+        tag: '導入事例',
+        title: 'ストリーミングロイヤリティ管理の刷新',
+        desc: '日次1,000万件の再生イベントを処理する超高速な課金パイプラインを構築し、SAP総勘定元帳と統合したプロジェクト。',
+        metrics: '分配金支払処理の正確性100%を達成。'
+      },
+      inquiryTitle: 'メディア専門チームへのご相談',
+      namePlaceholder: 'お名前',
+      emailPlaceholder: 'メールアドレス',
+      msgPlaceholder: '著作権管理や課金システムのご要件についてご記入ください...',
+      submitBtn: '問い合わせを送信する',
+      successMsg: '送信しました。専任のメディア担当者よりご連絡いたします。'
+    },
+    'telecommunications': {
+      slug: 'telecommunications',
+      badge: '電気通信',
+      title: '電気通信向けOSS/BSS統合・最適化',
+      subtitle: '大規模な加入者請求処理、ネットワークインフラ管理、リアルタイムトラフィック分析。',
+      overview: '通信コアネットワークの稼働状況と企業システムを強固に統合し、高トラフィックな通信課金データの処理、携帯基地局メンテナンスの最適化、解約予測モデルの運用を可能にします。',
+      gradientClass: 'linear-gradient(135deg, #091e3a 0%, #06b6d4 45%, #3b82f6 100%)',
+      themeColor: '#06b6d4',
+      stats: [
+        { value: '99.999%', label: 'コア課金システム稼働率' },
+        { value: '50M+', label: '管理対象のアクティブ回線数' },
+        { value: '15%', label: 'ネットワーク運用費用 (Opex) の削減' }
+      ],
+      solutions: [
+        { title: '超大量トランザクション課金', desc: '音声通話、パケット通信、および付加価値サービスの課金データを直接SAP BRIMへ取り込み処理します。', icon: 'phone' },
+        { title: 'ネットワーク資産管理', desc: '電波基地局、光ファイバー網、および関連ハードウェアの保守計画をSAP Plant Maintenance内で管理します。', icon: 'wifi' },
+        { title: '回線解約アナリティクス', desc: '加入者の通信トラフィック推移や請求履歴に機械学習を適用し、解約予兆検知モデルを実行します。', icon: 'activity' }
+      ],
+      playbook: {
+        tag: 'ネットワーク規模',
+        title: '5Gネットワーク展開の業務システム統合',
+        desc: '大手通信事業者向けに、設備投資計画 of 進捗と現地アンテナ基地局の敷設ワークフローを統合したプロジェクト。',
+        metrics: '新規基地局の開通リードタイムを6ヶ月から6週間へ短縮。'
+      },
+      inquiryTitle: '電気通信専門チームへのご相談',
+      namePlaceholder: 'お名前',
+      emailPlaceholder: 'メールアドレス',
+      msgPlaceholder: '課金トランザクションや設備管理のご要件についてご記入ください...',
+      submitBtn: 'メッセージを送信する',
+      successMsg: '送信しました。専任の電気通信IT担当よりご連絡いたします。'
+    },
+    'distribution-wholesale': {
+      slug: 'distribution-wholesale',
+      badge: '流通・卸売',
+      title: '流通・卸売・サプライチェーン优化',
+      subtitle: '現金化サイクル (Order-to-Cash) の加速、倉庫ロジスティクスのスマート化。',
+      overview: '大規模なディストリビューター向けに、サプライチェーンロジスティクスと倉庫処理のスピードを最大化します。SAP EWM（拡張倉庫管理）と配送ネットワークを統合し、出荷業務のボトルネックを解消します。',
+      gradientClass: 'linear-gradient(135deg, #1c1917 0%, #f59e0b 45%, #ea580c 100%)',
+      themeColor: '#f59e0b',
+      stats: [
+        { value: '45%', label: '出荷リードタイム短縮率' },
+        { value: '100k+', label: '日次最適化対象のSKU（アイテム数）' },
+        { value: '22%', label: '在庫保管維持費の削減率' }
+      ],
+      solutions: [
+        { title: '拡張倉庫オペレーション', desc: 'SAP EWM内の自動経路選定や3D棚割マップを活用し、ピッキングから発送までのシーケンスを最適化します。', icon: 'box' },
+        { title: 'オムニチャネル受注フロー', desc: '各地域の卸販売先、代理店、および直販サイトからの注文データを一元化し、単一の勘定へ反映します。', icon: 'truck' },
+        { title: 'サプライヤー協働ポータル', desc: '仕入先ベンダーとの購買発注処理や納期回答書のやり取りをシステム上で完全自動化します。', icon: 'archive' }
+      ],
+      playbook: {
+        tag: '導入事例',
+        title: 'グローバル自动补货ロジックの構築',
+        desc: '安全在庫数を下回ったタイミングで、取引先ベンダーへの追加購買依頼を自動発行する在庫予測エンジンを実装。',
+        metrics: '欠品在庫発生による販売機会損失を98%抑止。'
+      },
+      inquiryTitle: '流通・卸売専門チームへのご相談',
+      namePlaceholder: 'お名前',
+      emailPlaceholder: 'メールアドレス',
+      msgPlaceholder: '倉庫管理や出荷システムのご要件についてご記入ください...',
+      submitBtn: '問い合わせを送信する',
+      successMsg: '送信しました。流通・卸売IT担当者よりご連絡いたします。'
+    },
+    'retail': {
+      slug: 'retail',
+      badge: '小売 (Retail)',
+      title: 'オムニチャネル統一小売＆EC統合基盤',
+      subtitle: '全チャネルでのリアルタイム在庫把握、POSレジ決済連携、ロイヤリティプログラム統合。',
+      overview: '顧客向けのECサイトと実店舗の在庫管理のギャップを解消します。店舗の棚在庫、倉庫保管分、ネット予約引当分を一括同期し、すべての接点で高精度な在庫情報と会員情報を提供します。',
+      gradientClass: 'linear-gradient(135deg, #022c22 0%, #10b981 45%, #84cc16 100%)',
+      themeColor: '#10b981',
+      stats: [
+        { value: '99.8%', label: 'リアルタイム在庫データ精度' },
+        { value: '12M+', label: '同期されている会員ロイヤリティアカウント数' },
+        { value: '30%', label: 'ロイヤリティ会員の客単価・リピート率向上' }
+      ],
+      solutions: [
+        { title: '統一オムニチャネル在庫', desc: '店頭在庫、バックヤード、およびWEB注文引当分を一元管理し、瞬時に勘定データへ反映します。', icon: 'shopping-bag' },
+        { title: 'ダイナミック販売価格制御', desc: '全店舗およびオンラインストアでの価格設定、割引クーポン適用ルール、セール情報を同期します。', icon: 'tag' },
+        { title: 'POSレジ会計のERP連動', desc: '店舗レジ（POSシステム）の売上トランザクションをSAP財務システムへ直結し、日次締めを自動化します。', icon: 'credit-card' }
+      ],
+      playbook: {
+        tag: '店舗成長',
+        title: '多店舗在庫の完全リアルタイム同期化',
+        desc: '大手アパレル小売事業者向けに、EC受注と各都市の店舗在庫情報を完全に同期するERPコアモジュールを構築。',
+        metrics: '在庫データの不一致に伴う未発送キャンセルを85%削減。'
+      },
+      inquiryTitle: '小売・コマース専門チームへのご相談',
+      namePlaceholder: 'お名前',
+      emailPlaceholder: 'メールアドレス',
+      msgPlaceholder: '店舗システムやEC連携についてご記入ください...',
+      submitBtn: '問い合わせを送信する',
+      successMsg: '送信しました。弊社の小売IT担当よりご連絡いたします。'
+    },
+    'hotel-management': {
+      slug: 'hotel-management',
+      badge: 'ホテル管理',
+      title: 'ホテル運営・客室管理システム',
+      subtitle: 'リアルタイム客室予約エンジン、PMSレジ連携、ホテル稼働収益率の最大化。',
+      overview: '顧客向けの客室管理（PMS）システムと基幹財務ERPシステムを連動させます。予約在庫の自動配置、ホテル内物資の自動調達、チェックアウト時のスピード請求をグローバルに最適化します。',
+      gradientClass: 'linear-gradient(135deg, #1e1b4b 0%, #8b5cf6 45%, #d946ef 100%)',
+      themeColor: '#8b5cf6',
+      stats: [
+        { value: '98%', label: '顧客満足度（CS）指数' },
+        { value: '15M+', label: '処理される年間予約客室数' },
+        { value: '18%', label: '部屋あたり収益 (RevPAR) の改善率' }
+      ],
+      solutions: [
+        { title: 'Property Management ERP', desc: '清掃状況（メイク完了）、チェックイン、ルームチャージデータを直接SAP会計システムへ連携します。', icon: 'key' },
+        { title: '宿泊価格・ダイナミック算出', desc: 'ホテル稼働傾向や地域の主要イベントカレンダーに基づき、客室の自動値決めロジックを走らせます。', icon: 'coffee' },
+        { title: '統合ホテルサービス運営', desc: 'フロント業務、ホテル内料飲（F&B）掛売り、スパ予約の決済などを単一顧客カルテで管理します。', icon: 'bed' }
+      ],
+      playbook: {
+        tag: '導入事例',
+        title: '多拠点リゾートホテルの掛売りシステム統合',
+        desc: '世界50箇所のリゾート内のすべてのレストラン、各種アクティビティ代金を部屋付け処理するための顧客 One-ID システムを設計。',
+        metrics: '請求ミスの発生率を0.1%以下へ抑制。'
+      },
+      inquiryTitle: 'ホテル・観光IT専門チームへの相談',
+      namePlaceholder: 'お名前',
+      emailPlaceholder: 'メールアドレス',
+      msgPlaceholder: '宿泊予約やホテル業務システムのご要件についてご記入ください...',
+      submitBtn: 'メッセージを送信する',
+      successMsg: '送信しました。ホスピタリティ担当チームより追ってご連絡いたします。'
+    },
+    'information-services': {
+      slug: 'information-services',
+      badge: '情報サービス',
+      title: '情報サービス・データマネタイズ基盤',
+      subtitle: 'データ資産のパッケージ販売、高スループットAPI配信、サブスク自動会計。',
+      overview: 'データブローカーや信用情報機関が持つデジタルデータを商品化・マネタイズするのを支援します。高速なデータ参照APIレイヤーの構築や、SAPでのサブスク契約管理と継続課金を自動化します。',
+      gradientClass: 'linear-gradient(135deg, #0f172a 0%, #3b82f6 45%, #00d4c8 100%)',
+      themeColor: '#3b82f6',
+      stats: [
+        { value: '10B+', label: '日次APIアクセス処理件数' },
+        { value: '99.999%', label: 'クエリ処理の高可用性' },
+        { value: '40%', label: 'サブスクリプション継続率の向上' }
+      ],
+      solutions: [
+        { title: 'API従量課金システム', desc: '開発者側のAPI呼び出しトランザクションをリアルタイム追跡し、SAP BRIMで従量課金を行います。', icon: 'database' },
+        { title: '超高応答データ配信', desc: '秒間数百万件の同時問い合わせに対処できるよう、データキャッシュやインデックス分散配置を構築します。', icon: 'server' },
+        { title: '構造化メタデータ・ハブ', desc: '生データレコード、クライアントのアクセス権限キー、問い合わせ履歴ログをSAP HANA内で安全に保持します。', icon: 'info' }
+      ],
+      playbook: {
+        tag: '導入事例',
+        title: 'グローバル信用情報APIの従量課金化',
+        desc: '薬事審査やスコアリングのための各種データベース照合と、月次の請求書発行を自動化したプロジェクト。',
+        metrics: '月次の請求書作成期間を5日間から2分間へ短縮。'
+      },
+      inquiryTitle: 'データマネタイズ専門チームへの相談',
+      namePlaceholder: 'お名前',
+      emailPlaceholder: 'メールアドレス',
+      msgPlaceholder: 'API連携やサブスクリプション請求についてご記入ください...',
+      submitBtn: 'メッセージを送信する',
+      successMsg: '送信しました。データインフラ担当チームより追ってご連絡いたします。'
+    },
+    'public-services': {
+      slug: 'public-services',
+      badge: '公共サービス',
+      title: '公共サービス・自治体業務システム',
+      subtitle: '市民生活支援、各種申請管理、地域振興プログラム予算管理。',
+      overview: '地方自治体や非営利団体向けに、効率的かつ透明性の高い公共福祉サービス運営をサポートします。住民申請の履歴追跡、特定福祉予算の適正な執行管理、公的監査への合致を支援します。',
+      gradientClass: 'linear-gradient(135deg, #030712 0%, #6366f1 45%, #4338ca 100%)',
+      themeColor: '#6366f1',
+      stats: [
+        { value: '10M+', label: 'サービス提供対象の市民数' },
+        { value: '100%', label: '事業予算監査クリア実績' },
+        { value: '50%', label: '相談窓口・受付業務処理期間の削減率' }
+      ],
+      solutions: [
+        { title: '住民向け電子申請窓口', desc: '市民がオンラインで給付金や社会保障支援の申請、進捗追跡を行うためのセキュアなFioriポータルを構築します。', icon: 'users' },
+        { title: '公的基金・予算管理 (FI-FM)', desc: '国・地方からの補助金交付状況、およびプログラム経費支出をSAP Funds Managementで監査トレースします。', icon: 'shield' },
+        { title: '福祉ケース・業務管理ワークフロー', desc: '複数の行政・医療機関をまたぐ住民の相談ケース記録や、支援マイルストーンを統合データベース化します。', icon: 'briefcase' }
+      ],
+      playbook: {
+        tag: '社会貢献',
+        title: '住民給付金申請プロセスの自動化',
+        desc: '地方政府向けに、受給資格情報のデータベース照合と、給付金送金指示を自動化するモジュールを設計。',
+        metrics: '申请処理の滞留（バックログ）を90%解消。'
+      },
+      inquiryTitle: '公共・自治体専門チームへのご相談',
+      namePlaceholder: 'お名前',
+      emailPlaceholder: 'メールアドレス',
+      msgPlaceholder: '窓口システムや公的資金管理についてご記入ください...',
+      submitBtn: 'メッセージを送信する',
+      successMsg: '送信しました。自治体公共ITアドバイザーより折り返しご連絡いたします。'
+    },
+    'education': {
+      slug: 'education',
+      badge: '教育',
+      title: '教育機関・統合学務管理システム',
+      subtitle: '在籍ライフサイクル追跡、デジタル入試選考、学習管理（LMS）データ同期。',
+      overview: '大学や学校法人グループ向けに、拡張性の高い統合教育システムを構築します。学籍・成績情報管理、授業料等の出納・奨学金処理の自動化、CanvasやMoodleなどのLMSとのシームレス連携を実現します。',
+      gradientClass: 'linear-gradient(135deg, #2a0800 0%, #ea580c 45%, #eab308 100%)',
+      themeColor: '#ea580c',
+      stats: [
+        { value: '250k+', label: '管理対象のアクティブ学生数' },
+        { value: '95%', label: '出願・選考処理の高速化率' },
+        { value: '100%', label: 'LMSと学務DBの同期完了率' }
+      ],
+      solutions: [
+        { title: '統合学務ライフサイクル (SLM)', desc: 'コースシラバス、履修登録、成績評価、学籍簿管理をSAP Student Lifecycleモジュールで運用します。', icon: 'book' },
+        { title: '学費・会計業務の自動化', desc: '期別の授業料請求書のバッチ発行、各種奨学金枠の管理、学生個人口座の入金消込を自動化します。', icon: 'award' },
+        { title: '学習ポータル (LMS) 連携', desc: 'CanvasやMoodleなどの外部学習管理システムと、バックエンドの学生マスタ・財務DBを相互同期します。', icon: 'compass' }
+      ],
+      playbook: {
+        tag: '導入事例',
+        title: 'マルチキャンパス大学のクラウド学務移行',
+        desc: '複数拠点を持つ州立大学において、分散していた学籍データベースを統合されたSAP Cloud学務環境へ統合した事例。',
+        metrics: '新学期の履修登録待ち時間を70%削減。'
+      },
+      inquiryTitle: '教育情報化チームへのご相談',
+      namePlaceholder: 'お名前',
+      emailPlaceholder: 'メールアドレス',
+      msgPlaceholder: '学務システムやLMS連携のご要件についてご記入ください...',
+      submitBtn: 'メッセージを送信する',
+      successMsg: '送信しました。教育ITアドバイザーより追ってご連絡いたします。'
     }
   }
 };
