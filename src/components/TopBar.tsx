@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Logo } from './Shared';
 import { useLanguage, Language } from '@/context/LanguageContext';
+import { LoginModal } from './LoginModal';
 
 const REGIONS = [
   {
@@ -652,12 +653,14 @@ export function TopBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [globalOpen, setGlobalOpen] = useState(false);
+  const [loginOpen, setLoginOpen] = useState(false);
   const { language, setLanguage, t, tData } = useLanguage();
 
   const nav = tData<any[]>('nav');
   const promos = tData<any>('promos');
 
   return (
+    <>
     <header className="topbar">
       <div className="topbar-inner">
         <Logo/>
@@ -749,7 +752,7 @@ export function TopBar() {
                 </div>
               )}
             </div>
-            <button className="cta-btn accent">{t('login')}</button>
+            <button className="cta-btn accent" onClick={() => setLoginOpen(true)}>{t('login')}</button>
           </div>
         </nav>
         <div className="topbar-actions">
@@ -803,12 +806,14 @@ export function TopBar() {
               </div>
             )}
           </div>
-          <button className="cta-btn topbar-cta">{t('login')}</button>
+          <button className="cta-btn topbar-cta" onClick={() => setLoginOpen(true)}>{t('login')}</button>
         </div>
         <button className="mobile-menu-btn" aria-label="Toggle Menu" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           {mobileMenuOpen ? '✕' : '☰'}
         </button>
       </div>
     </header>
+    {loginOpen && <LoginModal onClose={() => setLoginOpen(false)} />}
+    </>
   );
 }

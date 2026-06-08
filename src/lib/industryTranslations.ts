@@ -239,7 +239,7 @@ export const INDUSTRY_TRANSLATIONS: Record<string, Record<string, IndustryDetail
       solutions: [
         { title: 'Funds Management (FI-FM)', desc: 'Budget allocation tracking, municipal grants distribution, and public finance audit reports.', icon: 'lock' },
         { title: 'Digital Citizen Services', desc: 'Fiori citizen portals for municipal utilities billing, business registration, and licensing.', icon: 'user' },
-        { title: 'Public Procurement', desc: 'Automate vendor bidding pipelines and contract lifecycle management in full compliance with public audit standards.', icon: 'document' }
+        { title: 'Public Procurement & Tendering', desc: 'Automate vendor bidding pipelines, manage contract lifecycles, and assist enterprise partners in bidding and strategizing for public tenders.', icon: 'document' }
       ],
       playbook: {
         tag: 'Public Service',
@@ -799,7 +799,7 @@ export const INDUSTRY_TRANSLATIONS: Record<string, Record<string, IndustryDetail
       solutions: [
         { title: 'Gestión de Fondos (FI-FM)', desc: 'Seguimiento de asignación presupuestaria, distribución de subvenciones municipales e informes de auditoría financiera pública.', icon: 'lock' },
         { title: 'Servicios Digitales al Ciudadano', desc: 'Portales ciudadanos Fiori para facturación de servicios públicos municipales, registro de empresas y licencias.', icon: 'user' },
-        { title: 'Contratación Pública', desc: 'Automatice los procesos de licitación de proveedores y la gestión del ciclo de vida de los contratos cumpliendo con los estándares de auditoría.', icon: 'document' }
+        { title: 'Contratación Pública y Licitaciones', desc: 'Automatice los procesos de licitación, gestione contratos y asesore a empresas asociadas en su estrategia de preparación para licitaciones públicas.', icon: 'document' }
       ],
       playbook: {
         tag: 'Servicio Público',
@@ -1359,7 +1359,7 @@ export const INDUSTRY_TRANSLATIONS: Record<string, Record<string, IndustryDetail
       solutions: [
         { title: '政府财政资金管理', desc: '管理财政预决算资金分配指标，追踪拨付链路，生成公开透明的政府财政审计底稿。', icon: 'lock' },
         { title: '数字市民服务平台', desc: '通过基于 Fiori 技术的市民门户系统，方便办理市政费用缴纳、工商执照注册及行政许可。', icon: 'user' },
-        { title: '规范的招投标公共采购', desc: '自动协调供货商资格审查、比价流程及合同管理，全面满足公共采购审计监管规范。', icon: 'document' }
+        { title: '招投标公共采购与投标战略', desc: '自动协调供货商资格审查及比价合同管理，并帮助企业合作伙伴制定政府招投标的参与战略。', icon: 'document' }
       ],
       playbook: {
         tag: '公共服务',
@@ -1919,7 +1919,7 @@ export const INDUSTRY_TRANSLATIONS: Record<string, Record<string, IndustryDetail
       solutions: [
         { title: 'Haushaltsmanagement (FI-FM)', desc: 'Budgetüberwachung, Verwaltung kommunaler Zuschüsse und Erstellung öffentlicher Finanzberichte.', icon: 'lock' },
         { title: 'Digitale Bürgerdienste', desc: 'Fiori-Bürgerportale für kommunale Abrechnungen, Gewerbeanmeldungen und Genehmigungen.', icon: 'user' },
-        { title: 'Öffentliche Beschaffung', desc: 'Automatisieren Sie Ausschreibungsverfahren und Vertragsmanagement gemäß den Prüfstandards.', icon: 'document' }
+        { title: 'Beschaffungswesen & Tender-Strategie', desc: 'Automatisieren Sie Ausschreibungsverfahren und unterstützen Sie Unternehmen bei der strategischen Vorbereitung auf öffentliche Ausschreibungen.', icon: 'document' }
       ],
       playbook: {
         tag: 'Öffentlicher Dienst',
@@ -2479,7 +2479,7 @@ export const INDUSTRY_TRANSLATIONS: Record<string, Record<string, IndustryDetail
       solutions: [
         { title: 'Gestion des Fonds (FI-FM)', desc: 'Suivi de l\'allocation des crédits budgétaires, versement des subventions et rapports d\'audits financiers.', icon: 'lock' },
         { title: 'Portail Citoyen Fiori', desc: 'Portail dématérialisé pour la facturation des régies municipales, licences et démarches administratives.', icon: 'user' },
-        { title: 'Achats & Marchés Publics', desc: 'Automatisez l\'appel d\'offres et le suivi des contrats fournisseurs dans le strict respect du code des marchés publics.', icon: 'document' }
+        { title: 'Achats, Marchés Publics & Appels d\'Offres', desc: 'Automatisez les appels d\'offres et accompagnez les entreprises partenaires à structurer et à stratégiser leurs réponses aux marchés publics.', icon: 'document' }
       ],
       playbook: {
         tag: 'Service Public',
@@ -3039,7 +3039,7 @@ export const INDUSTRY_TRANSLATIONS: Record<string, Record<string, IndustryDetail
       solutions: [
         { title: '資金管理・予算会計', desc: '国家・自治体予算の執行枠の管理、助成金交付プロセスの監査トレースを支援します。', icon: 'lock' },
         { title: '住民向けデジタル窓口', desc: 'Fioriを用いて、住民の水道光熱費支払いや法人設立時の許認可申請などのオンライン窓口を構築します。', icon: 'user' },
-        { title: '公共調達・入札プロセス', desc: '入札元の資格審査や比較見積もりを自動化し、公的監査基準に100%合致した調達フローを整備します。', icon: 'document' }
+        { title: '公共調達・入札＆テンダー戦略', desc: '入札審査・調達フローの自動化に加え、企業パートナーが公的機関の入札（テンダー）で落札するための獲得戦略策定を支援します。', icon: 'document' }
       ],
       playbook: {
         tag: '公共サービス',
