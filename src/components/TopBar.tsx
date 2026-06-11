@@ -752,7 +752,10 @@ export function TopBar() {
                 </div>
               )}
             </div>
-            <button className="cta-btn accent" onClick={() => setLoginOpen(true)}>{t('login')}</button>
+            <button className="cta-btn accent" onClick={() => {
+              setLoginOpen(true);
+              setMobileMenuOpen(false);
+            }}>{t('login')}</button>
           </div>
         </nav>
         <div className="topbar-actions">

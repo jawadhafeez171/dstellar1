@@ -708,7 +708,7 @@ a {
 
 @media (max-width: 768px) {
   .hero-bg-video {
-    top: 50%;
+    top: 42%;
     transform: translateY(-50%);
     bottom: auto;
     aspect-ratio: 16 / 9;
@@ -2340,8 +2340,7 @@ footer::before {
   inset: 0;
   z-index: 9999;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow-y: auto;
   background: rgba(8, 12, 30, 0.72);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -2353,6 +2352,7 @@ footer::before {
   position: relative;
   width: 100%;
   max-width: 440px;
+  margin: auto;
   background: rgba(255, 255, 255, 0.97);
   border-radius: 24px;
   padding: 40px 40px 32px;
@@ -2648,10 +2648,63 @@ footer::before {
 .login-signup-link:hover { opacity: 0.75; }
 
 /* Responsive */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .login-modal {
-    padding: 32px 24px 24px;
+    padding: 28px 24px 24px;
     border-radius: 20px;
   }
-  .login-title { font-size: 20px; }
+  .login-logo-wrap {
+    margin-bottom: 12px;
+  }
+  .login-logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .login-logo-glow {
+    width: 64px;
+    height: 64px;
+  }
+  .login-title {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  .login-subtitle {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  .login-form {
+    gap: 12px;
+  }
+  .login-input {
+    padding: 9px 36px 9px 34px;
+    font-size: 13px;
+  }
+  .login-input-icon {
+    left: 10px;
+  }
+  .login-submit {
+    padding: 11px;
+    font-size: 14px;
+  }
+  .login-divider {
+    margin: 12px 0;
+  }
+  .login-social {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .login-social-btn {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  .login-close {
+    top: 12px;
+    right: 12px;
+    width: 30px;
+    height: 30px;
+  }
+  .login-close svg {
+    width: 16px;
+    height: 16px;
+  }
 }
