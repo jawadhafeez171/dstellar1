@@ -1535,6 +1535,93 @@ section {
   margin-top: 7px;
 }
 
+/* Stats row inside service panel */
+.sp-stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 24px;
+}
+
+.sp-stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sp-stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent-hi);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.sp-stat-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* Capabilities list inside service panel */
+.sp-caps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.sp-cap {
+  display: flex;
+  flex-direction: column;
+}
+
+.sp-cap-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.sp-cap-title-row .dot {
+  flex: 0 0 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.sp-cap p {
+  margin: 6px 0 0 16px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.45;
+}
+
+/* Dynamic background glow bubble */
+.sp-glow {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  transition: background 0.6s ease-in-out;
+}
+
+@media (max-width: 960px) {
+  .sp-stats-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding-bottom: 18px;
+  }
+}
+
+
 /* ————— PRODUCTS ————— */
 .products-row {
   display: grid;
